@@ -1,5 +1,5 @@
 <template>
-  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+  <nav class="p-5 bg-white shadow lg:flex lg:items-center lg:justify-between">
     <div class="flex justify-between items-center">
       <span class="text-2xl cursor-pointer">
         <img class="h-10 inline" src="../assets/logo.png" />
@@ -7,7 +7,7 @@
       </span>
 
       <!-- Burger Menu Icon -->
-      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+      <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
         <ion-icon
           :name="isMenuOpen ? 'close' : 'menu'"
           @click="toggleMenu"
@@ -16,28 +16,33 @@
     </div>
 
     <ul
-      class="md:flex md:items-center absolute md:relative bg-white w-full md:w-auto left-0 md:py-0 py-4 md:pl-0 pl-7 shadow-md md:shadow-none transition-all ease-in duration-200"
+      class="lg:flex lg:items-center absolute lg:relative bg-white w-full lg:w-auto left-0 lg:py-0 py-4 lg:pl-0 pl-7 shadow-lg lg:shadow-none transition-all ease-in duration-200"
       :class="
         isMenuOpen
           ? 'top-[80px] opacity-100 z-50 h-screen w-full'
-          : 'top-[-400px] opacity-0 z-[-1] md:opacity-100 md:static md:z-auto md:flex'
+          : 'top-[-400px] opacity-0 z-[-1] lg:opacity-100 lg:static lg:z-auto lg:flex'
       "
     >
       <li
         v-for="(link, index) in navLinks"
         :key="index"
-        class="mx-4 my-6 md:my-0 text-xl hover:text-cyan-500 duration-200"
+        class="mx-4 my-6 lg:my-0 text-xl hover:text-cyan-500 duration-200"
       >
         <RouterLink :to="link.to" @click="closeMenu">{{
           link.label
         }}</RouterLink>
       </li>
+      <LanguageSwitcher />
     </ul>
   </nav>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import { useI18n } from "vue-i18n";
+import LanguageSwitcher from "../components/LanguageSwitcher.vue";
+
+const { t } = useI18n();
 
 const isMenuOpen = ref(false);
 
@@ -48,11 +53,12 @@ const closeMenu = () => {
   isMenuOpen.value = false;
 };
 
-const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "Information", to: "/information" },
-  { label: "Gallery", to: "/gallery" },
-  { label: "Booking", to: "/booking" },
-  { label: "Comments", to: "/comments" },
-];
+// Utilisation de computed pour que la traduction change dynamiquement
+const navLinks = computed(() => [
+  { label: t("navbar.home"), to: "/" },
+  { label: t("navbar.information"), to: "/information" },
+  { label: t("navbar.gallery"), to: "/gallery" },
+  { label: t("navbar.booking"), to: "/booking" },
+  { label: t("navbar.comments"), to: "/comments" },
+]);
 </script>

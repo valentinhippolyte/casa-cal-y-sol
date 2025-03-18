@@ -1,0 +1,9 @@
+{
+  "navbar": {
+    "home": "Home",
+    "information": "Information",
+    "gallery": "Gallery",
+    "booking": "Rates and reservation",
+    "comments": "Comments"
+  }
+}
