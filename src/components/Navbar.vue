@@ -1,16 +1,28 @@
 <template>
-  <nav class="p-5 bg-white shadow lg:flex lg:items-center lg:justify-between">
+  <nav
+    class="p-5 bg-white shadow lg:flex lg:items-center lg:justify-between"
+    role="navigation"
+    aria-label="Main Navigation"
+  >
     <div class="flex justify-between items-center">
-      <span class="text-2xl cursor-pointer">
-        <img class="h-10 inline" src="../assets/logo.png" />
+      <RouterLink to="/" class="text-2xl cursor-pointer flex items-center">
+        <img
+          class="h-10 inline"
+          src="../assets/logo.png"
+          alt="Casa Cal Y Sol Logo"
+        />
         Casa Cal Y Sol
-      </span>
+      </RouterLink>
 
       <!-- Burger Menu Icon -->
-      <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
+      <span
+        class="text-3xl cursor-pointer mx-2 lg:hidden block"
+        role="button"
+        aria-label="Toggle menu"
+      >
         <ion-icon
           :name="isMenuOpen ? 'close' : 'menu'"
-          @click="toggleMenu"
+          @click="toggleMenu()"
         ></ion-icon>
       </span>
     </div>
@@ -20,15 +32,15 @@
       :class="
         isMenuOpen
           ? 'top-[80px] opacity-100 z-50 h-screen w-full'
-          : 'top-[-400px] opacity-0 z-[-1] lg:opacity-100 lg:static lg:z-auto lg:flex'
+          : 'hidden lg:flex'
       "
     >
       <li
         v-for="(link, index) in navLinks"
         :key="index"
-        class="mx-4 my-6 lg:my-0 text-xl hover:text-cyan-500 duration-200"
+        class="mx-4 my-6 lg:my-0 text-xl"
       >
-        <RouterLink :to="link.to" @click="closeMenu">{{
+        <RouterLink :to="link.to" @click="toggleMenu(true)">{{
           link.label
         }}</RouterLink>
       </li>
@@ -46,11 +58,8 @@ const { t } = useI18n();
 
 const isMenuOpen = ref(false);
 
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-};
-const closeMenu = () => {
-  isMenuOpen.value = false;
+const toggleMenu = (forceClose = false) => {
+  isMenuOpen.value = forceClose ? false : !isMenuOpen.value;
 };
 
 // Utilisation de computed pour que la traduction change dynamiquement
