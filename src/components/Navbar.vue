@@ -16,11 +16,15 @@
     </div>
 
     <ul
-      class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200"
       :class="isMenuOpen ? 'top-[80px] opacity-100' : 'top-[-400px] opacity-0'"
     >
-      <li class="mx-4 my-6 md:my-0 text-xl hover:text-cyan-500 duration-200">
-        <RouterLink to="/">Home</RouterLink>
+      <li
+        v-for="(link, index) in navLinks"
+        :key="index"
+        class="mx-4 my-6 md:my-0 text-xl hover:text-cyan-500 duration-200"
+      >
+        <RouterLink :to="link.to">{{ link.label }}</RouterLink>
       </li>
     </ul>
   </nav>
@@ -34,4 +38,12 @@ const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+const navLinks = [
+  { label: "Home", to: "/" },
+  { label: "Information", to: "/information" },
+  { label: "Gallery", to: "/gallery" },
+  { label: "Booking", to: "/booking" },
+  { label: "Comments", to: "/comments" },
+];
 </script>
