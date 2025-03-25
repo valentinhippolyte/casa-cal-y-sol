@@ -29,8 +29,8 @@ import { Motion } from "@motionone/vue";
 import Footer from "./components/layout/footer/Footer.vue";
 import Navbar from "./components/layout/navbar/Navbar.vue";
 
+import { onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { watch, onMounted } from "vue";
 
 const { t, locale } = useI18n();
 
