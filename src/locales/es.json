@@ -5,5 +5,12 @@
     "gallery": "Galeria",
     "booking": "Tarifas y reserva",
     "comments": "Commentarios"
+  },
+  "footer": {
+    "title1": "Contactarnos",
+    "title2": "Encontrarnos",
+    "address": "Calle Peñón, 28, 11690 Olvera, Cádiz, España",
+    "registration": "N° de registro: ",
+    "rights": "Todos los derechos reservados"
   }
 }

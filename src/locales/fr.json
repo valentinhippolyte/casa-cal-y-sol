@@ -5,5 +5,12 @@
     "gallery": "Galerie",
     "booking": "Tarifs et réservation",
     "comments": "Commentaires"
+  },
+  "footer": {
+    "title1": "Nous contacter",
+    "title2": "Nous trouver",
+    "address": "28, rue Peñón, 11690 Olvera, Cadix, Espagne",
+    "registration": "N° d’enregistrement :",
+    "rights": "Tous droits réservés"
   }
 }
