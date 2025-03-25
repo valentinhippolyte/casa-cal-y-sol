@@ -44,7 +44,9 @@
           link.label
         }}</RouterLink>
       </li>
-      <LanguageSwitcher />
+      <li class="mx-4 lg:ml-4">
+        <LanguageSwitcher />
+      </li>
     </ul>
   </nav>
 </template>
