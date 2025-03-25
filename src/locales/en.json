@@ -5,5 +5,12 @@
     "gallery": "Gallery",
     "booking": "Rates and reservation",
     "comments": "Comments"
+  },
+  "footer": {
+    "title1": "Contact us",
+    "title2": "Find us",
+    "address": "28 Peñón Street, 11690 Olvera, Cádiz, Spain",
+    "registration": "Registration:",
+    "rights": "All rights reserved"
   }
 }
