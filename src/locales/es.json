@@ -12,5 +12,8 @@
     "address": "Calle Peñón, 28, 11690 Olvera, Cádiz, España",
     "registration": "N° de registro: ",
     "rights": "Todos los derechos reservados"
+  },
+  "comments": {
+    "title": "Comentarios"
   }
 }
