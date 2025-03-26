@@ -1,65 +1,84 @@
 <template>
-  <div v-if="locale == 'fr'">c'est en fr</div>
-  <div v-if="locale == 'es'">c'est en es</div>
-  <div v-if="locale == 'en'">c'est en en</div>
   <div class="container mx-auto px-4 py-6">
     <h2 class="text-2xl font-bold mb-4">{{ t("comments.title") }}</h2>
-    <!-- en -->
-    <div
-      v-if="locale == 'en'"
-      class="trust-widget-container bg-white p-4 rounded-lg shadow-md"
-      src="https://cdn.trustindex.io/loader.js?cfeee0625234620d8e164d1e4c8"
-    ></div>
 
-    <!-- fr -->
-    <div
-      v-if="locale === 'fr'"
-      class="trust-widget-container bg-white p-4 rounded-lg shadow-md"
-      src="https://cdn.trustindex.io/loader.js?4be5ca225a5f6190dc962c833fe"
-    ></div>
+    <div v-if="showWidget">
+      <div
+        v-if="locale === 'en'"
+        class="trust-widget-container bg-white p-4 rounded-lg shadow-md"
+        src="https://cdn.trustindex.io/loader.js?cfeee0625234620d8e164d1e4c8"
+      ></div>
 
-    <!-- es -->
-    <div
-      v-if="locale === 'es'"
-      class="trust-widget-container bg-white p-4 rounded-lg shadow-md"
-      src="https://cdn.trustindex.io/loader.js?6bbe58c25c4e620e57068cee342"
-    ></div>
+      <div
+        v-else-if="locale === 'fr'"
+        class="trust-widget-container bg-white p-4 rounded-lg shadow-md"
+        src="https://cdn.trustindex.io/loader.js?4be5ca225a5f6190dc962c833fe"
+      ></div>
+
+      <div
+        v-else-if="locale === 'es'"
+        class="trust-widget-container bg-white p-4 rounded-lg shadow-md"
+        src="https://cdn.trustindex.io/loader.js?6bbe58c25c4e620e57068cee342"
+      ></div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, watch } from "vue";
+import { nextTick, onMounted, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 
 const { t, locale } = useI18n();
+const showWidget = ref(true);
 
-// Fonction pour charger le script Trustindex
-const loadTrustIndexScript = () => {
+const loadTrustIndexScript = async () => {
+  console.log("🔄 Rechargement du widget TrustIndex...");
+
+  // Désactiver temporairement l'affichage du widget
+  showWidget.value = false;
+
+  await nextTick(); // Attendre que le DOM soit mis à jour
+
+  // Supprimer les scripts existants TrustIndex
+  document
+    .querySelectorAll('script[src*="trustindex.io"]')
+    .forEach((el) => el.remove());
+
+  // Supprimer les anciens widgets
+  document
+    .querySelectorAll(".trust-widget-container")
+    .forEach((el) => (el.innerHTML = ""));
+
+  await nextTick(); // Assurer que le DOM est bien nettoyé
+
+  // Réactiver le widget
+  showWidget.value = true;
+
+  await nextTick(); // Attendre encore avant d'ajouter le script
+
+  // Ajouter le script
   const script = document.createElement("script");
   script.src = "https://cdn.trustindex.io/loader.js";
   script.defer = true;
   script.async = true;
 
-  document.head.appendChild(script);
+  document.body.appendChild(script);
 
-  script.onload = () => {
-    console.log("Trustindex script loaded");
-  };
+  script.onload = () => console.log("✅ TrustIndex script chargé !");
 };
 
-// Charger le script initialement au montage du composant
+// Charger le script au montage
 onMounted(() => {
   loadTrustIndexScript();
 });
 
-// Observer les changements de locale
+// Observer les changements de langue et recharger le script proprement
 watch(
   () => locale.value,
-  (newLocale, oldLocale) => {
-    console.log(`La langue a changé de ${oldLocale} à ${newLocale}`);
+  async (newLocale, oldLocale) => {
+    console.log(`🌍 Changement de langue : ${oldLocale} → ${newLocale}`);
 
-    // Si tu veux recharger le script à chaque changement de langue
-    loadTrustIndexScript();
+    await loadTrustIndexScript();
   }
 );
 </script>
