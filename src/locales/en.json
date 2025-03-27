@@ -20,6 +20,16 @@
     "title": "Gallery"
   },
   "booking": {
-    "title": "Booking"
+    "title": "Booking",
+    "form": {
+      "fistName": "fistName",
+      "lastName": "lastName",
+      "email": "Email Address",
+      "arrivalDate": "Arrival Date",
+      "departureDate": "Departure Date",
+      "number_adults": "Number of adults",
+      "number_children": "Number of children",
+      "button": "Book"
+    }
   }
 }
