@@ -1,22 +1,20 @@
 <template>
   <div class="flex items-center justify-center p-12">
-    <!-- Author: FormBold Team -->
-    <div class="mx-auto w-full max-w-[550px] bg-white">
-      <form>
+    <div class="mx-auto w-full max-w-[550px] bg-amber-100">
+      <form @submit.prevent="handleSubmit">
         <div class="-mx-3 flex flex-wrap">
           <div class="w-full px-3 sm:w-1/2">
             <div class="mb-5">
-              <label
-                for="firstName"
-                class="mb-3 block text-base font-medium text-[#07074D]"
-              >
+              <label for="firstName" class="mb-3 block text-base font-medium">
                 First name
               </label>
               <input
                 type="text"
                 name="firstName"
                 id="firstName"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                v-model="formData.firstName"
+                required
+                class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               />
             </div>
           </div>
@@ -24,7 +22,7 @@
             <div class="mb-5">
               <label
                 for="departureDate"
-                class="mb-3 block text-base font-medium text-[#07074D]"
+                class="mb-3 block text-base font-medium"
               >
                 Last name
               </label>
@@ -32,40 +30,40 @@
                 type="text"
                 name="lastName"
                 id="lastName"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                v-model="formData.lastName"
+                required
+                class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               />
             </div>
           </div>
         </div>
         <div class="mb-5">
-          <label
-            for="email"
-            class="mb-3 block text-base font-medium text-[#07074D]"
-          >
+          <label for="email" class="mb-3 block text-base font-medium">
             Email Address
           </label>
           <input
             type="email"
             name="email"
             id="email"
+            v-model="formData.email"
+            required
             placeholder="Enter your email"
-            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
           />
         </div>
         <div class="-mx-3 flex flex-wrap">
           <div class="w-full px-3 sm:w-1/2">
             <div class="mb-5">
-              <label
-                for="arrivalDate"
-                class="mb-3 block text-base font-medium text-[#07074D]"
-              >
+              <label for="arrivalDate" class="mb-3 block text-base font-medium">
                 Arrival date
               </label>
               <input
                 type="date"
                 name="arrivalDate"
                 id="arrivalDate"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                v-model="formData.arrivalDate"
+                required
+                class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               />
             </div>
           </div>
@@ -73,7 +71,7 @@
             <div class="mb-5">
               <label
                 for="departureDate"
-                class="mb-3 block text-base font-medium text-[#07074D]"
+                class="mb-3 block text-base font-medium"
               >
                 Departure date
               </label>
@@ -81,7 +79,9 @@
                 type="date"
                 name="departureDate"
                 id="departureDate"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                v-model="formData.departureDate"
+                required
+                class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               />
             </div>
           </div>
@@ -90,16 +90,15 @@
         <div class="-mx-3 flex flex-wrap">
           <div class="w-full px-3 sm:w-1/2">
             <div class="mb-5">
-              <label
-                for="adults"
-                class="mb-3 block text-base font-medium text-[#07074D]"
-              >
+              <label for="adults" class="mb-3 block text-base font-medium">
                 Number of adults
               </label>
               <select
                 name="adults"
                 id="adults"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                v-model="formData.adults"
+                required
+                class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               >
                 <option v-for="n in 8" :key="n" :value="n">{{ n }}</option>
               </select>
@@ -107,18 +106,19 @@
           </div>
           <div class="w-full px-3 sm:w-1/2">
             <div class="mb-5">
-              <label
-                for="children"
-                class="mb-3 block text-base font-medium text-[#07074D]"
-              >
+              <label for="children" class="mb-3 block text-base font-medium">
                 Number of children
               </label>
               <select
                 name="children"
                 id="children"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                v-model="formData.children"
+                required
+                class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               >
-                <option v-for="n in 8" :key="n" :value="n">{{ n - 1 }}</option>
+                <option v-for="n in 8" :key="n" :value="n - 1">
+                  {{ n - 1 }}
+                </option>
               </select>
             </div>
           </div>
@@ -126,7 +126,8 @@
 
         <div>
           <button
-            class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+            class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none cursor-pointer"
+            type="submit"
           >
             Book
           </button>
@@ -136,4 +137,28 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import { createBooking } from "../services/apiService.js";
+
+const formData = ref({
+  lastName: "",
+  firstName: "",
+  email: "",
+  arrivalDate: "",
+  departureDate: "",
+  adults: 0,
+  children: 0,
+});
+
+const handleSubmit = async () => {
+  try {
+    const response = await createBooking(formData.value);
+    console.log("Réservation succed:", response);
+    alert("Reservation done!");
+  } catch (error) {
+    console.error("Error during the reservation:", error);
+    alert("Error during the reservation.");
+  }
+};
+</script>
