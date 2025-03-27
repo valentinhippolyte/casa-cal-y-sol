@@ -6,7 +6,7 @@
           <div class="w-full px-3 sm:w-1/2">
             <div class="mb-5">
               <label for="firstName" class="mb-3 block text-base font-medium">
-                First name
+                {{ t("booking.form.fistName") }}
               </label>
               <input
                 type="text"
@@ -24,7 +24,7 @@
                 for="departureDate"
                 class="mb-3 block text-base font-medium"
               >
-                Last name
+                {{ t("booking.form.lastName") }}
               </label>
               <input
                 type="text"
@@ -39,7 +39,7 @@
         </div>
         <div class="mb-5">
           <label for="email" class="mb-3 block text-base font-medium">
-            Email Address
+            {{ t("booking.form.email") }}
           </label>
           <input
             type="email"
@@ -47,7 +47,6 @@
             id="email"
             v-model="formData.email"
             required
-            placeholder="Enter your email"
             class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
           />
         </div>
@@ -55,7 +54,7 @@
           <div class="w-full px-3 sm:w-1/2">
             <div class="mb-5">
               <label for="arrivalDate" class="mb-3 block text-base font-medium">
-                Arrival date
+                {{ t("booking.form.arrivalDate") }}
               </label>
               <input
                 type="date"
@@ -73,7 +72,7 @@
                 for="departureDate"
                 class="mb-3 block text-base font-medium"
               >
-                Departure date
+                {{ t("booking.form.departureDate") }}
               </label>
               <input
                 type="date"
@@ -91,7 +90,7 @@
           <div class="w-full px-3 sm:w-1/2">
             <div class="mb-5">
               <label for="adults" class="mb-3 block text-base font-medium">
-                Number of adults
+                {{ t("booking.form.number_adults") }}
               </label>
               <select
                 name="adults"
@@ -100,14 +99,16 @@
                 required
                 class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               >
-                <option v-for="n in 8" :key="n" :value="n">{{ n }}</option>
+                <option v-for="n in 9" :key="n" :value="n - 1">
+                  {{ n - 1 }}
+                </option>
               </select>
             </div>
           </div>
           <div class="w-full px-3 sm:w-1/2">
             <div class="mb-5">
               <label for="children" class="mb-3 block text-base font-medium">
-                Number of children
+                {{ t("booking.form.number_children") }}
               </label>
               <select
                 name="children"
@@ -129,7 +130,7 @@
             class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none cursor-pointer"
             type="submit"
           >
-            Book
+            {{ t("booking.form.button") }}
           </button>
         </div>
       </form>
@@ -140,6 +141,9 @@
 <script setup>
 import { ref } from "vue";
 import { createBooking } from "../services/apiService.js";
+import { useI18n } from "vue-i18n";
+
+const { t, locale } = useI18n();
 
 const formData = ref({
   lastName: "",
