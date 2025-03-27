@@ -18,5 +18,18 @@
   },
   "gallery": {
     "title": "Galeria"
+  },
+  "booking": {
+    "title": "Reservar",
+    "form": {
+      "fistName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "arrivalDate": "Fecha de llegada",
+      "departureDate": "Fecha de salida",
+      "number_adults": "Número de adultos",
+      "number_children": "Número de niños",
+      "button": "Reservar"
+    }
   }
 }
