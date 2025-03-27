@@ -18,5 +18,8 @@
   },
   "gallery": {
     "title": "Gallery"
+  },
+  "booking": {
+    "title": "Booking"
   }
 }

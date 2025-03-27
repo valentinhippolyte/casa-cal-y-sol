@@ -18,5 +18,8 @@
   },
   "gallery": {
     "title": "Galeria"
+  },
+  "booking": {
+    "title": "Reservar"
   }
 }
