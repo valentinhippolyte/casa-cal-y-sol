@@ -31,5 +31,13 @@
       "number_children": "Nombre d'enfants",
       "button": "Réserver"
     }
+  },
+  "information": {
+    "title": "Informations",
+    "history": {
+      "title1": "Un rêve devenu réalité",
+      "text1": "Il y a vingt ans, nous avons découvert Olvera et sommes tombés sous le charme de ce village blanc au cœur de l’Andalousie. Ses ruelles ensoleillées, son ambiance chaleureuse et son authenticité nous ont immédiatement conquis. Depuis, un rêve s’est dessiné : s’y installer à la retraite. Ce moment est enfin arrivé, et c’est avec beaucoup de joie que nous ouvrons les portes de Casa Cal y Sol, un lieu où nous espérons que vous vous sentirez aussi bien que nous.",
+      "text2": "Casa Cal y Sol se trouve dans le centre historique d’Olvera, à deux pas d’un château arabe du XIIᵉ siècle et de son église néoclassique, véritables emblèmes de la ville. Idéalement située sur la route des villages blancs, la maison est à 1h30 des aéroports de Séville et Malaga, ainsi que des plages et des principaux sites culturels d’Andalousie.À proximité, la Via Verde de la Sierra vous invite à explorer la région à pied, à vélo ou à cheval, et les amateurs de sensations fortes pourront s’essayer au parapente à Algodonales. Notre maison offre tous les avantages de la ville tout en conservant l’authenticité d’un village. À moins de 100 mètres, vous trouverez supermarchés, boucherie, primeur, pâtisserie, pharmacie, bars, et bien plus encore. Et, perle rare en pleine ville, une piscine privative de 3 x 4 m vous attend pour vous rafraîchir sous le soleil andalou. Située dans la paisible Calle Peñón, où seuls le boulanger et les éboueurs passent quotidiennement, notre maison garantit calme et sérénité. Un parking est disponible à proximité."
+    }
   }
 }

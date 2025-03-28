@@ -31,5 +31,13 @@
       "number_children": "Número de niños",
       "button": "Reservar"
     }
+  },
+  "information": {
+    "title": "Informaciones",
+    "history": {
+      "title1": "Un sueño hecho realidad",
+      "text1": "Hace veinte años, descubrimos Olvera y nos enamoramos de este pueblo blanco en el corazón de Andalucía. Sus calles soleadas, su ambiente acogedor y su autenticidad nos cautivaron de inmediato. Desde entonces, nació un sueño: establecernos aquí al jubilarnos. Ese momento finalmente ha llegado, y estamos encantados de abrir las puertas de Casa Cal y Sol, un lugar donde esperamos que se sientan tan a gusto como nosotros.",
+      "text2": "Casa Cal y Sol se encuentra en el centro histórico de Olvera, a pocos pasos de un castillo árabe del siglo XII y su iglesia neoclásica, verdaderos emblemas de la ciudad. Idealmente situada en la Ruta de los Pueblos Blancos, la casa está a 1h30 de los aeropuertos de Sevilla y Málaga, así como de las playas y los principales sitios culturales de Andalucía. Muy cerca, la Vía Verde de la Sierra invita a explorar la región a pie, en bicicleta o a caballo, y los amantes de la adrenalina pueden probar el parapente en Algodonales. Nuestra casa ofrece todas las comodidades de la ciudad sin perder la autenticidad de un pueblo. A menos de 100 metros, encontrará supermercados, carnicería, frutería, panadería, farmacia, bares y mucho más. Y, una joya poco común en plena ciudad, una piscina privada de 3x4 m le espera para refrescarse bajo el sol andaluz. Ubicada en la tranquila Calle Peñón, donde solo pasan el panadero y los basureros diariamente, nuestra casa garantiza calma y serenidad. Hay estacionamiento disponible cerca."
+    }
   }
 }
