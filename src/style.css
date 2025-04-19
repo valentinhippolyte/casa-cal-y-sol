@@ -1,1 +1,56 @@
+@font-face {
+  font-family: "Roca";
+  src: url("../src/assets/fonts/Roca/Roca-Regular.otf");
+}
+@font-face {
+  font-family: "Montserrat_Alternates";
+  src: url("../src/assets/fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf");
+}
+
 @import "tailwindcss";
+
+@theme {
+  --font-roca: Roca, "sans-serif";
+  --font-montserrat: Montserrat_Alternates, "sans-serif";
+
+  --color-app-red: #b03407;
+
+  --color-app-red-50: #f7ebe6;
+  --color-app-red-100: #efd6cd;
+  --color-app-red-200: #dfae9c;
+  --color-app-red-300: #d0856a;
+  --color-app-red-400: #c05d39;
+  --color-app-red-500: #b03407;
+  --color-app-red-600: #8d2a06;
+  --color-app-red-700: #6a1f04;
+  --color-app-red-800: #461503;
+  --color-app-red-900: #230a01;
+
+  --color-app-yellow: #feca16;
+
+  --color-app-yellow-50: #fffae8;
+  --color-app-yellow-100: #fff4d0;
+  --color-app-yellow-200: #ffeaa2;
+  --color-app-yellow-300: #fedf73;
+  --color-app-yellow-400: #fed545;
+  --color-app-yellow-500: #feca16;
+  --color-app-yellow-600: #cba212;
+  --color-app-yellow-700: #98790d;
+  --color-app-yellow-800: #665109;
+  --color-app-yellow-900: #332804;
+
+  --color-accent: #348fce;
+
+  --color-app-blue-50: #ebf4fa;
+  --color-app-blue-100: #d6e9f5;
+  --color-app-blue-200: #aed2eb;
+  --color-app-blue-300: #85bce2;
+  --color-app-blue-400: #5da5d8;
+  --color-app-blue-500: #348fce;
+  --color-app-blue-600: #2a72a5;
+  --color-app-blue-700: #1f567c;
+  --color-app-blue-800: #153952;
+  --color-app-blue-900: #0a1d29;
+
+  --color-app-bg: #faf5eb;
+}

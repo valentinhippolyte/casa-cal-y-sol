@@ -8,6 +8,8 @@ import en from "./locales/en.json";
 import es from "./locales/es.json";
 import fr from "./locales/fr.json";
 
+import * as lucideIcons from "lucide-vue-next";
+
 const i18n = createI18n({
   legacy: false,
   locale: "en",
@@ -20,6 +22,10 @@ const i18n = createI18n({
 });
 
 const app = createApp(App);
+
+for (const [key, component] of Object.entries(lucideIcons)) {
+  app.component(key, component);
+}
 
 app.use(i18n);
 app.use(router);
