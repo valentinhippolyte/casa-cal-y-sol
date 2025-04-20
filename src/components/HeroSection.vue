@@ -17,7 +17,7 @@
       >
         <!-- Logo -->
         <img
-          src="../assets/logo-white.png"
+          src="../assets/Logo_beige.svg"
           alt="Logo"
           class="w-40 lg:w-64 mb-6 lg:mb-0"
         />

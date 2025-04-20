@@ -18,7 +18,7 @@
       <RouterLink to="/" class="absolute left-1/2 transform -translate-x-1/2">
         <img
           class="h-[60px]"
-          src="../assets/logo.png"
+          src="../assets/Logo_couleur.svg"
           alt="Casa Cal Y Sol Logo"
         />
       </RouterLink>
@@ -32,7 +32,7 @@
       <RouterLink to="/" class="flex items-center">
         <img
           class="h-[60px]"
-          src="../assets/logo.png"
+          src="../assets/Logo_couleur.svg"
           alt="Casa Cal Y Sol Logo"
         />
         <h1 class="text-app-red font-roca ml-4 text-2xl leading-6">
