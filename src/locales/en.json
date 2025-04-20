@@ -8,7 +8,11 @@
   },
   "home": {
     "welcome": "Welcome to",
-    "subtitle": "Holiday home in Andalusia"
+    "subtitle": "Holiday home in Andalusia",
+    "information": {
+      "title": "A haven of peace in the heart of Andalusia",
+      "text": "Twenty years ago, a love at first sight for Olvera sparked a dream: to one day settle in this sun-drenched white village. Today, that dream has come true, and it is with great joy that we welcome you to Casa Cal y Sol. Located in the historic center, our house combines Andalusian charm, modern comfort, and absolute tranquility. Everything is here to make you feel at home."
+    }
   },
   "comments": {
     "title": "Comments"
@@ -18,5 +22,6 @@
     "title2": "Find us",
     "address": "28 Calle Peñón, 11690 Olvera, Cádiz, Spain",
     "registration": "Registration: "
-  }
+  },
+  "seeMoreButton": "See more"
 }

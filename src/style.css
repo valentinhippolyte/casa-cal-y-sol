@@ -2,6 +2,12 @@
   font-family: "Roca";
   src: url("../src/assets/fonts/Roca/Roca-Regular.otf");
 }
+
+@font-face {
+  font-family: "Roca-Light";
+  src: url("../src/assets/fonts/Roca/Roca-Light.otf");
+}
+
 @font-face {
   font-family: "Montserrat_Alternates";
   src: url("../src/assets/fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf");
@@ -11,6 +17,7 @@
 
 @theme {
   --font-roca: Roca, "sans-serif";
+  --font-roca-light: Roca-Light, "sans-serif";
   --font-montserrat: Montserrat_Alternates, "sans-serif";
 
   --color-app-red: #b03407;
