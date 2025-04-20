@@ -5,5 +5,9 @@
     "gallery": "Galerie",
     "booking": "Réserver",
     "comments": "Commentaires"
+  },
+  "home": {
+    "welcome": "Bienvenue à",
+    "subtitle": "Maison de vacances en Andalousie"
   }
 }

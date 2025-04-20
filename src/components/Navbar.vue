@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="p-5 bg-app-bg shadow flex items-center justify-between lg:grid lg:grid-cols-3"
+    class="p-5 bg-app-bg shadow flex items-center justify-between lg:grid lg:grid-cols-3 relative z-20"
     role="navigation"
     aria-label="Main Navigation"
   >

@@ -5,5 +5,9 @@
     "gallery": "Gallery",
     "booking": "Book",
     "comments": "Comments"
+  },
+  "home": {
+    "welcome": "Welcome to",
+    "subtitle": "Holiday home in Andalusia"
   }
 }
