@@ -9,5 +9,8 @@
   "home": {
     "welcome": "Welcome to",
     "subtitle": "Holiday home in Andalusia"
+  },
+  "comments": {
+    "title": "Comments"
   }
 }

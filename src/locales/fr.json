@@ -9,5 +9,8 @@
   "home": {
     "welcome": "Bienvenue à",
     "subtitle": "Maison de vacances en Andalousie"
+  },
+  "comments": {
+    "title": "Commentaires"
   }
 }
