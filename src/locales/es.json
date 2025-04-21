@@ -8,7 +8,25 @@
   },
   "home": {
     "welcome": "Bienvenidos a",
-    "subtitle": "Casa de vacaciones en Andalucía"
+    "subtitle": "Casa de vacaciones en Andalucía",
+    "information": {
+      "title": "Un remanso de paz en el corazón de Andalucía",
+      "text": "Hace veinte años, un flechazo por Olvera dio lugar a un sueño: instalarse algún día en este pueblo blanco bañado por el sol. Hoy, ese sueño se ha hecho realidad, y con mucha alegría les damos la bienvenida a Casa Cal y Sol. Situada en el centro histórico, nuestra casa combina el encanto andaluz, el confort moderno y una tranquilidad absoluta. Todo está pensado para que se sientan como en casa."
+    },
+    "characteristic": {
+      "title": "Características",
+      "icone": {
+        "house": "Casa entera",
+        "people": "7 personas",
+        "bed": "4 habitaciones",
+        "door": "6 camas",
+        "bath": "3 baños",
+        "sun": "3 terrazas",
+        "pool": "Piscina 3x4",
+        "cold": "Aire acondicionado",
+        "wifi": "Wi-Fi"
+      }
+    }
   },
   "comments": {
     "title": "Comentarios"
@@ -18,5 +36,6 @@
     "title2": "Dónde estamos",
     "address": "Calle Peñón 28, 11690 Olvera, Cádiz, España",
     "registration": "Registro turístico: "
-  }
+  },
+  "seeMoreButton": "Ver más"
 }

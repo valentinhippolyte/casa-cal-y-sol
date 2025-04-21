@@ -8,7 +8,25 @@
   },
   "home": {
     "welcome": "Bienvenue à",
-    "subtitle": "Maison de vacances en Andalousie"
+    "subtitle": "Maison de vacances en Andalousie",
+    "information": {
+      "title": "Un havre de paix au cœur de l’Andalousie",
+      "text": "Il y a vingt ans, un coup de cœur pour Olvera a donné naissance à un rêve : s’installer un jour dans ce village blanc baigné de soleil. Aujourd’hui, ce rêve est devenu réalité, et c’est avec bonheur que nous vous accueillons à Casa Cal y Sol. Située dans le centre historique, notre maison allie charme andalou, confort moderne, et calme absolu. Tout y est réuni pour que vous vous sentiez comme chez vous."
+    },
+    "characteristic": {
+      "title": "Caractéristiques",
+      "icone": {
+        "house": "Maison entière",
+        "people": "7 personnes",
+        "bed": "4 chambres",
+        "door": "6 lits",
+        "bath": "3 salles de bain",
+        "sun": "3 terrasses",
+        "pool": "Piscine 3x4",
+        "cold": "Climatisation",
+        "wifi": "Wi-Fi"
+      }
+    }
   },
   "comments": {
     "title": "Commentaires"
@@ -18,5 +36,6 @@
     "title2": "Nous trouver",
     "address": "28 Calle Peñón, 11690 Olvera, Cadix, Espagne",
     "registration": "Numéro d'enregistrement : "
-  }
+  },
+  "seeMoreButton": "Voir plus"
 }
