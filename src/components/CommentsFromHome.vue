@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center px-4 py-6">
+  <div class="flex flex-col items-center px-4 pb-6">
     <div class="h-1.5 w-18 bg-app-red mt-10 mb-3"></div>
     <h2 class="text-2xl font-roca-light mb-8">
       {{ t("home.comments.title") }}
@@ -24,7 +24,9 @@
         src="https://cdn.trustindex.io/loader.js?a2a23e3259106181c726a959dd8"
       ></div>
     </div>
-    <SeeMoreButton link="/comments" />
+    <div class="mb-3">
+      <SeeMoreButton link="/comments" />
+    </div>
   </div>
 </template>
 

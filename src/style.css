@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Roca";
-  src: url("../src/assets/fonts/Roca/Roca-Regular.otf");
+  src: url("../src/assets/fonts/Roca/Roca.otf");
 }
 
 @font-face {
@@ -16,9 +16,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-roca: Roca, "sans-serif";
-  --font-roca-light: Roca-Light, "sans-serif";
-  --font-montserrat: Montserrat_Alternates, "sans-serif";
+  --font-roca: Roca;
+  --font-roca-light: Roca-Light;
+  --font-montserrat: Montserrat_Alternates;
 
   --color-app-red: #b03407;
 

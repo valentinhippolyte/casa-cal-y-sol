@@ -1,6 +1,8 @@
 <template>
   <div class="container mx-auto px-4 py-6">
-    <h2 class="text-2xl font-bold mb-4">{{ t("comments.title") }}</h2>
+    <h2 class="text-2xl font-roca-light font-bold mb-4">
+      {{ t("comments.title") }}
+    </h2>
 
     <div v-if="showWidget">
       <div

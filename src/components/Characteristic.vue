@@ -24,7 +24,7 @@
     <!-- Deuxième ligne -->
     <div class="flex flex-wrap justify-center max-w-6xl w-full px-4">
       <div
-        class="w-1/2 lg:w-1/5 flex flex-col items-center text-center mb-6"
+        class="w-1/2 lg:w-1/5 flex flex-col items-center text-center mb-10"
         v-for="(item, i) in secondLine"
         :key="'ligne2-' + i"
       >
