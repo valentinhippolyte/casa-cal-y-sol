@@ -12,5 +12,11 @@
   },
   "comments": {
     "title": "Comments"
+  },
+  "footer": {
+    "title1": "Contact us",
+    "title2": "Find us",
+    "address": "28 Calle Peñón, 11690 Olvera, Cádiz, Spain",
+    "registration": "Registration: "
   }
 }

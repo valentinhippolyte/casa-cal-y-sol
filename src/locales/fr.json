@@ -12,5 +12,11 @@
   },
   "comments": {
     "title": "Commentaires"
+  },
+  "footer": {
+    "title1": "Contactez-nous",
+    "title2": "Nous trouver",
+    "address": "28 Calle Peñón, 11690 Olvera, Cadix, Espagne",
+    "registration": "Numéro d'enregistrement : "
   }
 }
