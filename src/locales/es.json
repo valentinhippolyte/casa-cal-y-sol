@@ -9,5 +9,8 @@
   "home": {
     "welcome": "Bienvenidos a",
     "subtitle": "Casa de vacaciones en Andalucía"
+  },
+  "comments": {
+    "title": "Comentarios"
   }
 }
