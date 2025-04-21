@@ -26,6 +26,9 @@
         "cold": "Air conditioning",
         "wifi": "Wifi"
       }
+    },
+    "comments": {
+      "title": "Last comments"
     }
   },
   "comments": {

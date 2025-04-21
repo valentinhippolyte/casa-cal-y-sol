@@ -26,6 +26,9 @@
         "cold": "Climatisation",
         "wifi": "Wi-Fi"
       }
+    },
+    "comments": {
+      "title": "Derniers avis"
     }
   },
   "comments": {
