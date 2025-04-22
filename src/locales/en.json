@@ -44,7 +44,17 @@
     "title": "Gallery"
   },
   "booking": {
-    "title": "Rates and reservation"
+    "title": "Rates and reservation",
+    "form": {
+      "fistName": "First name",
+      "lastName": "Last name",
+      "email": "Email Address",
+      "arrivalDate": "Arrival Date",
+      "departureDate": "Departure Date",
+      "number_adults": "Number of adults",
+      "number_children": "Number of children",
+      "button": "Book"
+    }
   },
   "footer": {
     "title1": "Contact us",

@@ -4,11 +4,16 @@
     <h2 class="text-2xl font-roca-light mb-8">
       {{ t("booking.title") }}
     </h2>
+    <Calendar />
+
+    <BookingForm />
   </div>
 </template>
 
 <script setup>
 import { useI18n } from "vue-i18n";
+import BookingForm from "../components/BookingForm.vue";
+import Calendar from "../components/Calendar.vue";
 
 const { t } = useI18n();
 </script>
