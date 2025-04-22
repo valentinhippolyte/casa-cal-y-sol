@@ -34,8 +34,17 @@
       "title": "La maison en images"
     }
   },
+  "information": {
+    "title": "Informations"
+  },
   "comments": {
     "title": "Commentaires"
+  },
+  "gallery": {
+    "title": "Galerie"
+  },
+  "booking": {
+    "title": "Tarifs et réservation"
   },
   "footer": {
     "title1": "Contactez-nous",
