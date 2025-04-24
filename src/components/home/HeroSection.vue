@@ -3,7 +3,7 @@
     <!-- Background Image -->
     <div class="absolute inset-0">
       <img
-        src="../assets/images/home_photo.jpg"
+        src="../../assets/images/home_photo.jpg"
         alt="Background Image"
         class="object-cover object-[35%_center] lg:object-center w-full h-full"
       />
@@ -17,7 +17,7 @@
       >
         <!-- Logo -->
         <img
-          src="../assets/Logo_beige.svg"
+          src="../../assets/Logo_beige.svg"
           alt="Logo"
           class="w-40 lg:w-64 mb-6 lg:mb-0"
         />

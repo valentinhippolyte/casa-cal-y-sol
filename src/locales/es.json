@@ -36,7 +36,43 @@
     }
   },
   "information": {
-    "title": "Informaciones"
+    "title": "Informaciones",
+    "firstText": {
+      "title": "Un sueño hecho realidad",
+      "text": " Hace veinte años, descubrimos Olvera y nos enamoramos de este pueblo blanco en el corazón de Andalucía. Sus callejuelas soleadas, su ambiente acogedor y su autenticidad nos conquistaron al instante. Desde entonces, nació un sueño: instalarnos aquí al jubilarnos. Ese momento por fin ha llegado, y con mucha alegría abrimos las puertas de Casa Cal y Sol, un lugar donde esperamos que os sintáis tan a gusto como nosotros."
+    },
+    "regulations": {
+      "title": "Reglamento interno",
+      "rules": {
+        "1": {
+          "title": "Llegada / Salida",
+          "text": {
+            "1": "Llegada: después de las 16:00.",
+            "2": "Salida: antes de las 11:30."
+          }
+        },
+        "2": {
+          "title": "Condiciones",
+          "text": "Reserva: 30% del precio de la estancia."
+        },
+        "3": {
+          "title": "Restricciones",
+          "text": {
+            "1": "No se permiten fiestas / eventos.",
+            "2": "Prohibido fumar.",
+            "3": "No se admiten mascotas.",
+            "4": "Poco adecuado para niños pequeños."
+          }
+        },
+        "4": {
+          "title": "Cancelación",
+          "text": {
+            "1": "Las reservas de estancias de una semana o más canceladas con menos de 10 días de antelación no serán reembolsadas.",
+            "2": "Las reservas de fin de semana canceladas con menos de 3 días de antelación no serán reembolsadas."
+          }
+        }
+      }
+    }
   },
   "comments": {
     "title": "Comentarios"

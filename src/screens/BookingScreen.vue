@@ -4,7 +4,6 @@
       {{ t("booking.title") }}
     </h2>
     <Calendar />
-    <CalendarIcal />
 
     <BookingForm />
   </div>
@@ -12,9 +11,8 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
-import BookingForm from "../components/BookingForm.vue";
-import Calendar from "../components/Calendar.vue";
-import CalendarIcal from "../components/CalendarIcal.vue";
+import BookingForm from "../components/booking/BookingForm.vue";
+import Calendar from "../components/booking/Calendar.vue";
 
 const { t } = useI18n();
 </script>

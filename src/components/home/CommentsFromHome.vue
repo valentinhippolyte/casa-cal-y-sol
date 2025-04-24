@@ -33,7 +33,7 @@
 <script setup>
 import { nextTick, onMounted, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import SeeMoreButton from "./SeeMoreButton.vue";
+import SeeMoreButton from "../common/SeeMoreButton.vue";
 
 const { t, locale } = useI18n();
 const showWidget = ref(true);

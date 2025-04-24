@@ -18,7 +18,7 @@
       <RouterLink to="/" class="absolute left-1/2 transform -translate-x-1/2">
         <img
           class="h-[60px]"
-          src="../assets/Logo_couleur.svg"
+          src="../../../assets/Logo_couleur.svg"
           alt="Casa Cal Y Sol Logo"
         />
       </RouterLink>
@@ -32,7 +32,7 @@
       <RouterLink to="/" class="flex items-center">
         <img
           class="h-[60px]"
-          src="../assets/Logo_couleur.svg"
+          src="../../../assets/Logo_couleur.svg"
           alt="Casa Cal Y Sol Logo"
         />
         <h1 class="text-app-red font-roca ml-4 text-2xl leading-6">
@@ -82,8 +82,8 @@
 <script setup>
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
-import BookButton from "../components/BookButton.vue";
-import LanguageSwitcher from "../components/LanguageSwitcher.vue";
+import BookButton from "./BookButton.vue";
+import LanguageSwitcher from "./LanguageSwitcher.vue";
 
 // Import des icônes Lucide
 import { Menu, X } from "lucide-vue-next";

@@ -37,7 +37,7 @@
 
     <div class="text-center mt-6">
       <div class="h-0.5 w-18 bg-white mt-10 mb-3 mx-auto"></div>
-      <p class="text-sm text-white">&copy; 2025 Casa Caly y Sol.</p>
+      <p class="text-sm text-white">&copy; 2025 Casa Cal y Sol.</p>
     </div>
   </footer>
 </template>

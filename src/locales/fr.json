@@ -35,7 +35,43 @@
     }
   },
   "information": {
-    "title": "Informations"
+    "title": "Informations",
+    "firstText": {
+      "title": "Un rêve devenu réalité",
+      "text": "Il y a vingt ans, nous avons découvert Olvera et sommes tombés sous le charme de ce village blanc au cœur de l’Andalousie. Ses ruelles ensoleillées, son ambiance chaleureuse et son authenticité nous ont immédiatement conquis. Depuis, un rêve s’est dessiné : s’y installer à la retraite. Ce moment est enfin arrivé, et c’est avec beaucoup de joie que nous ouvrons les portes de Casa Cal y Sol, un lieu où nous espérons que vous vous sentirez aussi bien que nous."
+    },
+    "regulations": {
+      "title": "Règlement intérieur",
+      "rules": {
+        "1": {
+          "title": "Arrivée / Départ",
+          "text": {
+            "1": "Arrivée : après 16h00.",
+            "2": "Départ : avant 11h30."
+          }
+        },
+        "2": {
+          "title": "Conditions",
+          "text": "Réservation : 30% du prix du séjour."
+        },
+        "3": {
+          "title": "Restrictions",
+          "text": {
+            "1": "Soirées / événements non autorisés.",
+            "2": "Non fumeur.",
+            "3": "Animaux non admis.",
+            "4": "Peu adapté pour les enfants en bas âge."
+          }
+        },
+        "4": {
+          "title": "Annulation",
+          "text": {
+            "1": "Les réservations des séjours d'une semaine ou plus annulées à moins de 10 jours de la date ne seront pas remboursées.",
+            "2": "Les réservations des week-end annulées à moins de 3 jours de la date du séjour ne seront pas remboursées."
+          }
+        }
+      }
+    }
   },
   "comments": {
     "title": "Commentaires"

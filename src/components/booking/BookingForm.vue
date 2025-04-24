@@ -141,7 +141,7 @@
 <script setup>
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
-import { createBooking } from "../services/apiService.js";
+import { createBooking } from "../../services/apiService.js";
 
 const { t } = useI18n();
 

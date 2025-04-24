@@ -38,23 +38,23 @@ import { useI18n } from "vue-i18n";
 
 import "swiper/css";
 import "swiper/css/autoplay";
-import SeeMoreButton from "./SeeMoreButton.vue";
+import SeeMoreButton from "../common/SeeMoreButton.vue";
 
 const { t } = useI18n();
 
 // Remplace par tes vraies images
 const images = {
-  breakfast: new URL("../assets/images/breakfast.jpg", import.meta.url).href,
-  home_photo: new URL("../assets/images/home_photo.jpg", import.meta.url).href,
-  house_front: new URL("../assets/images/house_front.jpeg", import.meta.url)
+  home_photo: new URL("../../assets/images/home_photo.jpg", import.meta.url)
     .href,
-  living_room: new URL("../assets/images/living_room.jpg", import.meta.url)
+  house_front: new URL("../../assets/images/house_front.jpeg", import.meta.url)
     .href,
-  terrace2: new URL("../assets/images/terrace_2.jpeg", import.meta.url).href,
-  night: new URL("../assets/images/night.jpg", import.meta.url).href,
-  paragliding: new URL("../assets/images/paragliding.jpg", import.meta.url)
+  living_room: new URL("../../assets/images/living_room.jpg", import.meta.url)
     .href,
-  patio: new URL("../assets/images/patio.jpg", import.meta.url).href,
-  terrace1: new URL("../assets/images/terrace_1.jpeg", import.meta.url).href,
+  terrace2: new URL("../../assets/images/terrace_2.jpeg", import.meta.url).href,
+  night: new URL("../../assets/images/night.jpg", import.meta.url).href,
+  paragliding: new URL("../../assets/images/paragliding.jpg", import.meta.url)
+    .href,
+  patio: new URL("../../assets/images/patio.jpg", import.meta.url).href,
+  terrace1: new URL("../../assets/images/terrace_1.jpeg", import.meta.url).href,
 };
 </script>

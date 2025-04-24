@@ -35,7 +35,43 @@
     }
   },
   "information": {
-    "title": "Information"
+    "title": "Information",
+    "firstText": {
+      "title": "A dream come true",
+      "text": "Twenty years ago, we discovered Olvera and instantly fell under the spell of this white village in the heart of Andalusia. Its sunny streets, warm atmosphere, and authenticity immediately won us over. Since then, a dream began to take shape: to settle here for our retirement. That moment has finally arrived, and it is with great joy that we open the doors of Casa Cal y Sol, a place where we hope you'll feel just as at home as we do."
+    },
+    "regulations": {
+      "title": "Rules of procedure",
+      "rules": {
+        "1": {
+          "title": "Arrival / departure",
+          "text": {
+            "1": "Arrival: after 4:00 pm.",
+            "2": "Departure: before 11:30 am."
+          }
+        },
+        "2": {
+          "title": "Conditions",
+          "text": "Reservation: 30% of the price of the stay."
+        },
+        "3": {
+          "title": "Restrictions",
+          "text": {
+            "1": "Evening / events not allowed.",
+            "2": "No smoking.",
+            "3": "Pets not allowed.",
+            "4": "Not suitable for small children."
+          }
+        },
+        "4": {
+          "title": "Cancellation",
+          "text": {
+            "1": "Reservations for stays of one week or more canceled within 10 days of the date will not be refunded.",
+            "2": "Weekend bookings canceled within 3 days of the date of stay will not be refunded."
+          }
+        }
+      }
+    }
   },
   "comments": {
     "title": "Comments"
