@@ -8,7 +8,7 @@
 
 <script setup>
 defineProps({
-  icon: Object,
+  icon: String,
   label: String,
 });
 </script>

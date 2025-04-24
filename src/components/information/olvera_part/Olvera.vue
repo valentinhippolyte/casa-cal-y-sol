@@ -24,26 +24,20 @@
 
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-4 gap-x-4">
             <LegendItem
-              :icon="ShoppingCart"
+              icon="ShoppingCart"
               :label="t('information.olvera.legend.1')"
             />
             <LegendItem
-              :icon="Croissant"
+              icon="Croissant"
               :label="t('information.olvera.legend.2')"
             />
+            <LegendItem icon="Beer" :label="t('information.olvera.legend.3')" />
             <LegendItem
-              :icon="Beer"
-              :label="t('information.olvera.legend.3')"
-            />
-            <LegendItem
-              :icon="Apple"
+              icon="Apple"
               :label="t('information.olvera.legend.4')"
             />
-            <LegendItem
-              :icon="View"
-              :label="t('information.olvera.legend.5')"
-            />
-            <LegendItem :icon="Ham" :label="t('information.olvera.legend.6')" />
+            <LegendItem icon="View" :label="t('information.olvera.legend.5')" />
+            <LegendItem icon="Ham" :label="t('information.olvera.legend.6')" />
           </div>
         </div>
       </div>
@@ -70,14 +64,6 @@
 </template>
 
 <script setup>
-import {
-  Apple,
-  Beer,
-  Croissant,
-  Ham,
-  ShoppingCart,
-  View,
-} from "lucide-vue-next";
 import { ref } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";
 import { useI18n } from "vue-i18n";

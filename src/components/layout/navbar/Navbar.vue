@@ -59,23 +59,33 @@
     </div>
 
     <!-- Mobile menu déroulant -->
-    <ul
-      v-show="isMenuOpen"
-      class="lg:hidden absolute top-[80px] left-0 w-full bg-app-bg shadow-md z-50 flex flex-col gap-4 p-6 text-md font-montserrat"
+    <transition
+      name="fade-slide"
+      enter-active-class="transition-all duration-300 ease-out"
+      leave-active-class="transition-all duration-200 ease-in"
+      enter-from-class="opacity-0 -translate-y-4"
+      enter-to-class="opacity-100 translate-y-0"
+      leave-from-class="opacity-100 translate-y-0"
+      leave-to-class="opacity-0 -translate-y-4"
     >
-      <li
-        v-for="(link, index) in navLinks"
-        :key="index"
-        @click="toggleMenu(true)"
+      <ul
+        v-show="isMenuOpen"
+        class="lg:hidden absolute top-[80px] left-0 w-full bg-app-bg shadow-md z-50 flex flex-col gap-4 p-6 text-md font-montserrat"
       >
-        <RouterLink :to="link.to">{{ link.label }}</RouterLink>
-      </li>
+        <li
+          v-for="(link, index) in navLinks"
+          :key="index"
+          @click="toggleMenu(true)"
+        >
+          <RouterLink :to="link.to">{{ link.label }}</RouterLink>
+        </li>
 
-      <!-- Switcher de langue (mobile only) -->
-      <li>
-        <LanguageSwitcher />
-      </li>
-    </ul>
+        <!-- Switcher de langue (mobile only) -->
+        <li>
+          <LanguageSwitcher />
+        </li>
+      </ul>
+    </transition>
   </nav>
 </template>
 
