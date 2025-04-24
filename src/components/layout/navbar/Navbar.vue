@@ -43,7 +43,9 @@
     </div>
 
     <!-- Desktop : NavLinks au centre -->
-    <ul class="hidden lg:flex justify-center gap-8 font-montserrat text-md">
+    <ul
+      class="hidden lg:flex justify-center gap-8 font-montserrat text-md z-40"
+    >
       <li v-for="(link, index) in navLinks" :key="index">
         <RouterLink :to="link.to">
           {{ link.label }}
@@ -70,7 +72,7 @@
     >
       <ul
         v-show="isMenuOpen"
-        class="lg:hidden absolute top-[80px] left-0 w-full bg-app-bg shadow-md z-50 flex flex-col gap-4 p-6 text-md font-montserrat"
+        class="lg:hidden absolute top-[80px] left-0 w-full bg-app-bg shadow-md z-30 flex flex-col gap-4 p-6 text-md font-montserrat"
       >
         <li
           v-for="(link, index) in navLinks"
