@@ -60,22 +60,20 @@
             "1": "Evening / events not allowed.",
             "2": "No smoking.",
             "3": "Pets not allowed.",
-            "4": "Not suitable for small children."
+            "4": "Not suitable for young children."
           }
         },
         "4": {
           "title": "Cancellation",
-          "text": {
-            "1": "Reservations for stays of one week or more canceled within 10 days of the date will not be refunded.",
-            "2": "Weekend bookings canceled within 3 days of the date of stay will not be refunded."
-          }
+          "text": "No refunds for weekly stays cancelled less than 10 days in advance, or weekends cancelled less than 3 days in advance."
         }
       }
     },
     "olvera": {
-      "title": "Olvera Map Title",
+      "title": "Everyday life in Olvera",
       "text": "Our house offers all the advantages of the city while preserving the authenticity of a village. Less than 100 meters away, you'll find supermarkets, a butcher, greengrocer, bakery, pharmacy, bars, and much more (our recommendations are listed below). In addition to all these amenities, the house also features a private 3x4m pool to cool off under the Andalusian sun. Located on the quiet Calle Peñón, where only the baker and garbage collectors pass daily, our house guarantees peace and serenity. Parking is available nearby.",
       "legend": {
+        "title": "Nearby:",
         "1": "Supermarket",
         "2": "Bakery",
         "3": "Bar",
@@ -83,6 +81,10 @@
         "5": "Viewpoint",
         "6": "Butcher"
       }
+    },
+    "andalusia": {
+      "title": "A privileged geographical location",
+      "text": " Casa Cal y Sol is located in the historic center of Olvera, just steps away from a 12th-century Arab castle and its neoclassical church—true symbols of the town. Ideally situated on the Route of the White Villages, the house is only 1.5 hours from Seville and Malaga airports, as well as from the beaches and main cultural sites of Andalusia. Nearby, the Via Verde de la Sierra invites you to explore the region on foot, by bike, or on horseback, and thrill-seekers can try paragliding in Algodonales."
     }
   },
   "comments": {

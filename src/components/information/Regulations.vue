@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center px-4">
+  <div class="flex flex-col items-center px-6 lg:px-20">
     <div class="h-1.5 w-18 bg-app-red mt-10 mb-3"></div>
     <h2 class="text-2xl font-roca-light mb-8 text-center">
       {{ t("information.regulations.title") }}
@@ -52,8 +52,7 @@
           {{ t("information.regulations.rules.4.title") }}
         </h3>
         <p class="text-md font-montserrat text-left">
-          {{ t("information.regulations.rules.4.text.1") }}<br />
-          {{ t("information.regulations.rules.4.text.2") }}
+          {{ t("information.regulations.rules.4.text") }}
         </p>
       </div>
     </div>

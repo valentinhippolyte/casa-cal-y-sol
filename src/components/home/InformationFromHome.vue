@@ -1,15 +1,16 @@
 <template>
-  <div class="bg-app-bg flex flex-col-reverse lg:flex-row">
+  <div class="bg-app-bg flex flex-col-reverse lg:flex-row px-6 lg:px-20">
     <!-- Bloc image avec padding sur grand écran -->
     <div class="w-full lg:w-1/2 p-8 lg:p-20 flex items-center justify-center">
       <img
         src="../../assets/images/rue-fleurs.jpeg"
-        class="rounded-md w-full h-auto object-cover"
+        class="rounded-md w-full h-auto object-cover max-w-[500px]"
+        alt="street of flowers"
       />
     </div>
 
     <!-- Bloc texte -->
-    <div class="w-full lg:w-1/2 px-6 py-8 flex flex-col justify-center">
+    <div class="w-full lg:w-1/2 py-8 flex flex-col justify-center">
       <div class="h-1.5 w-18 bg-app-red mb-3"></div>
       <h2 class="text-2xl font-roca-light mb-4">
         {{ t("home.information.title") }}

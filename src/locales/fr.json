@@ -60,22 +60,20 @@
             "1": "Soirées / événements non autorisés.",
             "2": "Non fumeur.",
             "3": "Animaux non admis.",
-            "4": "Peu adapté pour les enfants en bas âge."
+            "4": "Non adapté aux jeunes enfants."
           }
         },
         "4": {
           "title": "Annulation",
-          "text": {
-            "1": "Les réservations des séjours d'une semaine ou plus annulées à moins de 10 jours de la date ne seront pas remboursées.",
-            "2": "Les réservations des week-end annulées à moins de 3 jours de la date du séjour ne seront pas remboursées."
-          }
+          "text": "Pas de remboursement pour les séjours d'une semaine annulés moins de 10 jours avant, ou les week-ends annulés moins de 3 jours avant."
         }
       }
     },
     "olvera": {
-      "title": "Titre Carte Olvera",
+      "title": "Olvera au quotidien",
       "text": "Notre maison offre tous les avantages de la ville tout en conservant l’authenticité d’un village. À moins de 100 mètres, vous trouverez supermarchés, boucherie, primeur, pâtisserie, pharmacie, bars, et bien plus encore (vous trouverez nos recommandations ci-dessous). En plus de toutes ces commodités, cette maison vous offre, en pleine ville, une piscine privative de 3 x 4 m pour vous rafraîchir sous le soleil andalou. Située dans la paisible Calle Peñón, où seuls le boulanger et les éboueurs passent quotidiennement, notre maison garantit calme et sérénité. Un parking est disponible à proximité.",
       "legend": {
+        "title": "À proximité :",
         "1": "Supermarché",
         "2": "Boulangerie",
         "3": "Bar",
@@ -83,6 +81,10 @@
         "5": "Point de vue",
         "6": "Boucherie"
       }
+    },
+    "andalusia": {
+      "title": "Une situation géographique privilégiée",
+      "text": "Casa Cal y Sol se trouve dans le centre historique d’Olvera, à deux pas d’un château arabe du XIIᵉ siècle et de son église néoclassique, véritables emblèmes de la ville. Idéalement située sur la route des villages blancs, la maison est à 1h30 des aéroports de Séville et Malaga, ainsi que des plages et des principaux sites culturels d’Andalousie. À proximité, la Via Verde de la Sierra vous invite à explorer la région à pied, à vélo ou à cheval, et les amateurs de sensations fortes pourront s’essayer au parapente à Algodonales."
     }
   },
   "comments": {

@@ -61,22 +61,20 @@
             "1": "No se permiten fiestas / eventos.",
             "2": "Prohibido fumar.",
             "3": "No se admiten mascotas.",
-            "4": "Poco adecuado para niños pequeños."
+            "4": "No apto para niños pequeños."
           }
         },
         "4": {
           "title": "Cancelación",
-          "text": {
-            "1": "Las reservas de estancias de una semana o más canceladas con menos de 10 días de antelación no serán reembolsadas.",
-            "2": "Las reservas de fin de semana canceladas con menos de 3 días de antelación no serán reembolsadas."
-          }
+          "text": "Sin reembolso para estancias semanales canceladas con menos de 10 días o fines de semana con menos de 3 días de antelación."
         }
       }
     },
     "olvera": {
-      "title": "Título del mapa de Olvera",
+      "title": "Olvera en la vida cotidiana",
       "text": "Nuestra casa ofrece todas las ventajas de la ciudad manteniendo la autenticidad de un pueblo. A menos de 100 metros, encontrarás supermercados, carnicería, frutería, panadería, farmacia, bares y mucho más (nuestras recomendaciones están a continuación). Además de todas estas comodidades, esta casa también cuenta con una piscina privada de 3x4 m para refrescarte bajo el sol andaluz. Situada en la tranquila Calle Peñón, por donde solo pasan el panadero y los basureros cada día, nuestra casa garantiza calma y serenidad. Hay aparcamiento disponible cerca.",
       "legend": {
+        "title": "Cerca de casa:",
         "1": "Supermercado",
         "2": "Panadería",
         "3": "Bar",
@@ -84,6 +82,10 @@
         "5": "Mirador",
         "6": "Carnicería"
       }
+    },
+    "andalusia": {
+      "title": "Una ubicación geográfica privilegiada",
+      "text": " Casa Cal y Sol se encuentra en el centro histórico de Olvera, a pocos pasos de un castillo árabe del siglo XII y de su iglesia neoclásica, verdaderos símbolos de la ciudad. Situada en plena Ruta de los Pueblos Blancos, la casa está a solo 1h30 de los aeropuertos de Sevilla y Málaga, así como de las playas y de los principales sitios culturales de Andalucía. Muy cerca, la Vía Verde de la Sierra invita a explorar la región a pie, en bicicleta o a caballo, y quienes buscan emociones fuertes pueden probar el parapente en Algodonales."
     }
   },
   "comments": {
