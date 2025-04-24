@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-6">
+  <div class="flex justify-center py-6">
     <div v-if="showWidget">
       <!-- Widget Smoobu pour la langue anglaise -->
       <div

@@ -1,7 +1,6 @@
 <template>
   <div class="flex flex-col items-center">
-    <div class="h-1.5 w-18 bg-app-red mt-10 mb-3"></div>
-    <h2 class="text-2xl font-roca-light mb-8">
+    <h2 class="text-2xl font-roca-light mb-8 mt-10">
       {{ t("information.title") }}
     </h2>
   </div>

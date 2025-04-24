@@ -1,13 +1,35 @@
 <template>
   <div class="container mx-auto px-4 pb-6">
     <div class="flex flex-col items-center">
-      <div class="h-1.5 w-18 bg-app-red mt-10 mb-3"></div>
-      <h2 class="text-2xl font-roca-light mb-8">
+      <h2 class="text-2xl font-roca-light mb-8 mt-10">
         {{ t("comments.title") }}
       </h2>
     </div>
 
-    <div v-if="showWidget">
+    <div v-if="isLoading" class="flex justify-center items-center py-10">
+      <svg
+        class="animate-spin h-8 w-8 text-app-red"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+        ></path>
+      </svg>
+    </div>
+
+    <div v-else-if="showWidget">
       <div
         v-if="locale === 'en'"
         class="trust-widget-container bg-white p-4 rounded-lg shadow-md"
@@ -35,48 +57,46 @@ import { useI18n } from "vue-i18n";
 
 const { t, locale } = useI18n();
 const showWidget = ref(true);
+const isLoading = ref(true);
 
 const loadTrustIndexScript = async () => {
-  // Désactiver temporairement l'affichage du widget
+  isLoading.value = true;
   showWidget.value = false;
 
-  await nextTick(); // Attendre que le DOM soit mis à jour
+  await nextTick();
 
-  // Supprimer les scripts existants TrustIndex
   document
     .querySelectorAll('script[src*="trustindex.io"]')
     .forEach((el) => el.remove());
-
-  // Supprimer les anciens widgets
   document
     .querySelectorAll(".trust-widget-container")
     .forEach((el) => (el.innerHTML = ""));
 
-  await nextTick(); // Assurer que le DOM est bien nettoyé
+  await nextTick();
 
-  // Réactiver le widget
   showWidget.value = true;
 
-  await nextTick(); // Attendre encore avant d'ajouter le script
+  await nextTick();
 
-  // Ajouter le script
   const script = document.createElement("script");
   script.src = "https://cdn.trustindex.io/loader.js";
   script.defer = true;
   script.async = true;
 
+  script.onload = () => {
+    isLoading.value = false;
+  };
+
   document.body.appendChild(script);
 };
 
-// Charger le script au montage
 onMounted(() => {
   loadTrustIndexScript();
 });
 
-// Observer les changements de langue et recharger le script proprement
 watch(
   () => locale.value,
-  async (newLocale, oldLocale) => {
+  async () => {
     await loadTrustIndexScript();
   }
 );

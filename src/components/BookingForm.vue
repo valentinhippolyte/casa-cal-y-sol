@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center p-12">
-    <div class="mx-auto w-full max-w-[550px]">
+    <div class="mx-auto w-full max-w-[550px] font-montserrat">
       <form @submit.prevent="handleSubmit">
         <div class="-mx-3 flex flex-wrap">
           <div class="w-full px-3 sm:w-1/2">
@@ -127,7 +127,7 @@
 
         <div>
           <button
-            class="hover:shadow-form w-full rounded-md bg-app-red py-3 px-8 text-center text-base font-semibold text-white outline-none cursor-pointer"
+            class="hover:shadow-form w-full rounded-md bg-app-red py-3 px-8 text-center text-base font-semibold text-white outline-none cursor-pointer font-montserrat"
             type="submit"
           >
             {{ t("booking.form.button") }}
