@@ -5,6 +5,7 @@
     </h2>
     <FirstTextFromInformation />
     <Regulations />
+    <Olvera />
   </div>
 </template>
 
@@ -12,6 +13,7 @@
 import { useI18n } from "vue-i18n";
 import FirstTextFromInformation from "../components/information/FirstTextFromInformation.vue";
 import Regulations from "../components/information/Regulations.vue";
+import Olvera from "../components/information/olvera_part/Olvera.vue";
 
 const { t } = useI18n();
 </script>

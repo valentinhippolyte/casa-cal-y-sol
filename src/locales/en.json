@@ -71,6 +71,18 @@
           }
         }
       }
+    },
+    "olvera": {
+      "title": "Olvera Map Title",
+      "text": "Our house offers all the advantages of the city while preserving the authenticity of a village. Less than 100 meters away, you'll find supermarkets, a butcher, greengrocer, bakery, pharmacy, bars, and much more (our recommendations are listed below). In addition to all these amenities, the house also features a private 3x4m pool to cool off under the Andalusian sun. Located on the quiet Calle Peñón, where only the baker and garbage collectors pass daily, our house guarantees peace and serenity. Parking is available nearby.",
+      "legend": {
+        "1": "Supermarket",
+        "2": "Bakery",
+        "3": "Bar",
+        "4": "Greengrocer",
+        "5": "Viewpoint",
+        "6": "Butcher"
+      }
     }
   },
   "comments": {

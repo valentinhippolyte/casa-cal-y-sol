@@ -71,6 +71,18 @@
           }
         }
       }
+    },
+    "olvera": {
+      "title": "Titre Carte Olvera",
+      "text": "Notre maison offre tous les avantages de la ville tout en conservant l’authenticité d’un village. À moins de 100 mètres, vous trouverez supermarchés, boucherie, primeur, pâtisserie, pharmacie, bars, et bien plus encore (vous trouverez nos recommandations ci-dessous). En plus de toutes ces commodités, cette maison vous offre, en pleine ville, une piscine privative de 3 x 4 m pour vous rafraîchir sous le soleil andalou. Située dans la paisible Calle Peñón, où seuls le boulanger et les éboueurs passent quotidiennement, notre maison garantit calme et sérénité. Un parking est disponible à proximité.",
+      "legend": {
+        "1": "Supermarché",
+        "2": "Boulangerie",
+        "3": "Bar",
+        "4": "Primerie",
+        "5": "Point de vue",
+        "6": "Boucherie"
+      }
     }
   },
   "comments": {
