@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col lg:flex-row px-6 lg:px-20">
+  <div class="bg-app-bg flex flex-col lg:flex-row px-6 lg:px-20">
     <!-- Bloc texte -->
     <div
       class="w-full lg:w-1/2 pb-8 lg:py-8 flex flex-col justify-center order-2"
@@ -37,7 +37,10 @@
               :label="t('information.olvera.legend.4')"
             />
             <LegendItem icon="View" :label="t('information.olvera.legend.5')" />
-            <LegendItem icon="Ham" :label="t('information.olvera.legend.6')" />
+            <LegendItem
+              icon="Footprints"
+              :label="t('information.olvera.legend.6')"
+            />
           </div>
         </div>
       </div>
