@@ -1,6 +1,12 @@
 <template>
   <div class="flex items-center justify-center p-12">
     <div class="mx-auto w-full max-w-[550px] font-montserrat">
+      <div class="flex flex-col items-center justify-center mb-4">
+        <div class="h-1.5 w-18 bg-app-red mb-3"></div>
+        <h2 class="text-2xl font-roca-light mb-4">
+          {{ t("booking.form.title") }}
+        </h2>
+      </div>
       <form @submit.prevent="handleSubmit">
         <div class="-mx-3 flex flex-wrap">
           <div class="w-full px-3 sm:w-1/2">

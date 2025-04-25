@@ -96,6 +96,7 @@
   "booking": {
     "title": "Tarifs et réservation",
     "form": {
+      "title": "Réserver à Casa Cal y Sol",
       "fistName": "Prénom",
       "lastName": "Nom",
       "email": "Adresse e-mail",

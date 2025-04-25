@@ -96,6 +96,7 @@
   "booking": {
     "title": "Rates and reservation",
     "form": {
+      "title": " Book at Casa Cal y Sol",
       "fistName": "First name",
       "lastName": "Last name",
       "email": "Email Address",

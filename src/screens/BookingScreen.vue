@@ -8,6 +8,7 @@
       <h2 class="text-2xl font-roca-light mb-8 mt-10">
         {{ t("booking.title") }}
       </h2>
+      <SeasonCards />
       <Calendar />
 
       <BookingForm />
@@ -20,6 +21,7 @@ import { Motion } from "@motionone/vue";
 import { useI18n } from "vue-i18n";
 import BookingForm from "../components/booking/BookingForm.vue";
 import Calendar from "../components/booking/Calendar.vue";
+import SeasonCards from "../components/booking/SeasonCards.vue";
 
 const { t } = useI18n();
 </script>
