@@ -19,7 +19,7 @@
         {{ t("home.information.text") }}
       </p>
       <div class="inline-flex">
-        <SeeMoreButton link="/information" />
+        <SeeMoreButton link="/information" :text="t('commonButton.seeMore')" />
       </div>
     </div>
   </div>

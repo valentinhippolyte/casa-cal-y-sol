@@ -29,11 +29,11 @@
       </svg>
     </div>
 
-    <div v-else-if="showWidget">
+    <div v-else-if="showWidget" class="font-montserrat">
       <div
         v-if="locale === 'en'"
         class="trust-widget-container bg-white p-4 rounded-lg shadow-md"
-        src="https://cdn.trustindex.io/loader.js?cfeee0625234620d8e164d1e4c8"
+        src="https://cdn.trustindex.io/loader.js?e130c0b4536e275e7476cbbed38"
       ></div>
 
       <div
@@ -45,15 +45,21 @@
       <div
         v-else-if="locale === 'es'"
         class="trust-widget-container bg-white p-4 rounded-lg shadow-md"
-        src="https://cdn.trustindex.io/loader.js?6bbe58c25c4e620e57068cee342"
+        src="https://cdn.trustindex.io/loader.js?a20361c45d2027515f86c56b157"
       ></div>
     </div>
   </div>
+  <AzulejosSection
+    :title="t('commonButton.comments.title')"
+    :text="t('commonButton.comments.text')"
+    link="googlemybusinness"
+  />
 </template>
 
 <script setup>
 import { nextTick, onMounted, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
+import AzulejosSection from "../components/common/AzulejosSection.vue";
 
 const { t, locale } = useI18n();
 const showWidget = ref(true);

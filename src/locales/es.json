@@ -113,5 +113,15 @@
     "address": "Calle Peñón 28, 11690 Olvera, Cádiz, España",
     "registration": "Registro turístico: "
   },
-  "seeMoreButton": "Ver más"
+  "commonButton": {
+    "seeMore": "Ver más",
+    "booking": {
+      "title": "Reserva tu estancia",
+      "text": "Me reservo"
+    },
+    "comments": {
+      "title": "Cuéntenos sobre su estancia",
+      "text": "Comentar"
+    }
+  }
 }

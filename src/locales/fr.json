@@ -112,5 +112,15 @@
     "address": "28 Calle Peñón, 11690 Olvera, Cadix, Espagne",
     "registration": "Numéro d'enregistrement : "
   },
-  "seeMoreButton": "Voir plus"
+  "commonButton": {
+    "seeMore": "Voir plus",
+    "booking": {
+      "title": "Réserver votre séjour",
+      "text": "Je réserve"
+    },
+    "comments": {
+      "title": "Parlez-nous de votre séjour",
+      "text": "Je commente"
+    }
+  }
 }

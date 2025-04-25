@@ -26,7 +26,7 @@
       </SwiperSlide>
     </Swiper>
     <div class="mt-6 mb-10">
-      <SeeMoreButton link="/gallery" />
+      <SeeMoreButton link="/gallery" :text="t('commonButton.seeMore')" />
     </div>
   </div>
 </template>

@@ -25,7 +25,7 @@
       ></div>
     </div>
     <div class="mb-3">
-      <SeeMoreButton link="/comments" />
+      <SeeMoreButton link="/comments" :text="t('commonButton.seeMore')" />
     </div>
   </div>
 </template>
