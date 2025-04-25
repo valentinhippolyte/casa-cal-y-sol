@@ -27,15 +27,14 @@
         </template>
       </masonry-wall>
     </div>
-
-    <!-- Lightbox -->
-    <vue-easy-lightbox
-      :visible="visible"
-      :imgs="images.map((img) => img.src)"
-      :index="selectedIndex"
-      @hide="visible = false"
-    />
   </Motion>
+  <!-- Lightbox -->
+  <vue-easy-lightbox
+    :visible="visible"
+    :imgs="images.map((img) => img.src)"
+    :index="selectedIndex"
+    @hide="visible = false"
+  />
 </template>
 
 <script setup>

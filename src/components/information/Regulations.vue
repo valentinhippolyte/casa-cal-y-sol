@@ -6,7 +6,7 @@
     </h2>
 
     <div
-      class="flex flex-col lg:flex-row lg:items-start justify-between gap-y-12 lg:gap-y-0 lg:gap-x-12 max-w-7xl w-full mb-10"
+      class="flex flex-col lg:flex-row lg:items-start justify-between gap-y-12 lg:gap-y-0 lg:gap-x-16 max-w-7xl w-full mb-10"
     >
       <!-- Section 1 -->
       <div class="flex flex-col items-center text-center max-w-xs">
@@ -14,10 +14,16 @@
         <h3 class="text-md font-montserrat font-bold mb-3">
           {{ t("information.regulations.rules.1.title") }}
         </h3>
-        <p class="text-md font-montserrat text-left">
-          {{ t("information.regulations.rules.1.text.1") }} <br />
-          {{ t("information.regulations.rules.1.text.2") }}
-        </p>
+        <ul
+          class="text-md font-montserrat text-left list-disc list-inside marker:text-app-red"
+        >
+          <li class="text-black">
+            {{ t("information.regulations.rules.1.text.1") }}
+          </li>
+          <li class="text-black">
+            {{ t("information.regulations.rules.1.text.2") }}
+          </li>
+        </ul>
       </div>
 
       <!-- Section 2 -->
@@ -26,9 +32,13 @@
         <h3 class="text-md font-montserrat font-bold mb-3">
           {{ t("information.regulations.rules.2.title") }}
         </h3>
-        <p class="text-md font-montserrat text-left">
-          {{ t("information.regulations.rules.2.text") }}
-        </p>
+        <ul
+          class="text-md font-montserrat text-left list-disc list-inside marker:text-app-red"
+        >
+          <li class="text-black">
+            {{ t("information.regulations.rules.2.text") }}
+          </li>
+        </ul>
       </div>
 
       <!-- Section 3 -->
@@ -37,12 +47,22 @@
         <h3 class="text-md font-montserrat font-bold mb-3">
           {{ t("information.regulations.rules.3.title") }}
         </h3>
-        <p class="text-md font-montserrat text-left">
-          {{ t("information.regulations.rules.3.text.1") }}<br />
-          {{ t("information.regulations.rules.3.text.2") }}<br />
-          {{ t("information.regulations.rules.3.text.3") }}<br />
-          {{ t("information.regulations.rules.3.text.4") }}
-        </p>
+        <ul
+          class="text-md font-montserrat text-left list-disc list-inside marker:text-app-red"
+        >
+          <li class="text-black">
+            {{ t("information.regulations.rules.3.text.1") }}
+          </li>
+          <li class="text-black">
+            {{ t("information.regulations.rules.3.text.2") }}
+          </li>
+          <li class="text-black">
+            {{ t("information.regulations.rules.3.text.3") }}
+          </li>
+          <li class="text-black">
+            {{ t("information.regulations.rules.3.text.4") }}
+          </li>
+        </ul>
       </div>
 
       <!-- Section 4 -->
@@ -51,9 +71,13 @@
         <h3 class="text-md font-montserrat font-bold mb-3">
           {{ t("information.regulations.rules.4.title") }}
         </h3>
-        <p class="text-md font-montserrat text-left">
-          {{ t("information.regulations.rules.4.text") }}
-        </p>
+        <ul
+          class="text-md font-montserrat text-left list-disc list-inside marker:text-app-red"
+        >
+          <li class="">
+            {{ t("information.regulations.rules.4.text") }}
+          </li>
+        </ul>
       </div>
     </div>
   </div>
