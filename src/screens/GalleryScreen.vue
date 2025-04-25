@@ -1,38 +1,45 @@
 <template>
-  <div class="max-w-[1200px] mx-auto px-4 mb-12">
-    <div class="flex flex-col items-center">
-      <h2 class="text-2xl font-roca-light mb-8 mt-10">
-        {{ t("gallery.title") }}
-      </h2>
+  <Motion
+    :initial="{ opacity: 0, y: 30 }"
+    :animate="{ opacity: 1, y: 0 }"
+    :transition="{ duration: 0.5 }"
+  >
+    <div class="max-w-[1200px] mx-auto px-4 mb-12">
+      <div class="flex flex-col items-center">
+        <h2 class="text-2xl font-roca-light mb-8 mt-10">
+          {{ t("gallery.title") }}
+        </h2>
+      </div>
+      <masonry-wall :items="images" :column-width="250" :gap="10">
+        <template #default="{ item, index }">
+          <div
+            :style="{ height: `${item.height}px` }"
+            class="relative cursor-pointer transition-transform duration-200 hover:scale-101"
+            @click="openLightbox(index)"
+          >
+            <img
+              :src="item.src"
+              class="w-full h-full object-cover rounded-lg"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+        </template>
+      </masonry-wall>
     </div>
-    <masonry-wall :items="images" :column-width="250" :gap="10">
-      <template #default="{ item, index }">
-        <div
-          :style="{ height: `${item.height}px` }"
-          class="relative cursor-pointer transition-transform duration-200 hover:scale-101"
-          @click="openLightbox(index)"
-        >
-          <img
-            :src="item.src"
-            class="w-full h-full object-cover rounded-lg"
-            loading="lazy"
-            alt=""
-          />
-        </div>
-      </template>
-    </masonry-wall>
-  </div>
 
-  <!-- Lightbox -->
-  <vue-easy-lightbox
-    :visible="visible"
-    :imgs="images.map((img) => img.src)"
-    :index="selectedIndex"
-    @hide="visible = false"
-  />
+    <!-- Lightbox -->
+    <vue-easy-lightbox
+      :visible="visible"
+      :imgs="images.map((img) => img.src)"
+      :index="selectedIndex"
+      @hide="visible = false"
+    />
+  </Motion>
 </template>
 
 <script setup>
+import { Motion } from "@motionone/vue";
 import MasonryWall from "@yeger/vue-masonry-wall";
 import { ref } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";

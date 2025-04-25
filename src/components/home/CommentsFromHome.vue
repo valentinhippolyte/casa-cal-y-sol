@@ -5,11 +5,11 @@
       {{ t("home.comments.title") }}
     </h2>
 
-    <div v-if="showWidget" class="w-full max-w-6xl mb-3">
+    <div v-if="showWidget" class="w-full max-w-6xl mb-3 font-montserrat">
       <div
         v-if="locale === 'en'"
         class="trust-carousel-widget bg-white p-4 rounded-lg shadow-md"
-        src="https://cdn.trustindex.io/loader.js?ee6300c25315619b770687023fd"
+        src="https://cdn.trustindex.io/loader.js?9c8406e45476276d7f86c621fac"
       ></div>
 
       <div
@@ -21,7 +21,7 @@
       <div
         v-else-if="locale === 'es'"
         class="trust-carousel-widget bg-white p-4 rounded-lg shadow-md"
-        src="https://cdn.trustindex.io/loader.js?a2a23e3259106181c726a959dd8"
+        src="https://cdn.trustindex.io/loader.js?f70b26b4508a27642966da3994f"
       ></div>
     </div>
     <div class="mb-3">

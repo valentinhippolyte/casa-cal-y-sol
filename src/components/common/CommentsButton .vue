@@ -1,11 +1,11 @@
 <template>
-  <router-link :to="link">
+  <a :href="link" target="_blank" rel="noopener noreferrer">
     <button
       class="font-montserrat px-4 py-1 rounded-2xl hover:cursor-pointer hover:shadow-sm border text-app-red border-app-red text-sm"
     >
       {{ text }}
     </button>
-  </router-link>
+  </a>
 </template>
 
 <script setup>

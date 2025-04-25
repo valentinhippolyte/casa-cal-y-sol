@@ -58,8 +58,6 @@ const showWidget = ref(true);
 
 // Fonction pour charger le script Smoobu dynamiquement
 const loadSmoobuScript = async () => {
-  console.log("🔄 Rechargement du widget Smoobu...");
-
   // Désactiver temporairement l'affichage du widget
   showWidget.value = false;
 
@@ -89,8 +87,6 @@ const loadSmoobuScript = async () => {
   script.async = true;
 
   document.body.appendChild(script);
-
-  script.onload = () => console.log("✅ Smoobu script chargé !");
 };
 
 // Charger le script au montage
@@ -101,9 +97,7 @@ onMounted(() => {
 // Observer les changements de langue et recharger le script proprement
 watch(
   () => locale.value,
-  async (newLocale, oldLocale) => {
-    console.log(`🌍 Changement de langue : ${oldLocale} → ${newLocale}`);
-
+  async () => {
     await loadSmoobuScript();
   }
 );
