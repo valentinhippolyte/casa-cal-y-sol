@@ -14,6 +14,7 @@
       :transition="{ duration: 0.5 }"
     >
       <FirstTextFromInformation />
+      <Description />
       <Regulations />
     </Motion>
     <Olvera />
@@ -33,6 +34,7 @@ import AzulejosSectionIntern from "../components/common/AzulejosSectionIntern.vu
 import FirstTextFromInformation from "../components/information/FirstTextFromInformation.vue";
 import Regulations from "../components/information/Regulations.vue";
 import Andalusia from "../components/information/andalusia_part/Andalusia.vue";
+import Description from "../components/information/description_part/Description.vue";
 import Olvera from "../components/information/olvera_part/Olvera.vue";
 
 const { t } = useI18n();

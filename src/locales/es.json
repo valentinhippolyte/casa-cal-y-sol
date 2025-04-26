@@ -41,6 +41,59 @@
       "title": "Un sueño hecho realidad",
       "text": " Hace veinte años, descubrimos Olvera y nos enamoramos de este pueblo blanco en el corazón de Andalucía. Sus callejuelas soleadas, su ambiente acogedor y su autenticidad nos conquistaron al instante. Desde entonces, nació un sueño: instalarnos aquí al jubilarnos. Ese momento por fin ha llegado, y con mucha alegría abrimos las puertas de Casa Cal y Sol, un lugar donde esperamos que os sintáis tan a gusto como nosotros."
     },
+    "description": {
+      "title": "Descubre la casa",
+      "living_room_button": {
+        "1": {
+          "title": "Salón: ",
+          "text": "Wi-Fi, televisión, sofás de dos y tres plazas, consola de juegos, juegos de mesa."
+        },
+        "2": {
+          "title": "Dormitorio 1: ",
+          "text": "Dos camas individuales, apilables y movibles."
+        }
+      },
+      "kitchen_button": {
+        "1": {
+          "title": "Cocina: ",
+          "text": "Horno eléctrico, placa de inducción, frigorífico, congelador, lavavajillas, microondas, cafetera, tostadora, hervidor de agua, exprimidor, batidora de mano. Todo el menaje necesario para 8 personas."
+        },
+        "2": {
+          "title": "Despensa: ",
+          "text": "Lavadora, aspiradora, tabla de planchar, plancha, tendedero."
+        },
+        "3": {
+          "title": "Baño 1: ",
+          "text": "Ducha italiana, inodoro."
+        }
+      },
+      "patio_button": "Un pequeño patio con acceso directo desde la cocina.",
+      "terrace1_button": "Una gran terraza, parcialmente cubierta, alberga la zona de descanso y comedor, con sofá de esquina, sillas y tumbonas, una mesa de aluminio y cristal templado, sillas para ocho personas, una plancha de gas, un toldo manual y dos sombrillas.",
+      "pool_button": "Una segunda terraza con piscina (iluminada y con ducha exterior).",
+      "rooftop_button": "La azotea ofrece vistas espectaculares a la iglesia, el castillo y los olivares.",
+      "first_floor_button": {
+        "1": {
+          "title": "Baño en suite: ",
+          "text": "Dos lavabos, secador de pelo, bañera e inodoro."
+        },
+        "2": {
+          "title": "Baño 3: ",
+          "text": "Ducha, lavabo, inodoro, secador de pelo."
+        },
+        "3": {
+          "title": "Dormitorio 2: ",
+          "text": "Cama doble, armario y cómoda."
+        },
+        "4": {
+          "title": "Dormitorio 3: ",
+          "text": "Dos camas individuales, armario y cómoda."
+        },
+        "5": {
+          "title": "Dormitorio 4: ",
+          "text": "Cama doble, armario y cómoda."
+        }
+      }
+    },
     "regulations": {
       "title": "Reglamento interno",
       "rules": {

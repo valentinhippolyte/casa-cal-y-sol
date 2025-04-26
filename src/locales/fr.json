@@ -40,6 +40,59 @@
       "title": "Un rêve devenu réalité",
       "text": "Il y a vingt ans, nous avons découvert Olvera et sommes tombés sous le charme de ce village blanc au cœur de l’Andalousie. Ses ruelles ensoleillées, son ambiance chaleureuse et son authenticité nous ont immédiatement conquis. Depuis, un rêve s’est dessiné : s’y installer à la retraite. Ce moment est enfin arrivé, et c’est avec beaucoup de joie que nous ouvrons les portes de Casa Cal y Sol, un lieu où nous espérons que vous vous sentirez aussi bien que nous."
     },
+    "description": {
+      "title": "Découvrir la maison",
+      "living_room_button": {
+        "1": {
+          "title": "Salon : ",
+          "text": "Wi-Fi, télévision, canapés deux et trois places, console de jeux, jeux de société."
+        },
+        "2": {
+          "title": "Chambre 1 : ",
+          "text": "Deux lits simples, empilables et déplaçables."
+        }
+      },
+      "kitchen_button": {
+        "1": {
+          "title": "Cuisine : ",
+          "text": "Four électrique, plaque à induction, réfrigérateur, congélateur, lave-vaisselle, micro-ondes, cafetière, grille-pain, bouilloire, presse-agrumes, mixeur plongeant. Toute la vaisselle de cuisine nécessaire pour 8 personnes."
+        },
+        "2": {
+          "title": "Cellier : ",
+          "text": "Lave-linge, aspirateur, table à repasser, fer à repasser, étendoir à linge."
+        },
+        "3": {
+          "title": "Salle de bain 1 : ",
+          "text": "Douche à l’italienne, toilettes."
+        }
+      },
+      "patio_button": "Un petit patio avec accès direct depuis la cuisine.",
+      "terrace1_button": "Une grande terrasse, partiellement couverte, accueille l’espace détente et les repas, avec un canapé d’angle, des fauteuils et bains de soleil, une table en aluminium et verre trempé, des chaises pour huit personnes, une plancha au gaz, un store manuel et deux parasols.",
+      "pool_button": "Une deuxième terrasse avec piscine (éclairée et équipée d’une douche extérieure).",
+      "rooftop_button": "Le rooftop offre une vue spectaculaire sur l’église, le château et les oliviers.",
+      "first_floor_button": {
+        "1": {
+          "title": "Salle de bain en suite : ",
+          "text": "Deux lavabos, sèche-cheveux, baignoire et toilettes."
+        },
+        "2": {
+          "title": "Salle de bain 3 : ",
+          "text": "Douche, lavabo, toilettes, sèche-cheveux."
+        },
+        "3": {
+          "title": "Chambre 2 : ",
+          "text": "Lit double, armoire et commode."
+        },
+        "4": {
+          "title": "Chambre 3 : ",
+          "text": "Deux lits simples, armoire et commode."
+        },
+        "5": {
+          "title": "Chambre 4 : ",
+          "text": "Lit double, armoire et commode."
+        }
+      }
+    },
     "regulations": {
       "title": "Règlement intérieur",
       "rules": {
