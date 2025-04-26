@@ -6,7 +6,7 @@
     </h2>
 
     <div
-      class="flex flex-col lg:flex-row lg:items-start justify-between gap-y-12 lg:gap-y-0 lg:gap-x-16 max-w-7xl w-full mb-10"
+      class="flex flex-col items-center lg:flex-row lg:items-start justify-between gap-y-12 lg:gap-y-0 lg:gap-x-16 max-w-7xl w-full mb-10"
     >
       <!-- Section 1 -->
       <div class="flex flex-col items-center text-center max-w-xs">

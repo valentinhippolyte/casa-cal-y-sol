@@ -70,6 +70,11 @@
       "terrace1_button": "A large, semi-covered terrace houses the relaxation and dining areas, with a corner sofa, chairs and loungers, an aluminum and tempered glass table, chairs for eight, a gas griddle barbecue, a manual awning and two parasols.",
       "pool_button": "A second terrace with a swimming pool (lighted and with an outdoor shower).",
       "rooftop_button": "The rooftop offers spectacular views of the church, the castle, and the olive groves.",
+      "global_button": {
+        "1": "Reversible air conditioning in all rooms. Double-glazed windows and doors with roller shutters.",
+        "2": "Bathroom and bed linen provided.",
+        "3": "Beach towels provided."
+      },
       "first_floor_button": {
         "1": {
           "title": "En-suite bathroom: ",

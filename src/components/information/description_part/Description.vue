@@ -15,7 +15,7 @@
         class="w-full max-w-2xl"
       />
 
-      <!-- Popover living_room bouton  -->
+      <!-- Popover living_room button  -->
       <PopoverButton top="72%" left="11%">
         <template #content>
           <p>
@@ -33,7 +33,7 @@
         </template>
       </PopoverButton>
 
-      <!-- Popover kitchen bouton  -->
+      <!-- Popover kitchen button  -->
       <PopoverButton top="70%" left="45%">
         <template #content>
           <p>
@@ -57,7 +57,7 @@
         </template>
       </PopoverButton>
 
-      <!-- Popover patio bouton  -->
+      <!-- Popover patio button  -->
       <PopoverButton top="70%" left="83%">
         <template #content>
           <p>
@@ -66,7 +66,7 @@
         </template>
       </PopoverButton>
 
-      <!-- Popover first_floor bouton  -->
+      <!-- Popover first_floor button  -->
       <PopoverButton top="40%" left="40%">
         <template #content>
           <p>
@@ -102,7 +102,7 @@
         </template>
       </PopoverButton>
 
-      <!-- Popover terrace1 bouton  -->
+      <!-- Popover terrace1 button  -->
       <PopoverButton top="48%" left="83%">
         <template #content>
           <p>
@@ -111,7 +111,7 @@
         </template>
       </PopoverButton>
 
-      <!-- Popover pool bouton  -->
+      <!-- Popover pool button  -->
       <PopoverButton top="25%" left="78%">
         <template #content>
           <p>
@@ -120,11 +120,26 @@
         </template>
       </PopoverButton>
 
-      <!-- Popover rooftop bouton  -->
+      <!-- Popover rooftop button  -->
       <PopoverButton top="17%" left="25%">
         <template #content>
           <p>
             {{ t("information.description.rooftop_button") }}
+          </p>
+        </template>
+      </PopoverButton>
+
+      <!-- Popover global button  -->
+      <PopoverButton top="0%" left="90%">
+        <template #content>
+          <p>
+            {{ t("information.description.global_button.1") }}
+          </p>
+          <p>
+            {{ t("information.description.global_button.2") }}
+          </p>
+          <p>
+            {{ t("information.description.global_button.3") }}
           </p>
         </template>
       </PopoverButton>

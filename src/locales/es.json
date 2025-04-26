@@ -71,6 +71,11 @@
       "terrace1_button": "Una gran terraza, parcialmente cubierta, alberga la zona de descanso y comedor, con sofá de esquina, sillas y tumbonas, una mesa de aluminio y cristal templado, sillas para ocho personas, una plancha de gas, un toldo manual y dos sombrillas.",
       "pool_button": "Una segunda terraza con piscina (iluminada y con ducha exterior).",
       "rooftop_button": "La azotea ofrece vistas espectaculares a la iglesia, el castillo y los olivares.",
+      "global_button": {
+        "1": "Aire acondicionado reversible en todas las estancias. Ventanas y puertas con doble acristalamiento y persianas enrollables.",
+        "2": "Se proporcionan toallas y ropa de cama.",
+        "3": "Se proporcionan toallas de playa."
+      },
       "first_floor_button": {
         "1": {
           "title": "Baño en suite: ",

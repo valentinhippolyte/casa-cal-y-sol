@@ -70,6 +70,11 @@
       "terrace1_button": "Une grande terrasse, partiellement couverte, accueille l’espace détente et les repas, avec un canapé d’angle, des fauteuils et bains de soleil, une table en aluminium et verre trempé, des chaises pour huit personnes, une plancha au gaz, un store manuel et deux parasols.",
       "pool_button": "Une deuxième terrasse avec piscine (éclairée et équipée d’une douche extérieure).",
       "rooftop_button": "Le rooftop offre une vue spectaculaire sur l’église, le château et les oliviers.",
+      "global_button": {
+        "1": "Climatisation reversible dans toutes les pièces. Fenètres et portes avec double vitrage et volets roulants.",
+        "2": "Linge de toilette et de lit fourni.",
+        "3": "Draps de plage fournis."
+      },
       "first_floor_button": {
         "1": {
           "title": "Salle de bain en suite : ",
