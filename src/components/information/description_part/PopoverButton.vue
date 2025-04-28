@@ -13,7 +13,7 @@
       <!-- Popover desktop (lg+) -->
       <div
         v-if="isHovered"
-        class="hidden lg:block font-montserrat absolute top-8 left-1/2 transform -translate-x-1/2 bg-white border border-app-red p-2 rounded-md shadow-lg w-48 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        class="hidden lg:block font-montserrat absolute top-8 left-1/2 transform -translate-x-1/2 bg-white border border-app-red p-2 rounded-md shadow-lg w-60 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
       >
         <slot name="content" />
       </div>
