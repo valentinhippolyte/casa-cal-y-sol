@@ -203,7 +203,10 @@
       "departureDate": "Departure Date",
       "number_adults": "Number of adults",
       "number_children": "Number of children",
-      "button": "Book"
+      "button": "Book",
+      "successMessage": "Your booking has been successfully recorded!",
+      "errorMessage": "Some fields are invalid or incomplete. Please check your input.",
+      "serverError": "An error occurred. Please try again later."
     }
   },
   "footer": {

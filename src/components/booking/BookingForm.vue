@@ -167,20 +167,31 @@ const formData = ref({
 // 👇 max children = 8 - adults
 const childrenOptions = computed(() => {
   const count = 8 - formData.value.adults;
-  return Array.from({ length: count + 1 }, (_, i) => i); // 0 à `count`
+  return Array.from({ length: count + 1 }, (_, i) => i);
 });
 
 const handleSubmit = async () => {
   alertMessage.value = "";
   try {
     const response = await createBooking(formData.value);
-    console.log("Réservation success:", response);
-    alertType.value = "success";
-    alertMessage.value = t("booking.form.successMessage"); // à ajouter dans les traductions
+
+    if (response.status >= 200 && response.status < 300) {
+      alertType.value = "success";
+      alertMessage.value = t("booking.form.successMessage");
+    } else if (response.status >= 400 && response.status < 500) {
+      alertType.value = "error";
+      alertMessage.value = t("booking.form.errorMessage");
+
+      console.warn("Client error:", response.data?.validation_messages);
+    } else if (response.status >= 500) {
+      alertType.value = "error";
+      alertMessage.value = t("booking.form.serverError");
+      console.error("Server error:", response.data);
+    }
   } catch (error) {
-    console.error("Error during reservation:", error);
+    console.error("Network or unexpected error:", error);
     alertType.value = "error";
-    alertMessage.value = t("booking.form.errorMessage"); // idem
+    alertMessage.value = t("booking.form.serverError");
   }
 };
 

@@ -203,7 +203,10 @@
       "departureDate": "Date de départ",
       "number_adults": "Nombre d'adultes",
       "number_children": "Nombre d'enfants",
-      "button": "Réserver"
+      "button": "Réserver",
+      "successMessage": "Votre réservation a bien été enregistrée !",
+      "errorMessage": "Certains champs sont invalides ou incomplets. Veuillez vérifier votre saisie.",
+      "serverError": "Une erreur est survenue. Veuillez réessayer plus tard."
     }
   },
   "footer": {

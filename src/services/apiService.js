@@ -10,11 +10,13 @@ export const createBooking = async (data) => {
       body: JSON.stringify(data),
     });
 
-    if (!response.ok) {
-      throw new Error(`Error HTTP: ${response.status}`);
-    }
+    const responseData = await response.json();
 
-    return await response.json();
+    return {
+      status: response.status,
+      ok: response.ok,
+      data: responseData,
+    };
   } catch (error) {
     console.error("Error when booking:", error);
     throw error;

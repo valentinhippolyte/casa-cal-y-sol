@@ -204,7 +204,10 @@
       "departureDate": "Fecha de salida",
       "number_adults": "Número de adultos",
       "number_children": "Número de niños",
-      "button": "Reservar"
+      "button": "Reservar",
+      "successMessage": "¡Su reserva ha sido registrada con éxito!",
+      "errorMessage": "Algunos campos son inválidos o están incompletos. Por favor, revise su información.",
+      "serverError": "Ha ocurrido un error. Por favor, inténtelo de nuevo más tarde."
     }
   },
   "footer": {
