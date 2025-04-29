@@ -189,6 +189,8 @@
     },
     "calendar": {
       "title": "Calendario de disponibilidad",
+      "loading": "Cargando calendario...",
+      "error": "Error de carga",
       "legend": {
         "low": "Temporada baja",
         "high": "Temporada alta",

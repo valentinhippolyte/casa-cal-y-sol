@@ -7,8 +7,12 @@
       </h2>
     </div>
 
-    <div v-if="loading" class="text-gray-500">Chargement du calendrier...</div>
-    <div v-else-if="error" class="text-red-500">Erreur de chargement</div>
+    <div v-if="loading" class="text-gray-500">
+      {{ t("booking.calendar.loading") }}
+    </div>
+    <div v-else-if="error" class="text-red-500">
+      {{ t("booking.calendar.error") }}
+    </div>
     <div v-else>
       <!-- Boutons navigation mois -->
       <div class="flex items-center justify-center space-x-4 mb-4">

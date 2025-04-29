@@ -36,6 +36,7 @@
 <script setup>
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
+import { highSeasonRanges } from "../booking/highSeasons.js";
 
 const { locale } = useI18n();
 
@@ -107,7 +108,9 @@ const daysInMonth = computed(() => {
     const date = new Date(props.year, props.month, i);
     days.push({
       day: i,
-      date: date.toISOString().split("T")[0],
+      date: `${props.year}-${String(props.month + 1).padStart(2, "0")}-${String(
+        i
+      ).padStart(2, "0")}`,
     });
   }
   return days;
@@ -123,22 +126,22 @@ function isReserved(dateStr) {
     const start = new Date(booking.start);
     const end = new Date(booking.end);
     const target = new Date(dateStr);
-    return target >= start && target < end;
+    return target >= start && target <= end;
   });
 }
 
+function parseLocalDate(dateStr) {
+  const [year, month, day] = dateStr.split("-").map(Number);
+  return new Date(year, month - 1, day, 0, 0, 0); // 00:00 heure locale
+}
+
 function isHighSeason(dateStr) {
-  const date = new Date(dateStr);
-
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
-
-  const isChristmasHighSeason =
-    (month === 12 && day >= 5 && day <= 8) || (month === 12 && day >= 24);
-
-  const isSummerHighSeason = month >= 6 && month <= 9;
-
-  return isChristmasHighSeason || isSummerHighSeason;
+  const date = parseLocalDate(dateStr);
+  return highSeasonRanges.some(({ start, end }) => {
+    const startDate = parseLocalDate(start);
+    const endDate = parseLocalDate(end);
+    return date >= startDate && date <= endDate;
+  });
 }
 </script>
 

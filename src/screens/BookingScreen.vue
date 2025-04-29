@@ -4,7 +4,7 @@
     :animate="{ opacity: 1, y: 0 }"
     :transition="{ duration: 0.5 }"
   >
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center gap-5">
       <h2 class="text-2xl font-roca-light mb-8 mt-10">
         {{ t("booking.title") }}
       </h2>

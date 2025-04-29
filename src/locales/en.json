@@ -188,6 +188,8 @@
     },
     "calendar": {
       "title": "Availability calendar",
+      "loading": "Loading calendar...",
+      "error": "Loading error",
       "legend": {
         "low": "Low season",
         "high": "High season",
