@@ -5,7 +5,7 @@
       <button
         @mouseenter="isHovered = true"
         @mouseleave="isHovered = false"
-        class="bg-app-yellow text-white rounded-full w-6 h-6 flex items-center justify-center shadow-md"
+        class="bg-app-yellow text-white rounded-full w-6 h-6 flex items-center justify-center shadow-md hover:cursor-pointer"
       >
         +
       </button>

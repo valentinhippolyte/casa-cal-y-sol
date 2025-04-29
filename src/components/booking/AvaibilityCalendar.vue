@@ -1,6 +1,11 @@
 <template>
   <div>
-    <h2 class="text-2xl font-bold mb-4">Calendrier des réservations</h2>
+    <div class="flex flex-col items-center">
+      <div class="h-1.5 w-18 bg-app-red mb-3"></div>
+      <h2 class="text-2xl font-roca-light mb-4">
+        {{ t("booking.calendar.title") }}
+      </h2>
+    </div>
 
     <div v-if="loading" class="text-gray-500">Chargement du calendrier...</div>
     <div v-else-if="error" class="text-red-500">Erreur de chargement</div>
@@ -9,16 +14,16 @@
       <div class="flex items-center justify-center space-x-4 mb-4">
         <button
           @click="prevMonth"
-          class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded"
+          class="px-4 py-2 bg-transparent hover:cursor-pointer text-app-red text-2xl font-montserrat"
         >
           &lt;
         </button>
-        <div class="text-lg font-semibold">
+        <div class="text-lg font-semibold font-montserrat">
           {{ months[currentMonth] }} {{ currentYear }}
         </div>
         <button
           @click="nextMonth"
-          class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded"
+          class="px-4 py-2 bg-transparent hover:cursor-pointer text-app-red text-2xl font-montserrat"
         >
           &gt;
         </button>
@@ -46,14 +51,25 @@
           :bookings="bookings"
         />
       </div>
+
+      <!-- Légende -->
+      <CalendarLegend class="mt-8" />
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
-import { months } from "../../utils/months.js"; // pour l'affichage dans le bouton du mois
+import { computed, onMounted, ref } from "vue";
+import { useI18n } from "vue-i18n";
+import { useMonths } from "../../utils/months.js";
 import CalendarMonth from "../booking/CalendarMonth.vue";
+import CalendarLegend from "./CalendarLegend.vue";
+
+const { getMonths } = useMonths();
+
+const months = computed(() => getMonths()); // pour l'affichage dans le bouton du mois
+
+const { t } = useI18n();
 
 const bookings = ref([]);
 const loading = ref(true);

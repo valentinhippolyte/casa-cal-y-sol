@@ -154,6 +154,47 @@
   },
   "booking": {
     "title": "Tarifas y reserva",
+    "seasonCards": {
+      "low": {
+        "title": "Temporada baja",
+        "text": {
+          "1": "Estancia mínima: 2 noches",
+          "2": "25€/noche/persona"
+        }
+      },
+      "high": {
+        "title": "Temporada alta",
+        "text": {
+          "1": {
+            "title": "Verano:",
+            "text": {
+              "1": "Estancia mínima: 7 noches",
+              "2": "1300€ por semana"
+            }
+          },
+          "2": {
+            "title": "Navidad, Semana Santa, Puentes:",
+            "text": {
+              "1": "Estancia mínima: 2 noches",
+              "2": "35€/noche/persona"
+            }
+          }
+        }
+      },
+      "info": {
+        "1": "Gratis para niños menores de dos años",
+        "2": "10% de descuento a partir de 8 noches",
+        "3": "Reserva posible hasta 3 días antes de la estancia"
+      }
+    },
+    "calendar": {
+      "title": "Calendario de disponibilidad",
+      "legend": {
+        "low": "Temporada baja",
+        "high": "Temporada alta",
+        "booked": "Reservado "
+      }
+    },
     "form": {
       "title": "Reservar en Casa Cal y Sol",
       "fistName": "Nombre",

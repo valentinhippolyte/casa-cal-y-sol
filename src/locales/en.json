@@ -153,6 +153,47 @@
   },
   "booking": {
     "title": "Rates and reservation",
+    "seasonCards": {
+      "low": {
+        "title": "Low season",
+        "text": {
+          "1": "Minimum stay: 2 nights",
+          "2": "€25/night/person"
+        }
+      },
+      "high": {
+        "title": "High season",
+        "text": {
+          "1": {
+            "title": "Summer:",
+            "text": {
+              "1": "Minimum stay: 7 nights",
+              "2": "€1300 per week"
+            }
+          },
+          "2": {
+            "title": "Christmas, Easter, Bank holidays:",
+            "text": {
+              "1": "Minimum stay: 2 nights",
+              "2": "€35/night/person"
+            }
+          }
+        }
+      },
+      "info": {
+        "1": "Free for children under two years old",
+        "2": "10% discount for stays of 8 nights or more",
+        "3": "Booking available up to 3 days before arrival"
+      }
+    },
+    "calendar": {
+      "title": "Availability calendar",
+      "legend": {
+        "low": "Low season",
+        "high": "High season",
+        "booked": "Reserved"
+      }
+    },
     "form": {
       "title": " Book at Casa Cal y Sol",
       "fistName": "First name",

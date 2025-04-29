@@ -153,6 +153,47 @@
   },
   "booking": {
     "title": "Tarifs et réservation",
+    "seasonCards": {
+      "low": {
+        "title": "Basse saison",
+        "text": {
+          "1": "Séjour minimum : 2 nuits",
+          "2": "25€/nuit/personne"
+        }
+      },
+      "high": {
+        "title": "Haute saison",
+        "text": {
+          "1": {
+            "title": "Eté:",
+            "text": {
+              "1": "Séjour mínimum: 7 nuits",
+              "2": "1300€ la semaine"
+            }
+          },
+          "2": {
+            "title": "Noël, Semaine Sainte, Ponts:",
+            "text": {
+              "1": "Séjour mínimum: 2 nuits",
+              "2": "35€/nuit/personne"
+            }
+          }
+        }
+      },
+      "info": {
+        "1": "Gratuit pour les enfants de moins de deux ans",
+        "2": "Remise de 10% à partir de 8 jours",
+        "3": "Réservation possible jusque 3 jours précédant le séjour"
+      }
+    },
+    "calendar": {
+      "title": "Calendrier de disponibilité",
+      "legend": {
+        "low": "Basse saison",
+        "high": "Haute saison",
+        "booked": "Reservé"
+      }
+    },
     "form": {
       "title": "Réserver à Casa Cal y Sol",
       "fistName": "Prénom",

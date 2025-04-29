@@ -7,6 +7,9 @@
           {{ t("booking.form.title") }}
         </h2>
       </div>
+
+      <AlertMessage :message="alertMessage" :type="alertType" />
+
       <form @submit.prevent="handleSubmit">
         <div class="-mx-3 flex flex-wrap">
           <div class="w-full px-3 sm:w-1/2">
@@ -105,8 +108,8 @@
                 required
                 class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               >
-                <option v-for="n in 9" :key="n" :value="n - 1">
-                  {{ n - 1 }}
+                <option v-for="n in 7" :key="n" :value="n">
+                  {{ n }}
                 </option>
               </select>
             </div>
@@ -123,8 +126,8 @@
                 required
                 class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               >
-                <option v-for="n in 8" :key="n" :value="n - 1">
-                  {{ n - 1 }}
+                <option v-for="n in childrenOptions" :key="n" :value="n">
+                  {{ n }}
                 </option>
               </select>
             </div>
@@ -145,9 +148,10 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import { createBooking } from "../../services/apiService.js";
+import AlertMessage from "../booking/AlertMessage.vue";
 
 const { t } = useI18n();
 
@@ -157,18 +161,29 @@ const formData = ref({
   email: "",
   arrivalDate: "",
   departureDate: "",
-  adults: 0,
+  adults: 1,
   children: 0,
+});
+// 👇 max children = 8 - adults
+const childrenOptions = computed(() => {
+  const count = 8 - formData.value.adults;
+  return Array.from({ length: count + 1 }, (_, i) => i); // 0 à `count`
 });
 
 const handleSubmit = async () => {
+  alertMessage.value = "";
   try {
     const response = await createBooking(formData.value);
-    console.log("Réservation succed:", response);
-    alert("Reservation done!");
+    console.log("Réservation success:", response);
+    alertType.value = "success";
+    alertMessage.value = t("booking.form.successMessage"); // à ajouter dans les traductions
   } catch (error) {
-    console.error("Error during the reservation:", error);
-    alert("Error during the reservation.");
+    console.error("Error during reservation:", error);
+    alertType.value = "error";
+    alertMessage.value = t("booking.form.errorMessage"); // idem
   }
 };
+
+const alertMessage = ref("");
+const alertType = ref("success");
 </script>
