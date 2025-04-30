@@ -1,5 +1,10 @@
 <template>
-  <a :href="link" target="_blank" rel="noopener noreferrer">
+  <a
+    :href="link"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Make a comment"
+  >
     <button
       class="font-montserrat px-4 py-1 rounded-2xl hover:cursor-pointer hover:shadow-sm border text-app-red border-app-red text-sm"
     >

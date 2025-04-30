@@ -15,11 +15,16 @@
       </button>
 
       <!-- Logo centré -->
-      <RouterLink to="/" class="absolute left-1/2 transform -translate-x-1/2">
+      <RouterLink
+        to="/"
+        aria-label="Home"
+        class="absolute left-1/2 transform -translate-x-1/2"
+      >
         <img
-          class="h-[60px]"
+          class="h-13"
           :src="imageUrls.logo.src"
           :alt="imageUrls.logo.alt"
+          loading="eager"
         />
       </RouterLink>
 
@@ -29,11 +34,12 @@
 
     <!-- Desktop : Logo + texte à gauche -->
     <div class="hidden lg:flex items-center">
-      <RouterLink to="/" class="flex items-center">
+      <RouterLink to="/" aria-label="Home" class="flex items-center">
         <img
-          class="h-[60px]"
+          class="h-13"
           :src="imageUrls.logo.src"
           :alt="imageUrls.logo.alt"
+          loading="eager"
         />
         <h1 class="text-app-red font-roca ml-4 text-2xl leading-6">
           CASA <br />
@@ -47,7 +53,7 @@
       class="hidden lg:flex justify-center gap-8 font-montserrat text-md z-40"
     >
       <li v-for="(link, index) in navLinks" :key="index">
-        <RouterLink :to="link.to">
+        <RouterLink :to="link.to" :aria-label="link.ariaLabel">
           {{ link.label }}
         </RouterLink>
       </li>
@@ -79,7 +85,9 @@
           :key="index"
           @click="toggleMenu(true)"
         >
-          <RouterLink :to="link.to">{{ link.label }}</RouterLink>
+          <RouterLink :to="link.to" :aria-label="link.ariaLabel">{{
+            link.label
+          }}</RouterLink>
         </li>
 
         <!-- Switcher de langue (mobile only) -->
@@ -109,9 +117,13 @@ const toggleMenu = (forceClose = false) => {
 };
 
 const navLinks = computed(() => [
-  { label: t("navbar.home"), to: "/" },
-  { label: t("navbar.information"), to: "/information" },
-  { label: t("navbar.gallery"), to: "/gallery" },
-  { label: t("navbar.comments"), to: "/comments" },
+  { label: t("navbar.home"), to: "/", ariaLabel: "Home" },
+  {
+    label: t("navbar.information"),
+    to: "/information",
+    ariaLabel: "Information",
+  },
+  { label: t("navbar.gallery"), to: "/gallery", ariaLabel: "Galley" },
+  { label: t("navbar.comments"), to: "/comments", ariaLabel: "Comments" },
 ]);
 </script>

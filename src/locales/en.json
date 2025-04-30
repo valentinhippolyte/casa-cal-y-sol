@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "Holiday home rental in Andalusia in a traditional white village."
+  },
   "navbar": {
     "home": "Home",
     "information": "Information",
@@ -215,7 +218,8 @@
     "title1": "Contact us",
     "title2": "Find us",
     "address": "28 Calle Peñón, 11690 Olvera, Cádiz, Spain",
-    "registration": "Registration: "
+    "registration": "Registration: ",
+    "map": "Map of the location of Casa Cal y Sol in Olvera, Spain"
   },
   "commonButton": {
     "seeMore": "See more",

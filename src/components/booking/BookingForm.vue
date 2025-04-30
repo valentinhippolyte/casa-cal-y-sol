@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center p-12">
-    <div class="mx-auto w-full max-w-[550px] font-montserrat">
+    <div class="mx-auto w-full max-w-lg font-montserrat">
       <div class="flex flex-col items-center justify-center mb-4">
         <div class="h-1.5 w-18 bg-app-red mb-3"></div>
         <h2 class="text-2xl font-roca-light mb-4">

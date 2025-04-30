@@ -8,7 +8,7 @@
         {{ t("information.description.title") }}
       </h2>
     </div>
-    <div class="relative w-full max-w-2xl">
+    <div class="relative w-full max-w-lg">
       <img
         :src="imageUrls.house_description_mobile.src"
         :alt="imageUrls.house_description_mobile.alt"

@@ -15,6 +15,7 @@
           <a
             href="mailto:casacalysol@gmail.com"
             class="mt-4 flex items-center justify-start text-white underline gap-2 hover:cursor-pointer text-sm"
+            aria-label="Email"
           >
             <Mail class="w-5 h-5 text-white" />
             casacalysol@gmail.com
@@ -34,11 +35,13 @@
             href="https://www.facebook.com/profile.php?id=61550858274141"
             target="_blank"
             class="mt-4 flex items-center justify-start text-white underline gap-2 hover:cursor-pointer text-sm"
+            aria-label="Facebook"
           >
             <img
               :src="imageUrls.facebook.src"
               :alt="imageUrls.facebook.alt"
               class="size-7"
+              loading="lazy"
             />
           </a>
         </div>

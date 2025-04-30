@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "Location de maison de vacances en Andalousie dans un village blanc."
+  },
   "navbar": {
     "home": "Bienvenue",
     "information": "Informations",
@@ -215,7 +218,8 @@
     "title1": "Contactez-nous",
     "title2": "Nous trouver",
     "address": "28 Calle Peñón, 11690 Olvera, Cadix, Espagne",
-    "registration": "Numéro d'enregistrement : "
+    "registration": "Numéro d'enregistrement : ",
+    "map": "Carte de l'emplacement de Casa Cal y Sol à Olvera, Espagne"
   },
   "commonButton": {
     "seeMore": "Voir plus",

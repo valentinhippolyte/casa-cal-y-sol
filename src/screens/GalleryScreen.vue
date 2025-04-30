@@ -4,7 +4,7 @@
     :animate="{ opacity: 1, y: 0 }"
     :transition="{ duration: 0.5 }"
   >
-    <div class="max-w-[1200px] mx-auto px-4 mb-12">
+    <div class="max-w-5xl mx-auto px-4 mb-12">
       <div class="flex flex-col items-center">
         <h2 class="text-2xl font-roca-light mb-8 mt-10">
           {{ t("gallery.title") }}

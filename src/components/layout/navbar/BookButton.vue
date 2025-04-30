@@ -1,5 +1,5 @@
 <template>
-  <RouterLink to="/booking">
+  <RouterLink to="/booking" aria-label="Booking">
     <button
       class="flex gap-1 bg-app-red text-white font-montserrat px-4 py-2.5 rounded-2xl hover:cursor-pointer hover:shadow-lg hover:bg-app-red-600"
     >

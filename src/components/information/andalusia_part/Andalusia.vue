@@ -17,12 +17,13 @@
     </div>
 
     <!-- Bloc image -->
-    <div class="w-full lg:w-1/2 p-8 lg:p-20 flex items-center justify-center">
+    <div class="w-full lg:w-1/2 p-8 flex items-center justify-center">
       <img
         @click="openLightbox"
         :src="imageUrls.olvera_map.src"
         :alt="imageUrls.olvera_map.alt"
-        class="rounded-md w-full h-auto object-cover cursor-pointer max-w-[500px]"
+        class="rounded-md w-full h-auto object-cover cursor-pointer max-w-sm"
+        loading="lazy"
       />
     </div>
   </div>

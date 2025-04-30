@@ -6,6 +6,7 @@
         :src="imageUrls.breakfast.src"
         :alt="imageUrls.breakfast.alt"
         class="object-cover object-[35%_center] lg:object-center w-full h-full"
+        loading="eager"
       />
       <div class="absolute inset-0 bg-black opacity-40"></div>
     </div>
@@ -20,15 +21,16 @@
           :src="imageUrls.logo_beige.src"
           :alt="imageUrls.logo_beige.alt"
           class="w-40 lg:w-64 mb-6 lg:mb-0"
+          loading="eager"
         />
 
         <!-- Text -->
         <div class="lg:ml-12 flex flex-col justify-center h-full lg:h-auto">
-          <h2
+          <p
             class="text-4xl lg:text-6xl font-roca font-bold uppercase tracking-widest mb-2"
           >
             {{ t("home.welcome") }}
-          </h2>
+          </p>
           <h1
             class="text-4xl lg:text-6xl font-roca font-bold tracking-wide mb-2"
           >

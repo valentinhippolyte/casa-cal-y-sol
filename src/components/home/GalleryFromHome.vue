@@ -22,6 +22,7 @@
           :src="img.src"
           :alt="img.alt"
           class="rounded-2xl w-full h-64 object-cover shadow-md"
+          loading="lazy"
         />
       </SwiperSlide>
     </Swiper>

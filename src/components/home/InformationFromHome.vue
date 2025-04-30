@@ -5,7 +5,8 @@
       <img
         :src="imageUrls.village_view.src"
         :alt="imageUrls.village_view.alt"
-        class="rounded-md w-full h-auto object-cover max-w-[500px]"
+        class="rounded-md w-full h-auto object-cover max-w-sm"
+        loading="lazy"
       />
     </div>
 

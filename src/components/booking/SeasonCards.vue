@@ -44,7 +44,7 @@
 
     <!-- Card 2 -->
     <div
-      class="bg-app-bg shadow-lg rounded-2xl p-6 max-w-md w-full flex flex-col items-center text-center min-h-[320px] justify-center"
+      class="bg-app-bg shadow-lg rounded-2xl p-6 max-w-md w-full flex flex-col items-center text-center min-h-md justify-center"
     >
       <div>
         <div class="h-1.5 w-12 bg-app-yellow mt-2 mb-4 mx-auto"></div>
