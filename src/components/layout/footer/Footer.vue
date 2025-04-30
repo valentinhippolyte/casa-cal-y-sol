@@ -36,8 +36,8 @@
             class="mt-4 flex items-center justify-start text-white underline gap-2 hover:cursor-pointer text-sm"
           >
             <img
-              src="../../../assets/images/facebook.png"
-              alt="Facebook"
+              :src="imageUrls.facebook.src"
+              :alt="imageUrls.facebook.alt"
               class="size-7"
             />
           </a>
@@ -62,6 +62,7 @@
 <script setup>
 import { Mail, MapPin, Save } from "lucide-vue-next";
 import { useI18n } from "vue-i18n";
+import { imageUrls } from "../../../assets/images/images.js";
 import Maps from "./Maps.vue";
 
 const { t } = useI18n();

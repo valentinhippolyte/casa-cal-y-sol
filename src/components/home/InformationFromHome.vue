@@ -3,9 +3,9 @@
     <!-- Bloc image avec padding sur grand écran -->
     <div class="w-full lg:w-1/2 p-8 lg:p-20 flex items-center justify-center">
       <img
-        src="../../assets/images/street.jpg"
+        :src="imageUrls.village_view.src"
+        :alt="imageUrls.village_view.alt"
         class="rounded-md w-full h-auto object-cover max-w-[500px]"
-        alt="street of flowers"
       />
     </div>
 
@@ -27,6 +27,7 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
+import { imageUrls } from "../../assets/images/images.js";
 import SeeMoreButton from "../common/SeeMoreButton.vue";
 
 const { t } = useI18n();

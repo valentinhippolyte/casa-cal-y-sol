@@ -3,9 +3,9 @@
     <!-- Bloc image avec padding sur grand écran -->
     <div class="w-full lg:w-1/2 p-8 flex items-center justify-center">
       <img
-        src="../../assets/images/village_view.jpg"
+        :src="imageUrls.village_view.src"
+        :alt="imageUrls.village_view.alt"
         class="rounded-md w-full h-auto object-cover max-w-[500px]"
-        alt="village view"
       />
     </div>
 
@@ -24,6 +24,7 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
+import { imageUrls } from "../../assets/images/images.js";
 
 const { t } = useI18n();
 </script>

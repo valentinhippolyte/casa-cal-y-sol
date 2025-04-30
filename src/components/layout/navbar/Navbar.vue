@@ -18,8 +18,8 @@
       <RouterLink to="/" class="absolute left-1/2 transform -translate-x-1/2">
         <img
           class="h-[60px]"
-          src="../../../assets/Logo_couleur.svg"
-          alt="Casa Cal Y Sol Logo"
+          :src="imageUrls.logo.src"
+          :alt="imageUrls.logo.alt"
         />
       </RouterLink>
 
@@ -32,8 +32,8 @@
       <RouterLink to="/" class="flex items-center">
         <img
           class="h-[60px]"
-          src="../../../assets/Logo_couleur.svg"
-          alt="Casa Cal Y Sol Logo"
+          :src="imageUrls.logo.src"
+          :alt="imageUrls.logo.alt"
         />
         <h1 class="text-app-red font-roca ml-4 text-2xl leading-6">
           CASA <br />
@@ -94,6 +94,7 @@
 <script setup>
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
+import { imageUrls } from "../../../assets/images/images.js";
 import BookButton from "./BookButton.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 

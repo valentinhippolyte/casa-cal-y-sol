@@ -10,8 +10,8 @@
     </div>
     <div class="relative w-full max-w-2xl">
       <img
-        src="../../../assets/images/house_description_mobile.png"
-        alt="Plan de la maison"
+        :src="imageUrls.house_description_mobile.src"
+        :alt="imageUrls.house_description_mobile.alt"
         class="w-full max-w-2xl"
       />
 
@@ -149,6 +149,7 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
+import { imageUrls } from "../../../assets/images/images.js";
 import PopoverButton from "./PopoverButton.vue";
 
 const { t } = useI18n();

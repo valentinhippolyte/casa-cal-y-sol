@@ -20,9 +20,9 @@
     <div class="w-full lg:w-1/2 p-8 lg:p-20 flex items-center justify-center">
       <img
         @click="openLightbox"
-        src="../../../assets/images/map_olvera.png"
+        :src="imageUrls.olvera_map.src"
+        :alt="imageUrls.olvera_map.alt"
         class="rounded-md w-full h-auto object-cover cursor-pointer max-w-[500px]"
-        alt="Map of Andalusia"
       />
     </div>
   </div>
@@ -30,7 +30,7 @@
   <!-- Lightbox -->
   <vue-easy-lightbox
     :visible="visible"
-    :imgs="[images.olvera]"
+    :imgs="[imageUrls.olvera_map.src]"
     :index="selectedIndex"
     @hide="visible = false"
   />
@@ -40,14 +40,9 @@
 import { ref } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";
 import { useI18n } from "vue-i18n";
+import { imageUrls } from "../../../assets/images/images.js";
 
 const { t } = useI18n();
-
-// Image source for the Lightbox
-const images = ref({
-  olvera: new URL("../../../assets/images/map_olvera.png", import.meta.url)
-    .href,
-});
 
 // Lightbox states
 const visible = ref(false);

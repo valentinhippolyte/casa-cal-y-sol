@@ -1,7 +1,15 @@
 export const imageUrls = {
+  logo: {
+    src: new URL("../Logo_couleur.svg", import.meta.url).href,
+    alt: "Original Casa Cal Y Sol logo",
+  },
+  logo_beige: {
+    src: new URL("../Logo_beige.svg", import.meta.url).href,
+    alt: "Beige Casa Cal Y Sol logo",
+  },
   breakfast: {
     src: new URL("./breakfast.jpg", import.meta.url).href,
-    alt: "Breakfast served on the terrace",
+    alt: "Breakfast served on the rooftop terrace",
   },
   street: {
     src: new URL("./street.jpg", import.meta.url).href,
@@ -110,5 +118,9 @@ export const imageUrls = {
   night_view: {
     src: new URL("./night_view.jpg", import.meta.url).href,
     alt: "Night view of the illuminated village",
+  },
+  facebook: {
+    src: new URL("./facebook.png", import.meta.url).href,
+    alt: "Facebook logo",
   },
 };

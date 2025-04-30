@@ -3,8 +3,8 @@
     <!-- Background Image -->
     <div class="absolute inset-0">
       <img
-        src="../../assets/images/breakfast.jpg"
-        alt="Background Image"
+        :src="imageUrls.breakfast.src"
+        :alt="imageUrls.breakfast.alt"
         class="object-cover object-[35%_center] lg:object-center w-full h-full"
       />
       <div class="absolute inset-0 bg-black opacity-40"></div>
@@ -17,8 +17,8 @@
       >
         <!-- Logo -->
         <img
-          src="../../assets/Logo_beige.svg"
-          alt="Logo"
+          :src="imageUrls.logo_beige.src"
+          :alt="imageUrls.logo_beige.alt"
           class="w-40 lg:w-64 mb-6 lg:mb-0"
         />
 
@@ -47,6 +47,7 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
+import { imageUrls } from "../../assets/images/images.js";
 
 const { t } = useI18n();
 </script>
