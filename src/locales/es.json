@@ -159,24 +159,24 @@
         "title": "Temporada baja",
         "text": {
           "1": "Estancia mínima: 2 noches",
-          "2": "25€/noche/persona"
+          "2": "30€/noche/persona"
         }
       },
       "high": {
         "title": "Temporada alta",
         "text": {
           "1": {
-            "title": "Verano:",
+            "title": "Julio/Agosto",
             "text": {
               "1": "Estancia mínima: 7 noches",
-              "2": "1300€ por semana"
+              "2": "1400€ por semana"
             }
           },
           "2": {
             "title": "Navidad, Semana Santa, Puentes:",
             "text": {
               "1": "Estancia mínima: 2 noches",
-              "2": "35€/noche/persona"
+              "2": "40€/noche/persona"
             }
           }
         }

@@ -166,7 +166,7 @@ const formData = ref({
 });
 // 👇 max children = 8 - adults
 const childrenOptions = computed(() => {
-  const count = 8 - formData.value.adults;
+  const count = 7 - formData.value.adults;
   return Array.from({ length: count + 1 }, (_, i) => i);
 });
 

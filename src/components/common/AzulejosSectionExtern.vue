@@ -12,7 +12,7 @@
 
     <!-- Contenu au-dessus -->
     <div
-      class="absolute top-1/2 left-10 transform -translate-y-1/2 ml-6 bg-white py-6 px-10 md:py-12 md:px-20 rounded-xl shadow-lg max-w-md z-10"
+      class="absolute top-1/2 left-10 transform -translate-y-1/2 bg-white py-6 px-10 md:py-12 md:px-20 rounded-xl shadow-lg max-w-md z-10"
     >
       <h2 class="text-2xl font-montserrat font-bold mb-4">
         {{ title }}

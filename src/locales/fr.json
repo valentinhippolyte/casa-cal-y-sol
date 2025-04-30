@@ -158,24 +158,24 @@
         "title": "Basse saison",
         "text": {
           "1": "Séjour minimum : 2 nuits",
-          "2": "25€/nuit/personne"
+          "2": "30€/nuit/personne"
         }
       },
       "high": {
         "title": "Haute saison",
         "text": {
           "1": {
-            "title": "Eté:",
+            "title": "Juillet/Août:",
             "text": {
               "1": "Séjour mínimum: 7 nuits",
-              "2": "1300€ la semaine"
+              "2": "1400€ la semaine"
             }
           },
           "2": {
             "title": "Noël, Semaine Sainte, Ponts:",
             "text": {
               "1": "Séjour mínimum: 2 nuits",
-              "2": "35€/nuit/personne"
+              "2": "40€/nuit/personne"
             }
           }
         }

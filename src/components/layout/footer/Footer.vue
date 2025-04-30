@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-app-red shadow-sm p-6 text-white">
     <div class="flex flex-col lg:grid lg:grid-cols-3 gap-6 lg:gap-12">
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-8">
         <div class="sm:text-left lg:col-span-1">
           <h3 class="text-xl font-roca-light">{{ t("footer.title1") }}</h3>
 

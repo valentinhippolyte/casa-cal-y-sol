@@ -158,24 +158,24 @@
         "title": "Low season",
         "text": {
           "1": "Minimum stay: 2 nights",
-          "2": "€25/night/person"
+          "2": "€30/night/person"
         }
       },
       "high": {
         "title": "High season",
         "text": {
           "1": {
-            "title": "Summer:",
+            "title": "July/August:",
             "text": {
               "1": "Minimum stay: 7 nights",
-              "2": "€1300 per week"
+              "2": "€1400 per week"
             }
           },
           "2": {
             "title": "Christmas, Easter, Bank holidays:",
             "text": {
               "1": "Minimum stay: 2 nights",
-              "2": "€35/night/person"
+              "2": "€40/night/person"
             }
           }
         }
