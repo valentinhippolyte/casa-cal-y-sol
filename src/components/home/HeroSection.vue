@@ -3,7 +3,7 @@
     <!-- Background Image -->
     <div class="absolute inset-0">
       <img
-        src="../../assets/images/home_photo.jpg"
+        src="../../assets/images/breakfast.jpg"
         alt="Background Image"
         class="object-cover object-[35%_center] lg:object-center w-full h-full"
       />

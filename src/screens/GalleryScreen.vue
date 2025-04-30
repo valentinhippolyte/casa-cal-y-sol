@@ -13,15 +13,14 @@
       <masonry-wall :items="images" :column-width="250" :gap="10">
         <template #default="{ item, index }">
           <div
-            :style="{ height: `${item.height}px` }"
             class="relative cursor-pointer transition-transform duration-200 hover:scale-101"
             @click="openLightbox(index)"
           >
             <img
               :src="item.src"
+              :alt="item.alt"
               class="w-full h-full object-cover rounded-lg"
               loading="lazy"
-              alt=""
             />
           </div>
         </template>
@@ -43,51 +42,34 @@ import MasonryWall from "@yeger/vue-masonry-wall";
 import { ref } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";
 import { useI18n } from "vue-i18n";
+import { imageUrls } from "../assets/images/images.js";
 
 const { t } = useI18n();
 
-const images = ref([
-  {
-    src: new URL("../assets/images/breakfast.jpg", import.meta.url).href,
-    height: 400,
-  },
-  {
-    src: new URL("../assets/images/house_front.jpg", import.meta.url).href,
-    height: 250,
-  },
-  {
-    src: new URL("../assets/images/living_room.jpg", import.meta.url).href,
-    height: 250,
-  },
-  {
-    src: new URL("../assets/images/night.jpg", import.meta.url).href,
-    height: 200,
-  },
-  {
-    src: new URL("../assets/images/paragliding.jpg", import.meta.url).href,
-    height: 300,
-  },
-  {
-    src: new URL("../assets/images/patio.jpg", import.meta.url).href,
-    height: 300,
-  },
-  {
-    src: new URL("../assets/images/terrace_1.jpg", import.meta.url).href,
-    height: 500,
-  },
-  {
-    src: new URL("../assets/images/terrace_2.jpg", import.meta.url).href,
-    height: 250,
-  },
-  {
-    src: new URL("../assets/images/village_front.jpg", import.meta.url).href,
-    height: 250,
-  },
-  {
-    src: new URL("../assets/images/breakfast.jpg", import.meta.url).href,
-    height: 350,
-  },
-]);
+const images = [
+  imageUrls.front_house,
+  imageUrls.hall,
+  imageUrls.living_room,
+  imageUrls.dining_room,
+  imageUrls.kitchen,
+  imageUrls.patio,
+  imageUrls.bedroom_1,
+  imageUrls.bedroom_2,
+  imageUrls.bedroom_3,
+  imageUrls.bedroom_4,
+  imageUrls.bathroom_1,
+  imageUrls.bathroom_2,
+  imageUrls.bathroom_3,
+  imageUrls.terrace1_1,
+  imageUrls.terrace1_2,
+  imageUrls.terrace1_3,
+  imageUrls.pool_1,
+  imageUrls.pool_2,
+  imageUrls.pool_3,
+  imageUrls.church,
+  imageUrls.castle,
+  imageUrls.night_view,
+];
 
 const selectedIndex = ref(0);
 const visible = ref(false);

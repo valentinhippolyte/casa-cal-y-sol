@@ -50,7 +50,7 @@
     <div class="w-full lg:w-1/2 p-8 lg:p-20 flex items-center justify-center">
       <img
         @click="openLightbox"
-        src="../../../assets/images/map_olvera.png"
+        src="../../../assets/images/olvera_map.png"
         class="rounded-md w-full h-auto object-cover cursor-pointer max-w-[500px]"
         alt="Map of Olvera"
       />
@@ -76,7 +76,7 @@ const { t } = useI18n();
 
 // Image source for the Lightbox
 const images = ref({
-  olvera: new URL("../../../assets/images/map_olvera.png", import.meta.url)
+  olvera: new URL("../../../assets/images/olvera_map.png", import.meta.url)
     .href,
 });
 

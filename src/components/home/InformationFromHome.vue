@@ -3,7 +3,7 @@
     <!-- Bloc image avec padding sur grand écran -->
     <div class="w-full lg:w-1/2 p-8 lg:p-20 flex items-center justify-center">
       <img
-        src="../../assets/images/rue-fleurs.jpeg"
+        src="../../assets/images/street.jpg"
         class="rounded-md w-full h-auto object-cover max-w-[500px]"
         alt="street of flowers"
       />

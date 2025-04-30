@@ -10,7 +10,7 @@
     </div>
     <div class="relative w-full max-w-2xl">
       <img
-        src="../../../assets/images/Maison_descriptif.png"
+        src="../../../assets/images/house_description_mobile.png"
         alt="Plan de la maison"
         class="w-full max-w-2xl"
       />
