@@ -47,32 +47,44 @@
       "title": "Discover the house",
       "living_room_button": {
         "1": {
-          "title": "Living room: ",
+          "title": "Living room",
           "text": "Wi-Fi, television, two and three-seater sofas, game console, board games."
         },
         "2": {
-          "title": "Bedroom 1: ",
+          "title": "Bedroom No. 1",
           "text": "Two single beds, stackable and movable."
         }
       },
       "kitchen_button": {
         "1": {
-          "title": "Kitchen: ",
+          "title": "Kitchen",
           "text": "Electric oven, induction hob, fridge, freezer, dishwasher, microwave oven, coffee maker, toaster, kettle, citrus press, hand blender. All the cookware needed for 8 people."
         },
         "2": {
-          "title": "Cellar: ",
+          "title": "Cellar",
           "text": "Washing machine, vacuum cleaner, ironing board, iron, clothes rack."
         },
         "3": {
-          "title": "Bathroom 1: ",
+          "title": "Bathroom No. 1",
           "text": "Walk-in shower, toilet."
         }
       },
-      "patio_button": "A small patio with direct access from the kitchen.",
-      "terrace1_button": "A large, semi-covered terrace houses the relaxation and dining areas, with a corner sofa, chairs and loungers, an aluminum and tempered glass table, chairs for eight, a gas griddle barbecue, a manual awning and two parasols.",
-      "pool_button": "A second terrace with a swimming pool (lighted and with an outdoor shower).",
-      "rooftop_button": "The rooftop offers spectacular views of the church, the castle, and the olive groves.",
+      "patio_button": {
+        "title": "Patio",
+        "text": "A small patio with direct access from the kitchen."
+      },
+      "terrace1_button": {
+        "title": "First terrace",
+        "text": "A large, semi-covered terrace houses the relaxation and dining areas, with a corner sofa, chairs and loungers, an aluminum and tempered glass table, chairs for eight, a gas griddle barbecue, a manual awning and two parasols."
+      },
+      "pool_button": {
+        "title": "Second terrace",
+        "text": "A second terrace with a swimming pool (lighted and with an outdoor shower)."
+      },
+      "rooftop_button": {
+        "title": "Rooftop",
+        "text": "The rooftop offers spectacular views of the church, the castle, and the olive groves."
+      },
       "global_button": {
         "1": "Reversible air conditioning in all rooms. Double-glazed windows and doors with roller shutters.",
         "2": "Bathroom and bed linen provided.",
@@ -80,23 +92,24 @@
       },
       "first_floor_button": {
         "1": {
-          "title": "En-suite bathroom: ",
+          "title": "En-suite bathroom",
           "text": "Two sinks, hairdryer, bathtub and toilet."
         },
         "2": {
-          "title": "Bathroom 3: ",
+          "title": "Bathroom No. 3",
           "text": "Shower, sink, toilet, hairdryer."
         },
         "3": {
-          "title": "Bedroom 2: ",
-          "text": "Double bed, wardrobe and dresser."
+          "title": "Bedroom No. 2",
+          "text": "Double bed, wardrobe and dresser.",
+          "desktop": "3 Bedrooms"
         },
         "4": {
-          "title": "Bedroom 3: ",
+          "title": "Bedroom No. 3",
           "text": "Two single beds, wardrobe and dresser."
         },
         "5": {
-          "title": "Bedroom 4: ",
+          "title": "Bedroom No. 4",
           "text": "Double bed, wardrobe and dresser."
         }
       }
@@ -209,7 +222,7 @@
       "number_adults": "Number of adults",
       "number_children": "Number of children",
       "button": "Book",
-      "successMessage": "Your booking has been successfully recorded!",
+      "successMessage": "Your reservation has been successfully registered! You will be contacted by email very soon.",
       "errorMessage": "Some fields are invalid or incomplete. Please check your input.",
       "serverError": "An error occurred. Please try again later."
     }

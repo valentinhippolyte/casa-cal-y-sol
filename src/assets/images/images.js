@@ -20,7 +20,11 @@ export const imageUrls = {
     alt: "View over the white village",
   },
   house_description_mobile: {
-    src: new URL("./house_description_mobile.webp", import.meta.url).href,
+    src: new URL("./house_description_mobile.png", import.meta.url).href,
+    alt: "Mobile layout showing house description",
+  },
+  house_description_desktop: {
+    src: new URL("./house_description_desktop.png", import.meta.url).href,
     alt: "Mobile layout showing house description",
   },
   olvera_map: {

@@ -47,32 +47,44 @@
       "title": "Découvrir la maison",
       "living_room_button": {
         "1": {
-          "title": "Salon : ",
+          "title": "Salon",
           "text": "Wi-Fi, télévision, canapés deux et trois places, console de jeux, jeux de société."
         },
         "2": {
-          "title": "Chambre 1 : ",
+          "title": "Chambre n°1",
           "text": "Deux lits simples, empilables et déplaçables."
         }
       },
       "kitchen_button": {
         "1": {
-          "title": "Cuisine : ",
+          "title": "Cuisine",
           "text": "Four électrique, plaque à induction, réfrigérateur, congélateur, lave-vaisselle, micro-ondes, cafetière, grille-pain, bouilloire, presse-agrumes, mixeur plongeant. Toute la vaisselle de cuisine nécessaire pour 8 personnes."
         },
         "2": {
-          "title": "Cellier : ",
+          "title": "Cellier",
           "text": "Lave-linge, aspirateur, table à repasser, fer à repasser, étendoir à linge."
         },
         "3": {
-          "title": "Salle de bain 1 : ",
+          "title": "Salle de bain n°1",
           "text": "Douche à l’italienne, toilettes."
         }
       },
-      "patio_button": "Un petit patio avec accès direct depuis la cuisine.",
-      "terrace1_button": "Une grande terrasse, partiellement couverte, accueille l’espace détente et les repas, avec un canapé d’angle, des fauteuils et bains de soleil, une table en aluminium et verre trempé, des chaises pour huit personnes, une plancha au gaz, un store manuel et deux parasols.",
-      "pool_button": "Une deuxième terrasse avec piscine (éclairée et équipée d’une douche extérieure).",
-      "rooftop_button": "Le rooftop offre une vue spectaculaire sur l’église, le château et les oliviers.",
+      "patio_button": {
+        "title": "Patio",
+        "text": "Un petit patio avec accès direct depuis la cuisine."
+      },
+      "terrace1_button": {
+        "title": "Première terrasse",
+        "text": "Une grande terrasse, partiellement couverte, accueille l’espace détente et les repas, avec un canapé d’angle, des fauteuils et bains de soleil, une table en aluminium et verre trempé, des chaises pour huit personnes, une plancha au gaz, un store manuel et deux parasols."
+      },
+      "pool_button": {
+        "title": "Seconde terrasse",
+        "text": "Une deuxième terrasse avec piscine (éclairée et équipée d’une douche extérieure)."
+      },
+      "rooftop_button": {
+        "title": "Rooftop",
+        "text": "Le rooftop offre une vue spectaculaire sur l’église, le château et les oliviers."
+      },
       "global_button": {
         "1": "Climatisation reversible dans toutes les pièces. Fenètres et portes avec double vitrage et volets roulants.",
         "2": "Linge de toilette et de lit fourni.",
@@ -80,23 +92,24 @@
       },
       "first_floor_button": {
         "1": {
-          "title": "Salle de bain en suite : ",
+          "title": "Salle de bain en suite",
           "text": "Deux lavabos, sèche-cheveux, baignoire et toilettes."
         },
         "2": {
-          "title": "Salle de bain 3 : ",
+          "title": "Salle de bain n°3",
           "text": "Douche, lavabo, toilettes, sèche-cheveux."
         },
         "3": {
-          "title": "Chambre 2 : ",
-          "text": "Lit double, armoire et commode."
+          "title": "Chambre n°2",
+          "text": "Lit double, armoire et commode.",
+          "desktop": "3 Chambres"
         },
         "4": {
-          "title": "Chambre 3 : ",
+          "title": "Chambre n°3",
           "text": "Deux lits simples, armoire et commode."
         },
         "5": {
-          "title": "Chambre 4 : ",
+          "title": "Chambre n°4",
           "text": "Lit double, armoire et commode."
         }
       }
@@ -209,7 +222,7 @@
       "number_adults": "Nombre d'adultes",
       "number_children": "Nombre d'enfants",
       "button": "Réserver",
-      "successMessage": "Votre réservation a bien été enregistrée !",
+      "successMessage": "Votre réservation a bien été enregistrée ! Vous serez contacté par mail très prochainement.",
       "errorMessage": "Certains champs sont invalides ou incomplets. Veuillez vérifier votre saisie.",
       "serverError": "Une erreur est survenue. Veuillez réessayer plus tard."
     }
