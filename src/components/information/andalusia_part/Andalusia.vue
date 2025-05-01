@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col-reverse lg-flex-col lg:flex-row px-6 lg:px-20">
+  <div
+    class="flex flex-col-reverse lg-flex-col lg:flex-row px-6 lg:px-20 lg:my-20"
+  >
     <!-- Bloc texte -->
     <div class="w-full lg:w-1/2 pb-8 lg:py-8 flex flex-col justify-center">
       <!-- Texte -->
