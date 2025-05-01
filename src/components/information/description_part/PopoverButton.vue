@@ -73,6 +73,6 @@ defineProps({
   left: { type: String, required: true },
   topLg: { type: String, default: null },
   leftLg: { type: String, default: null },
-  isGlobal: { type: Boolean, default: false },
+  isGlobal: { type: String, default: "" },
 });
 </script>

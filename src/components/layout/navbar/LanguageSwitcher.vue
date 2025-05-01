@@ -1,5 +1,5 @@
 <template>
-  <div class="relative inline-block text-left">
+  <div class="relative inline-block text-left" ref="dropdownRef">
     <button
       @click="isOpen = !isOpen"
       class="flex items-center gap-2 text-sm focus:outline-none hover:cursor-pointer"
@@ -55,21 +55,30 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
 
 const { locale } = useI18n();
 const isOpen = ref(false);
-
-const flagMap = {
-  en: "🇬🇧",
-  fr: "🇫🇷",
-  es: "🇪🇸",
-};
+const dropdownRef = ref(null);
 
 const selectLanguage = (lang) => {
   locale.value = lang;
   localStorage.setItem("lang", lang);
   isOpen.value = false;
 };
+
+const handleClickOutside = (event) => {
+  if (dropdownRef.value && !dropdownRef.value.contains(event.target)) {
+    isOpen.value = false;
+  }
+};
+
+onMounted(() => {
+  document.addEventListener("click", handleClickOutside);
+});
+
+onUnmounted(() => {
+  document.removeEventListener("click", handleClickOutside);
+});
 </script>

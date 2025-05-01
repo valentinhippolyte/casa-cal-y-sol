@@ -29,7 +29,7 @@
           </p>
         </div>
         <div>
-          <h3 class="text-xl font-roca-light">Follow us</h3>
+          <h3 class="text-xl font-roca-light">{{ t("footer.title3") }}</h3>
 
           <a
             href="https://www.facebook.com/profile.php?id=61550858274141"

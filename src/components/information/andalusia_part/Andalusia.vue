@@ -20,8 +20,8 @@
     <div class="w-full lg:w-1/2 p-8 flex items-center justify-center">
       <img
         @click="openLightbox"
-        :src="imageUrls.olvera_map.src"
-        :alt="imageUrls.olvera_map.alt"
+        :src="imageUrls.andalusia_map.src"
+        :alt="imageUrls.andalusia_map.alt"
         class="rounded-md w-full h-auto object-cover cursor-pointer max-w-sm"
         loading="lazy"
       />
@@ -31,7 +31,7 @@
   <!-- Lightbox -->
   <vue-easy-lightbox
     :visible="visible"
-    :imgs="[imageUrls.olvera_map.src]"
+    :imgs="[imageUrls.andalusia_map.src]"
     :index="selectedIndex"
     @hide="visible = false"
   />

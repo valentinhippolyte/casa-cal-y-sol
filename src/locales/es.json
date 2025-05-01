@@ -146,7 +146,7 @@
     },
     "olvera": {
       "title": "Olvera en la vida cotidiana",
-      "text": "Nuestra casa ofrece todas las ventajas de la ciudad manteniendo la autenticidad de un pueblo. A menos de 100 metros, encontrarás supermercados, carnicería, frutería, panadería, farmacia, bares y mucho más (nuestras recomendaciones están a continuación). Además de todas estas comodidades, esta casa también cuenta con una piscina privada de 3x4 m para refrescarte bajo el sol andaluz. Situada en la tranquila Calle Peñón, por donde solo pasan el panadero y los basureros cada día, nuestra casa garantiza calma y serenidad. Hay aparcamiento disponible cerca.",
+      "text": "Nuestra casa ofrece todas las ventajas de la ciudad manteniendo la autenticidad de un pueblo. A menos de 100 metros, encontrarás supermercados, carnicería, frutería, panadería, farmacia, bares y mucho más (nuestras recomendaciones están en el mapa). Además de todas estas comodidades, esta casa también cuenta con una piscina privada de 3x4 m para refrescarte bajo el sol andaluz. Situada en la tranquila Calle Peñón, por donde solo pasan el panadero y los basureros cada día, nuestra casa garantiza calma y serenidad. Hay aparcamiento disponible cerca.",
       "legend": {
         "title": "Cerca de casa:",
         "1": "Supermercado",
@@ -231,6 +231,7 @@
   "footer": {
     "title1": "Contáctanos",
     "title2": "Dónde estamos",
+    "title3": "Síganos",
     "address": "Calle Peñón 28, 11690 Olvera, Cádiz, España",
     "registration": "Registro turístico: ",
     "map": "Mapa de la ubicación de Casa Cal y Sol en Olvera, España"

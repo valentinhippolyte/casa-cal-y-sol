@@ -31,6 +31,10 @@ export const imageUrls = {
     src: new URL("./olvera_map.webp", import.meta.url).href,
     alt: "Map of Olvera and nearby points of interest",
   },
+  andalusia_map: {
+    src: new URL("./andalusia_map.png", import.meta.url).href,
+    alt: "Map of Andalusia and nearby cities",
+  },
   front_house: {
     src: new URL("./front_house.webp", import.meta.url).href,
     alt: "Front facade of the house",
