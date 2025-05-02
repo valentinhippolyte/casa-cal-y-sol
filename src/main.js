@@ -10,9 +10,18 @@ import fr from "./locales/fr.json";
 
 import * as lucideIcons from "lucide-vue-next";
 
+const availableLocales = ["en", "fr", "es"];
+
+let userLocale = localStorage.getItem("lang");
+
+if (!userLocale) {
+  const browserLang = navigator.language.slice(0, 2); // "fr-FR" => "fr"
+  userLocale = availableLocales.includes(browserLang) ? browserLang : "en";
+}
+
 const i18n = createI18n({
   legacy: false,
-  locale: "en",
+  locale: userLocale,
   fallbackLocale: "en",
   messages: {
     en,
