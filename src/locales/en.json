@@ -204,7 +204,7 @@
     },
     "calendar": {
       "title": "Availability calendar",
-      "loading": "Loading calendar...",
+      "loading": "Just a moment, the calendar is almost ready...",
       "error": "Loading error",
       "legend": {
         "low": "Low season",
@@ -231,7 +231,7 @@
     "title1": "Contact us",
     "title2": "Find us",
     "title3": "Follow us",
-    "address": "28 Calle Peñón, 11690 Olvera, Cádiz, Spain",
+    "address": "Calle Peñón, 28, 11690 Olvera, Cádiz, Spain",
     "registration": "Registration: ",
     "map": "Map of the location of Casa Cal y Sol in Olvera, Spain"
   },

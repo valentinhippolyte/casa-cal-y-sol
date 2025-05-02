@@ -151,7 +151,7 @@
         "1": "Supermarché",
         "2": "Boulangerie",
         "3": "Bar",
-        "4": "Primerie",
+        "4": "Primeur",
         "5": "Point de vue",
         "6": "Randonnée"
       }
@@ -204,7 +204,7 @@
     },
     "calendar": {
       "title": "Calendrier de disponibilité",
-      "loading": "Chargement du calendrier...",
+      "loading": "Un instant, le calendrier est presque prêt...",
       "error": "Erreur de chargement",
       "legend": {
         "low": "Basse saison",
@@ -231,7 +231,7 @@
     "title1": "Contactez-nous",
     "title2": "Nous trouver",
     "title3": "Suivez-nous",
-    "address": "28 Calle Peñón, 11690 Olvera, Cadix, Espagne",
+    "address": "Calle Peñón, 28, 11690 Olvera, Cadix, Espagne",
     "registration": "Numéro d'enregistrement : ",
     "map": "Carte de l'emplacement de Casa Cal y Sol à Olvera, Espagne"
   },

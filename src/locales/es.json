@@ -5,7 +5,7 @@
   "navbar": {
     "home": "Bienvenido",
     "information": "Informaciones",
-    "gallery": "Galeria",
+    "gallery": "Galería",
     "booking": "Reservar",
     "comments": "Commentarios"
   },
@@ -166,7 +166,7 @@
     "title": "Comentarios"
   },
   "gallery": {
-    "title": "Galeria"
+    "title": "Galería"
   },
   "booking": {
     "title": "Tarifas y reserva",
@@ -205,7 +205,7 @@
     },
     "calendar": {
       "title": "Calendario de disponibilidad",
-      "loading": "Cargando calendario...",
+      "loading": "Un momento, el calendario está casi listo...",
       "error": "Error de carga",
       "legend": {
         "low": "Temporada baja",
@@ -232,7 +232,7 @@
     "title1": "Contáctanos",
     "title2": "Dónde estamos",
     "title3": "Síganos",
-    "address": "Calle Peñón 28, 11690 Olvera, Cádiz, España",
+    "address": "Calle Peñón, 28, 11690 Olvera, Cádiz, España",
     "registration": "Registro turístico: ",
     "map": "Mapa de la ubicación de Casa Cal y Sol en Olvera, España"
   },

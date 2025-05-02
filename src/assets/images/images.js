@@ -20,11 +20,11 @@ export const imageUrls = {
     alt: "View over the white village",
   },
   house_description_mobile: {
-    src: new URL("./house_description_mobile.png", import.meta.url).href,
+    src: new URL("./house_description_mobile.webp", import.meta.url).href,
     alt: "Mobile layout showing house description",
   },
   house_description_desktop: {
-    src: new URL("./house_description_desktop.png", import.meta.url).href,
+    src: new URL("./house_description_desktop.webp", import.meta.url).href,
     alt: "Mobile layout showing house description",
   },
   olvera_map: {
@@ -32,7 +32,7 @@ export const imageUrls = {
     alt: "Map of Olvera and nearby points of interest",
   },
   andalusia_map: {
-    src: new URL("./andalusia_map.png", import.meta.url).href,
+    src: new URL("./andalusia_map.webp", import.meta.url).href,
     alt: "Map of Andalusia and nearby cities",
   },
   front_house: {
