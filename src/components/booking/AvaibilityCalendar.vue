@@ -85,7 +85,9 @@ const currentMonth = ref(now.getMonth());
 
 async function fetchBookings() {
   try {
-    const response = await fetch("http://localhost:3000/api/booked-dates");
+    const response = await fetch(
+      "https://casa-cal-y-sol-backend.onrender.com/api/booked-dates"
+    );
     if (!response.ok) {
       throw new Error("Erreur API");
     }
