@@ -4,7 +4,7 @@
     <div
       class="absolute inset-0 bg-repeat bg-center z-0"
       :style="{
-        backgroundImage: `url('${logo}')`,
+        backgroundImage: `url('${imageUrls.logo.src}')`,
         backgroundSize: '80px 80px',
         opacity: 0.4,
       }"
@@ -23,10 +23,8 @@
 </template>
 
 <script setup>
+import { imageUrls } from "../../assets/images/images.js";
 import SeeMoreButton from "./SeeMoreButton.vue";
-
-// Pas besoin de ref ici, c’est juste une string
-const logo = new URL("../../assets/Logo_couleur.svg", import.meta.url).href;
 
 defineProps(["title", "text", "link", "isExtern"]);
 </script>

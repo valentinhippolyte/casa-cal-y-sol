@@ -17,8 +17,10 @@
       <!-- Bouton + -->
       <div class="flex flex-row">
         <button
-          @mouseenter="isHovered = true"
-          @mouseleave="isHovered = false"
+          @mouseenter="isDesktop && (isHovered = true)"
+          @mouseleave="isDesktop && (isHovered = false)"
+          @click="togglePopover"
+          ref="buttonRef"
           :class="[
             'rounded-full w-6 h-6 flex items-center justify-center shadow-md hover:cursor-pointer border-1 font-montserrat text-sm leading-none mr-auto',
             isGlobal
@@ -32,7 +34,7 @@
 
       <!-- Popover desktop -->
       <div
-        v-if="isHovered"
+        v-if="isDesktop && isHovered"
         class="hidden lg:block font-montserrat absolute top-8 left-1/2 transform -translate-x-1/2 bg-white border border-app-red p-2 rounded-md shadow-lg w-60 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
       >
         <slot name="content" />
@@ -40,9 +42,10 @@
 
       <!-- Popover mobile/tablette -->
       <div
-        v-if="isHovered"
-        class="block lg:hidden font-montserrat fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border border-app-red p-2 rounded-md shadow-lg w-64 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50"
+        v-if="!isDesktop && isOpen"
+        class="block lg:hidden font-montserrat fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border border-app-red p-2 rounded-md shadow-lg w-64 text-sm opacity-100 transition-opacity duration-300 z-50"
         :class="isGlobal ? 'bg-app-red' : ''"
+        ref="popoverRef"
       >
         <slot name="content" />
       </div>
@@ -51,21 +54,46 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from "vue";
+import { nextTick, onBeforeUnmount, onMounted, ref } from "vue";
 
-const isHovered = ref(false);
+const isHovered = ref(false); // desktop
+const isOpen = ref(false); // mobile
 const isDesktop = ref(false);
+const popoverRef = ref(null);
+const buttonRef = ref(null);
+
+const handleClickOutside = (e) => {
+  if (
+    !isDesktop.value &&
+    isOpen.value &&
+    popoverRef.value &&
+    !popoverRef.value.contains(e.target) &&
+    !buttonRef.value.contains(e.target) // ⬅️ NE FERMER QUE SI CLIC À L'EXTÉRIEUR DU BOUTON AUSSI
+  ) {
+    isOpen.value = false;
+  }
+};
+
+const togglePopover = async () => {
+  if (!isDesktop.value) {
+    isOpen.value = !isOpen.value;
+    await nextTick(); // Attend que le popover soit dans le DOM
+  }
+};
+
+const checkScreen = () => {
+  isDesktop.value = window.innerWidth >= 1024;
+};
 
 onMounted(() => {
-  const checkScreen = () => {
-    isDesktop.value = window.innerWidth >= 1024;
-  };
   checkScreen();
   window.addEventListener("resize", checkScreen);
+  document.addEventListener("click", handleClickOutside); // Gère les clics en dehors pour fermer
+});
 
-  onBeforeUnmount(() => {
-    window.removeEventListener("resize", checkScreen);
-  });
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", checkScreen);
+  document.removeEventListener("click", handleClickOutside);
 });
 
 defineProps({
