@@ -1,5 +1,5 @@
 <template>
-  <RouterLink to="/booking" aria-label="Booking">
+  <RouterLink :to="localePath('/booking')" aria-label="Booking">
     <button
       class="flex gap-1 bg-app-red text-white font-montserrat px-4 py-2.5 rounded-2xl hover:cursor-pointer hover:shadow-lg hover:bg-app-red-600"
     >
@@ -11,6 +11,11 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
-import { RouterLink } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
 const { t, locale } = useI18n();
+
+const localePath = (path) => {
+  const route = useRoute();
+  return `/${route.params.locale}${path}`;
+};
 </script>

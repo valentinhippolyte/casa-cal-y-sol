@@ -14,9 +14,14 @@
 
 <script setup>
 import { Motion } from "@motionone/vue";
+import { onMounted } from "vue";
 import Characteristic from "../components/home/Characteristic.vue";
 import CommentsFromHome from "../components/home/CommentsFromHome.vue";
 import GalleryFromHome from "../components/home/GalleryFromHome.vue";
 import HeroSection from "../components/home/HeroSection.vue";
 import InformationFromHome from "../components/home/InformationFromHome.vue";
+
+onMounted(() => {
+  fetch("http://localhost:3000/api/ping").catch(() => {});
+});
 </script>

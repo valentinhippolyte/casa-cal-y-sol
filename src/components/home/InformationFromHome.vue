@@ -4,7 +4,7 @@
     <div class="w-full lg:w-1/2 p-8 lg:p-20 flex items-center justify-center">
       <img
         :src="imageUrls.village_view.src"
-        :alt="imageUrls.village_view.alt"
+        :alt="t('alt_images.village_view')"
         class="rounded-md w-full h-auto object-cover max-w-sm"
         loading="lazy"
       />

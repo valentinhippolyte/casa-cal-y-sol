@@ -11,12 +11,12 @@
     <div class="relative w-full max-w-2xl">
       <img
         :src="imageUrls.house_description_desktop.src"
-        :alt="imageUrls.house_description_desktop.alt"
+        :alt="t('alt_images.house_description_desktop')"
         class="w-full max-w-2xl hidden lg:block"
       />
       <img
         :src="imageUrls.house_description_mobile.src"
-        :alt="imageUrls.house_description_mobile.alt"
+        :alt="t('alt_images.house_description_mobile')"
         class="w-full max-w-2xl block lg:hidden"
       />
 

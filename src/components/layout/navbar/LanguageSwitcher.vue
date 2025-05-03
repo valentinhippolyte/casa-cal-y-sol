@@ -57,17 +57,44 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
+import { useRoute, useRouter } from "vue-router"; // Import useRoute et useRouter
 
 const { locale } = useI18n();
 const isOpen = ref(false);
 const dropdownRef = ref(null);
 
+// Utilisation de useRoute et useRouter pour gérer la navigation
+const route = useRoute();
+const router = useRouter();
+
+// Fonction pour changer la langue et enregistrer dans le localStorage
 const selectLanguage = (lang) => {
+  const currentLocale = route.params.locale || route.path.split("/")[1];
+
+  // Ne rien faire si la langue est déjà sélectionnée
+  if (lang === currentLocale) {
+    isOpen.value = false;
+    return;
+  }
+
+  // Met à jour la langue dans i18n + localStorage
   locale.value = lang;
   localStorage.setItem("lang", lang);
+
+  // Supprime la langue actuelle du path
+  const pathWithoutLocale = route.path.replace(/^\/[a-z]{2}(\/|$)/, "/");
+
+  // Nettoie le chemin pour éviter les doubles slashes
+  const cleanPath = pathWithoutLocale === "/" ? "" : pathWithoutLocale;
+
+  // Crée le nouveau chemin
+  const newPath = `/${lang}${cleanPath}`;
+  router.push(newPath);
+
   isOpen.value = false;
 };
 
+// Fonction pour gérer le clic en dehors du dropdown
 const handleClickOutside = (event) => {
   if (dropdownRef.value && !dropdownRef.value.contains(event.target)) {
     isOpen.value = false;

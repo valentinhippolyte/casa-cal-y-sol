@@ -1,6 +1,7 @@
 {
   "meta": {
-    "description": "Holiday home rental in Andalusia in a traditional white village."
+    "description": "Holiday home rental in Andalusia in a white village.",
+    "title": "Casa Cal y Sol – Holiday home in Andalusia"
   },
   "navbar": {
     "home": "Home",
@@ -83,7 +84,7 @@
       },
       "rooftop_button": {
         "title": "Rooftop",
-        "text": "The rooftop offers spectacular views of the church, the castle, and the olive groves."
+        "text": "The rooftop offers spectacular views of the mountains, the castle, and the church."
       },
       "global_button": {
         "1": "Reversible air conditioning in all rooms. Double-glazed windows and doors with roller shutters.",
@@ -245,5 +246,40 @@
       "title": "Tell us about your stay",
       "text": "Comment"
     }
+  },
+  "alt_images": {
+    "logo": "Original Casa Cal Y Sol logo",
+    "logo_beige": "Beige Casa Cal Y Sol logo",
+    "breakfast": "Breakfast served on the rooftop terrace",
+    "street": "Charming street in the village",
+    "village_view": "View over the white village of Olvera",
+    "house_description_mobile": "Mobile layout showing house description",
+    "house_description_desktop": "Desktop layout showing house description",
+    "olvera_map": "Map of Olvera and nearby points of interest",
+    "andalusia_map": "Map of Andalusia and nearby cities",
+    "front_house": "Front facade of the house",
+    "hall": "Entrance hall",
+    "living_room": "Spacious living room with sofas",
+    "dining_room": "Dining room with a family table",
+    "kitchen": "Fully equipped kitchen with modern appliances",
+    "bathroom_1": "First bathroom (en-suite)",
+    "bathroom_2": "Second bathroom",
+    "bathroom_3": "Third bathroom",
+    "bedroom_1": "First bedroom with double beds",
+    "bedroom_2": "Second bedroom with two single beds",
+    "bedroom_3": "Third bedroom with double beds",
+    "bedroom_4": "Fourth bedroom with single beds, stackable and movable",
+    "patio": "Traditional Andalusian patio with plants",
+    "terrace1_1": "First view of the main terrace",
+    "terrace1_2": "Second view of the main terrace",
+    "terrace1_3": "Third view of the main terrace",
+    "pool_1": "First view of the pool",
+    "pool_2": "Second view of the pool",
+    "pool_3": "Third view of the pool",
+    "rooftop": "Rooftop with view of the village and mountains",
+    "church": "Historic church in the village",
+    "castle": "Old castle overlooking the village",
+    "night_view": "Night view of the illuminated village",
+    "facebook": "Facebook page of Casa Cal y Sol"
   }
 }

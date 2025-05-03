@@ -51,7 +51,7 @@
       <img
         @click="openLightbox"
         :src="imageUrls.olvera_map.src"
-        :alt="imageUrls.olvera_map.alt"
+        :alt="t('alt_images.olvera_map')"
         class="rounded-md w-full h-auto object-cover cursor-pointer max-w-sm"
         loading="lazy"
       />

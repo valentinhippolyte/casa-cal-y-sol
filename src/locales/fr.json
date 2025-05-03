@@ -1,6 +1,7 @@
 {
   "meta": {
-    "description": "Location de maison de vacances en Andalousie dans un village blanc."
+    "description": "Location de maison de vacances en Andalousie dans un village blanc.",
+    "title": "Casa Cal y Sol – Maison de vacances en Andalousie"
   },
   "navbar": {
     "home": "Bienvenue",
@@ -83,7 +84,7 @@
       },
       "rooftop_button": {
         "title": "Rooftop",
-        "text": "Le rooftop offre une vue spectaculaire sur l’église, le château et les oliviers."
+        "text": "Le rooftop offre une vue spectaculaire sur les montagnes, le château et l'église."
       },
       "global_button": {
         "1": "Climatisation reversible dans toutes les pièces. Fenètres et portes avec double vitrage et volets roulants.",
@@ -245,5 +246,40 @@
       "title": "Parlez-nous de votre séjour",
       "text": "Je commente"
     }
+  },
+  "alt_images": {
+    "logo": "Logo original de Casa Cal y Sol",
+    "logo_beige": "Logo beige de Casa Cal y Sol",
+    "breakfast": "Petit-déjeuner servi sur la terrasse du toit",
+    "street": "Rue charmante du village",
+    "village_view": "Vue sur le village blanc d’Olvera",
+    "house_description_mobile": "Affichage mobile avec description de la maison",
+    "house_description_desktop": "Affichage ordinateur avec description de la maison",
+    "olvera_map": "Carte d’Olvera et des points d’intérêt à proximité",
+    "andalusia_map": "Carte de l’Andalousie et des villes proches",
+    "front_house": "Façade avant de la maison",
+    "hall": "Hall d’entrée",
+    "living_room": "Salon spacieux avec canapés",
+    "dining_room": "Salle à manger avec grande table familiale",
+    "kitchen": "Cuisine entièrement équipée avec électroménager moderne",
+    "bathroom_1": "Première salle de bain (attenante)",
+    "bathroom_2": "Deuxième salle de bain",
+    "bathroom_3": "Troisième salle de bain",
+    "bedroom_1": "Première chambre avec lits doubles",
+    "bedroom_2": "Deuxième chambre avec deux lits simples",
+    "bedroom_3": "Troisième chambre avec lits doubles",
+    "bedroom_4": "Quatrième chambre avec lits simples, empilables et modulables",
+    "patio": "Patio andalou traditionnel avec plantes",
+    "terrace1_1": "Première vue de la terrasse principale",
+    "terrace1_2": "Deuxième vue de la terrasse principale",
+    "terrace1_3": "Troisième vue de la terrasse principale",
+    "pool_1": "Première vue de la piscine",
+    "pool_2": "Deuxième vue de la piscine",
+    "pool_3": "Troisième vue de la piscine",
+    "rooftop": "Toit-terrasse avec vue sur le village et les montagnes",
+    "church": "Église historique du village",
+    "castle": "Ancien château surplombant le village",
+    "night_view": "Vue nocturne du village illuminé",
+    "facebook": "Page Facebook de Casa Cal y Sol"
   }
 }
