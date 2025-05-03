@@ -39,7 +39,7 @@
           >
             <img
               :src="imageUrls.facebook.src"
-              :alt="imageUrls.facebook.alt"
+              :alt="t('alt_images.facebook')"
               class="size-7"
               loading="lazy"
             />

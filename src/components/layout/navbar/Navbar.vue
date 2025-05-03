@@ -23,7 +23,7 @@
         <img
           class="h-13"
           :src="imageUrls.logo.src"
-          :alt="imageUrls.logo.alt"
+          :alt="t('alt_images.logo')"
           loading="eager"
         />
       </RouterLink>
@@ -42,7 +42,7 @@
         <img
           class="h-13"
           :src="imageUrls.logo.src"
-          :alt="imageUrls.logo.alt"
+          :alt="t('alt_images.logo')"
           loading="eager"
         />
         <h1 class="text-app-red font-roca ml-4 text-2xl leading-6">

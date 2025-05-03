@@ -4,7 +4,7 @@
     <div class="absolute inset-0">
       <img
         :src="imageUrls.breakfast.src"
-        :alt="imageUrls.breakfast.alt"
+        :alt="t('alt_images.breakfast')"
         class="object-cover object-[35%_center] lg:object-center w-full h-full"
         loading="eager"
       />
@@ -19,7 +19,7 @@
         <!-- Logo -->
         <img
           :src="imageUrls.logo_beige.src"
-          :alt="imageUrls.logo_beige.alt"
+          :alt="t('alt_images.logo_beige')"
           class="w-40 lg:w-64 mb-6 lg:mb-0"
           loading="eager"
         />
