@@ -26,11 +26,10 @@
 
 <script setup>
 import { Motion } from "@motionone/vue";
-import Footer from "./components/layout/footer/Footer.vue";
-import Navbar from "./components/layout/navbar/Navbar.vue";
-
+import { onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { watch, onMounted } from "vue";
+import Footer from "../src/components/layout/footer/Footer.vue";
+import Navbar from "../src/components/layout/navbar/Navbar.vue";
 
 const { t, locale } = useI18n();
 
@@ -48,9 +47,42 @@ function updateMetaDescription() {
   }
 }
 
-onMounted(updateMetaDescription);
+function updatePageTitle() {
+  document.title = t("meta.title");
+}
 
-watch(locale, () => {
+function updateHtmlLang() {
+  document.documentElement.lang = locale.value;
+}
+
+function updateHreflangs() {
+  const head = document.head;
+  const baseUrl = "https://casacalysol.com";
+
+  document
+    .querySelectorAll('link[rel="alternate"]')
+    .forEach((el) => el.remove());
+
+  const langs = ["fr", "en", "es"];
+  const currentPath =
+    window.location.pathname.replace(/^\/[a-z]{2}/, "") || "/";
+
+  langs.forEach((code) => {
+    const link = document.createElement("link");
+    link.setAttribute("rel", "alternate");
+    link.setAttribute("hreflang", code);
+    link.setAttribute("href", `${baseUrl}/${code}${currentPath}`);
+    head.appendChild(link);
+  });
+}
+
+function updateHeadTags() {
+  updateHtmlLang();
   updateMetaDescription();
-});
+  updatePageTitle();
+  updateHreflangs();
+}
+
+onMounted(updateHeadTags);
+watch(locale, updateHeadTags);
 </script>

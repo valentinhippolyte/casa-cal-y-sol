@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="link" :aria-label="text">
+  <router-link :to="localePath(link)" :aria-label="text">
     <button
       class="font-montserrat px-4 py-1 rounded-2xl hover:cursor-pointer hover:shadow-sm border text-app-red border-app-red text-sm"
     >
@@ -9,9 +9,12 @@
 </template>
 
 <script setup>
-import { useI18n } from "vue-i18n";
+import { useRoute } from "vue-router";
 
-const { t } = useI18n();
+const localePath = (path) => {
+  const route = useRoute();
+  return `/${route.params.locale}${path}`;
+};
 
 defineProps(["link", "text"]);
 </script>

@@ -16,7 +16,7 @@
 
       <!-- Logo centré -->
       <RouterLink
-        to="/"
+        :to="localeHomePath"
         aria-label="Home"
         class="absolute left-1/2 transform -translate-x-1/2"
       >
@@ -34,7 +34,11 @@
 
     <!-- Desktop : Logo + texte à gauche -->
     <div class="hidden lg:flex items-center">
-      <RouterLink to="/" aria-label="Home" class="flex items-center">
+      <RouterLink
+        :to="localeHomePath"
+        aria-label="Home"
+        class="flex items-center"
+      >
         <img
           class="h-13"
           :src="imageUrls.logo.src"
@@ -53,7 +57,7 @@
       class="hidden lg:flex justify-center gap-8 font-montserrat text-md z-40"
     >
       <li v-for="(link, index) in navLinks" :key="index">
-        <RouterLink :to="link.to" :aria-label="link.ariaLabel">
+        <RouterLink :to="localePath(link.to)" :aria-label="link.ariaLabel">
           {{ link.label }}
         </RouterLink>
       </li>
@@ -85,7 +89,7 @@
           :key="index"
           @click="toggleMenu(true)"
         >
-          <RouterLink :to="link.to" :aria-label="link.ariaLabel">{{
+          <RouterLink :to="localePath(link.to)" :aria-label="link.ariaLabel">{{
             link.label
           }}</RouterLink>
         </li>
@@ -102,15 +106,24 @@
 <script setup>
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
+import { useRoute } from "vue-router";
+
 import { imageUrls } from "../../../assets/images/images.js";
 import BookButton from "./BookButton.vue";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 
-// Import des icônes Lucide
 import { Menu, X } from "lucide-vue-next";
 
 const { t } = useI18n();
 const isMenuOpen = ref(false);
+
+const localePath = (path) => {
+  const route = useRoute();
+  return `/${route.params.locale}${path}`;
+};
+const route = useRoute();
+
+const localeHomePath = computed(() => `/${route.params.locale || "fr"}`);
 
 const toggleMenu = (forceClose = false) => {
   isMenuOpen.value = !forceClose ? false : !isMenuOpen.value;
@@ -123,7 +136,7 @@ const navLinks = computed(() => [
     to: "/information",
     ariaLabel: "Information",
   },
-  { label: t("navbar.gallery"), to: "/gallery", ariaLabel: "Galley" },
+  { label: t("navbar.gallery"), to: "/gallery", ariaLabel: "Gallery" },
   { label: t("navbar.comments"), to: "/comments", ariaLabel: "Comments" },
 ]);
 </script>
