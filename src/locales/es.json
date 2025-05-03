@@ -128,7 +128,7 @@
         },
         "2": {
           "title": "Condiciones",
-          "text": "Reserva: 30% del precio de la estancia."
+          "text": "Reserva: el 30% del precio de la estancia."
         },
         "3": {
           "title": "Restricciones",
@@ -247,5 +247,40 @@
       "title": "Cuéntenos sobre su estancia",
       "text": "Comentar"
     }
+  },
+  "alt_images": {
+    "logo": "Logotipo original de Casa Cal y Sol",
+    "logo_beige": "Logotipo beige de Casa Cal y Sol",
+    "breakfast": "Desayuno servido en la terraza de la azotea",
+    "street": "Calle encantadora del pueblo",
+    "village_view": "Vista del pueblo blanco de Olvera",
+    "house_description_mobile": "Diseño móvil que muestra la descripción de la casa",
+    "house_description_desktop": "Diseño de escritorio que muestra la descripción de la casa",
+    "olvera_map": "Mapa de Olvera y puntos de interés cercanos",
+    "andalusia_map": "Mapa de Andalucía y ciudades cercanas",
+    "front_house": "Fachada principal de la casa",
+    "hall": "Vestíbulo de entrada",
+    "living_room": "Salón espacioso con sofás",
+    "dining_room": "Comedor con mesa familiar",
+    "kitchen": "Cocina completamente equipada con electrodomésticos modernos",
+    "bathroom_1": "Primer baño (en suite)",
+    "bathroom_2": "Segundo baño",
+    "bathroom_3": "Tercer baño",
+    "bedroom_1": "Primer dormitorio con camas dobles",
+    "bedroom_2": "Segundo dormitorio con dos camas individuales",
+    "bedroom_3": "Tercer dormitorio con camas dobles",
+    "bedroom_4": "Cuarto dormitorio con camas individuales, apilables y móviles",
+    "patio": "Patio andaluz tradicional con plantas",
+    "terrace1_1": "Primera vista de la terraza principal",
+    "terrace1_2": "Segunda vista de la terraza principal",
+    "terrace1_3": "Tercera vista de la terraza principal",
+    "pool_1": "Primera vista de la piscina",
+    "pool_2": "Segunda vista de la piscina",
+    "pool_3": "Tercera vista de la piscina",
+    "rooftop": "Azotea con vistas al pueblo y a las montañas",
+    "church": "Iglesia histórica del pueblo",
+    "castle": "Antiguo castillo con vista al pueblo",
+    "night_view": "Vista nocturna del pueblo iluminado",
+    "facebook": "Página de Facebook de Casa Cal y Sol"
   }
 }
