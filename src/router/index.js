@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import i18n from "../plugins/i18n"; // adapte le chemin si besoin
+import { i18n } from "../plugins/i18n";
 import { routes } from "./routes";
 
 const router = createRouter({
@@ -10,17 +10,16 @@ const router = createRouter({
   },
 });
 
-// Synchroniser langue <-> URL
 router.beforeEach((to, from, next) => {
   const locale = to.params.locale;
-
   const supported = ["fr", "en", "es"];
+
   if (!supported.includes(locale)) {
-    return next("/fr"); // fallback
+    return next("/"); // fallback
   }
 
-  if (i18n.global.locale !== locale) {
-    i18n.global.locale = locale;
+  if (i18n.global.locale.value !== locale) {
+    i18n.global.locale.value = locale;
     localStorage.setItem("lang", locale);
   }
 
