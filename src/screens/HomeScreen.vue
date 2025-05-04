@@ -22,6 +22,6 @@ import HeroSection from "../components/home/HeroSection.vue";
 import InformationFromHome from "../components/home/InformationFromHome.vue";
 
 onMounted(() => {
-  fetch("http://localhost:3000/api/ping").catch(() => {});
+  fetch("https://casa-cal-y-sol-backend.onrender.com/api/ping").catch(() => {});
 });
 </script>
