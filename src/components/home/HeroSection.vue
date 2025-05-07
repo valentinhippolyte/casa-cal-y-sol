@@ -36,11 +36,11 @@
           >
             CASA CAL Y SOL
           </h1>
-          <h3
+          <h2
             class="text-lg lg:text-2xl font-montserrat font-medium tracking-wider"
           >
             {{ t("home.subtitle") }}
-          </h3>
+          </h2>
         </div>
       </div>
     </div>
