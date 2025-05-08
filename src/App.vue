@@ -1,4 +1,5 @@
 <template>
+  <Canonical />
   <Motion
     :initial="{ opacity: 0 }"
     :animate="{ opacity: 1 }"
@@ -25,6 +26,7 @@
 </template>
 
 <script setup>
+import Canonical from "./components/Canonical.vue";
 import { Motion } from "@motionone/vue";
 import Footer from "./components/layout/footer/Footer.vue";
 import Navbar from "./components/layout/navbar/Navbar.vue";
