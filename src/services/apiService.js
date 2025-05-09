@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://casa-cal-y-sol-backend.onrender.com/api";
+const API_BASE_URL = "http://localhost:3000/api";
 
 export const createBooking = async (data) => {
   try {
@@ -25,16 +25,12 @@ export const createBooking = async (data) => {
 
 export const sendBookingEmail = async (bookingData) => {
   try {
-    const response = await fetch("/api/send-email", {
+    const response = await fetch(`${API_BASE_URL}/send-booking-email`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        to: "casacalysol@gmail.com",
-        subject: "Nouvelle réservation",
-        bookingData: bookingData,
-      }),
+      body: JSON.stringify(bookingData),
     });
 
     if (!response.ok) {
