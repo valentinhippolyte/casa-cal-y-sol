@@ -22,3 +22,28 @@ export const createBooking = async (data) => {
     throw error;
   }
 };
+
+export const sendBookingEmail = async (bookingData) => {
+  try {
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        to: "casacalysol@gmail.com",
+        subject: "Nouvelle réservation",
+        bookingData: bookingData,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error("Error sending email:", error);
+    throw error;
+  }
+};

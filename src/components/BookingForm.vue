@@ -140,8 +140,8 @@
 
 <script setup>
 import { ref } from "vue";
-import { createBooking } from "../services/apiService.js";
 import { useI18n } from "vue-i18n";
+import { createBooking, sendBookingEmail } from "../services/apiService.js";
 
 const { t, locale } = useI18n();
 
@@ -158,6 +158,7 @@ const formData = ref({
 const handleSubmit = async () => {
   try {
     const response = await createBooking(formData.value);
+    await sendBookingEmail(formData.value);
     console.log("Réservation succed:", response);
     alert("Reservation done!");
   } catch (error) {
