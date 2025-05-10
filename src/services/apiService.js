@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://casa-cal-y-sol-backend.onrender.com/api";
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 export const createBooking = async (data) => {
   try {
