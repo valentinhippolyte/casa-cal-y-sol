@@ -1,0 +1,33 @@
+import {
+  Bath,
+  Bed,
+  DoorClosed,
+  House,
+  Mail,
+  MapPin,
+  Menu,
+  Save,
+  Sun,
+  ThermometerSnowflake,
+  User,
+  WavesLadder,
+  Wifi,
+  X,
+} from "lucide-vue-next";
+
+export const icons = {
+  Bath,
+  Bed,
+  DoorClosed,
+  House,
+  Sun,
+  ThermometerSnowflake,
+  User,
+  WavesLadder,
+  Wifi,
+  Mail,
+  MapPin,
+  Save,
+  Menu,
+  X,
+};

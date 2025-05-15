@@ -1,5 +1,5 @@
-import * as lucideIcons from "lucide-vue-next";
 import { createApp } from "vue";
+import { icons } from "../src/plugins/icons.js";
 import App from "./App.vue";
 import { i18n } from "./plugins/i18n";
 import router from "./router";
@@ -7,7 +7,7 @@ import "./style.css";
 
 const app = createApp(App);
 
-for (const [key, component] of Object.entries(lucideIcons)) {
+for (const [key, component] of Object.entries(icons)) {
   app.component(key, component);
 }
 

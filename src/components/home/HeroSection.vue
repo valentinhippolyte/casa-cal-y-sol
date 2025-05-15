@@ -2,12 +2,12 @@
   <div class="relative h-[calc(100vh-84px)] overflow-hidden">
     <!-- Background Image -->
     <div class="absolute inset-0">
-      <img
-        :src="imageUrls.breakfast.src"
-        :alt="t('alt_images.breakfast')"
-        class="object-cover object-[35%_center] lg:object-center w-full h-full"
-        loading="eager"
-      />
+      <div
+        class="w-full h-full object-cover bg-[35%_center] lg:bg-center bg-no-repeat bg-cover"
+        :style="`background-image: url('${imageUrls.breakfast.src}')`"
+        role="presentation"
+        aria-hidden="true"
+      ></div>
       <div class="absolute inset-0 bg-black opacity-40"></div>
     </div>
 
