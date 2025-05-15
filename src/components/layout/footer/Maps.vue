@@ -6,7 +6,7 @@
     >
       <!-- Bouton centré -->
       <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-4"
       >
         <button
           @click="iframeVisible = true"
@@ -14,6 +14,13 @@
         >
           {{ t("footer.map_consent") }}
         </button>
+        <div class="text-sm text-gray-600 font-montserrat text-center max-w-xs">
+          <i class="fas fa-info-circle mr-1"></i>
+          {{
+            t("footer.map_cookies_info") ||
+            "En chargeant cette carte, vous acceptez les cookies de Google Maps."
+          }}
+        </div>
       </div>
     </div>
 
