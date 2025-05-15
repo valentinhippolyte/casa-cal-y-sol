@@ -234,9 +234,7 @@
     "title3": "Follow us",
     "address": "Calle Peñón, 28, 11690 Olvera, Cádiz, Spain",
     "registration": "Registration: ",
-    "map": "Map of the location of Casa Cal y Sol in Olvera, Spain",
-    "map_consent": "See the map",
-    "map_cookies_info": "By loading this map, you accept Google Maps cookies."
+    "map": "Map of the location of Casa Cal y Sol in Olvera, Spain"
   },
   "commonButton": {
     "seeMore": "See more",
