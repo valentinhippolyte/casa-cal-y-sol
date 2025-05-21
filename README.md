@@ -76,4 +76,9 @@ The photo gallery uses vue-easy-lightbox for an optimal user experience.
 
 ## 📄 License
 
-This project is private and all rights reserved.
+All rights reserved.
+
+This source code is provided for educational and portfolio purposes only.  
+You are not allowed to copy, reuse, modify, or redistribute any part of this project without explicit permission from the author.
+
+© 2025 Valentin HIPPOLYTE
