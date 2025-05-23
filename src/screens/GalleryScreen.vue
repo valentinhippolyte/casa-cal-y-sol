@@ -4,31 +4,27 @@
     :animate="{ opacity: 1, y: 0 }"
     :transition="{ duration: 0.5 }"
   >
-    <div>
-      <div class="max-w-7xl mx-auto px-4 mb-12">
-        <div class="flex flex-col items-center">
-          <h2 class="text-2xl font-roca-light mb-8 mt-10">
-            {{ t("gallery.title") }}
-          </h2>
-        </div>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-        >
+    <div class="max-w-5xl mx-auto px-4 mb-12">
+      <div class="flex flex-col items-center">
+        <h2 class="text-2xl font-roca-light mb-8 mt-10">
+          {{ t("gallery.title") }}
+        </h2>
+      </div>
+      <masonry-wall :items="images" :column-width="250" :gap="10">
+        <template #default="{ item, index }">
           <div
-            v-for="(item, index) in images"
-            :key="index"
-            class="relative cursor-pointer transition-transform duration-200 hover:scale-101 aspect-square"
+            class="relative cursor-pointer transition-transform duration-200 hover:scale-101"
             @click="openLightbox(index)"
           >
             <img
               :src="item.src"
-              :alt="`Image ${index + 1}`"
+              :alt="item.alt"
               class="w-full h-full object-cover rounded-lg"
               loading="lazy"
             />
           </div>
-        </div>
-      </div>
+        </template>
+      </masonry-wall>
     </div>
   </Motion>
   <!-- Lightbox -->
@@ -42,17 +38,11 @@
 
 <script setup>
 import { Motion } from "@motionone/vue";
+import MasonryWall from "@yeger/vue-masonry-wall";
 import { ref } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";
 import { useI18n } from "vue-i18n";
 import { imageUrls } from "../assets/images/images.js";
-
-defineProps({
-  locale: {
-    type: String,
-    required: true,
-  },
-});
 
 const { t } = useI18n();
 
