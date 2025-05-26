@@ -223,6 +223,8 @@
       "departureDate": "Fecha de salida",
       "number_adults": "Número de adultos",
       "number_children": "Número de niños",
+      "additionalInfo": "Información adicional",
+      "additionalInfoPlaceholder": "Puede especificar aquí cualquier detalle útil sobre su estancia.",
       "button": "Reservar",
       "successMessage": "¡Su reserva ha sido registrada exitosamente! Nos pondremos en contacto con usted por correo electrónico muy pronto.",
       "errorMessage": "Algunos campos son inválidos o están incompletos. Por favor, revise su información.",

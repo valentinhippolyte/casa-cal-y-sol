@@ -222,6 +222,8 @@
       "departureDate": "Date de départ",
       "number_adults": "Nombre d'adultes",
       "number_children": "Nombre d'enfants",
+      "additionalInfo": "Informations supplémentaires",
+      "additionalInfoPlaceholder": "Vous pouvez préciser ici tout détail utile concernant votre séjour.",
       "button": "Réserver",
       "successMessage": "Votre réservation a bien été enregistrée ! Vous serez contacté par mail très prochainement.",
       "errorMessage": "Certains champs sont invalides ou incomplets. Veuillez vérifier votre saisie.",

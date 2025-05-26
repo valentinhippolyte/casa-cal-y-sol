@@ -71,6 +71,7 @@
                 id="arrivalDate"
                 v-model="formData.arrivalDate"
                 required
+                @keydown.enter.prevent
                 class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               />
             </div>
@@ -89,6 +90,7 @@
                 id="departureDate"
                 v-model="formData.departureDate"
                 required
+                @keydown.enter.prevent
                 class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md"
               />
             </div>
@@ -134,6 +136,19 @@
           </div>
         </div>
 
+        <div class="mb-5">
+          <label for="notice" class="mb-3 block text-base font-medium">
+            {{ t("booking.form.additionalInfo") }}
+          </label>
+          <textarea
+            name="notice"
+            id="notice"
+            v-model="formData.notice"
+            :placeholder="t('booking.form.additionalInfoPlaceholder')"
+            class="w-full rounded-md border bg-white py-3 px-6 text-base font-medium outline-none focus:shadow-md min-h-[100px]"
+          ></textarea>
+        </div>
+
         <div>
           <button
             class="hover:shadow-form w-full rounded-md bg-app-red py-3 px-8 text-center text-base font-semibold text-white outline-none cursor-pointer font-montserrat"
@@ -163,12 +178,26 @@ const formData = ref({
   departureDate: "",
   adults: 1,
   children: 0,
+  notice: "",
 });
 // 👇 max children = 8 - adults
 const childrenOptions = computed(() => {
   const count = 7 - formData.value.adults;
   return Array.from({ length: count + 1 }, (_, i) => i);
 });
+
+const resetForm = () => {
+  formData.value = {
+    lastName: "",
+    firstName: "",
+    email: "",
+    arrivalDate: "",
+    departureDate: "",
+    adults: 1,
+    children: 0,
+    notice: "",
+  };
+};
 
 const handleSubmit = async () => {
   alertMessage.value = "";
@@ -181,6 +210,7 @@ const handleSubmit = async () => {
 
       alertType.value = "success";
       alertMessage.value = t("booking.form.successMessage");
+      resetForm(); // Reset form after successful submission
     } else if (response.status >= 400 && response.status < 500) {
       alertType.value = "error";
       alertMessage.value = t("booking.form.errorMessage");

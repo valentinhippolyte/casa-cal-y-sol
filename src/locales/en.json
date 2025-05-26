@@ -222,6 +222,8 @@
       "departureDate": "Departure Date",
       "number_adults": "Number of adults",
       "number_children": "Number of children",
+      "additionalInfo": "Additional information",
+      "additionalInfoPlaceholder": "You can specify here any useful detail about your stay.",
       "button": "Book",
       "successMessage": "Your reservation has been successfully registered! You will be contacted by email very soon.",
       "errorMessage": "Some fields are invalid or incomplete. Please check your input.",
