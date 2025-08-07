@@ -205,7 +205,7 @@
     },
     "calendar": {
       "title": "Calendrier de disponibilité",
-      "loading": "Un instant, le calendrier est presque prêt...",
+      "loading": "Connexion au serveur en cours... Le calendrier sera prêt dans quelques instants.",
       "error": "Erreur de chargement",
       "legend": {
         "low": "Basse saison",

@@ -7,8 +7,13 @@
       </h2>
     </div>
 
-    <div v-if="loading" class="text-gray-500">
-      {{ t("booking.calendar.loading") }}
+    <div v-if="loading" class="flex flex-col items-center justify-center py-12">
+      <div
+        class="animate-spin rounded-full h-12 w-12 border-b-4 border-app-red mb-4"
+      ></div>
+      <p class="text-gray-500 text-center">
+        {{ t("booking.calendar.loading") }}
+      </p>
     </div>
     <div v-else-if="error" class="text-red-500">
       {{ t("booking.calendar.error") }}

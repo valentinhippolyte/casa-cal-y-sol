@@ -205,12 +205,12 @@
     },
     "calendar": {
       "title": "Availability calendar",
-      "loading": "Just a moment, the calendar is almost ready...",
+      "loading": "Connecting to the server... The calendar will be ready in a few moments.",
       "error": "Loading error",
       "legend": {
         "low": "Low season",
         "high": "High season",
-        "booked": "Reserved"
+        "booked": "Booked"
       }
     },
     "form": {
