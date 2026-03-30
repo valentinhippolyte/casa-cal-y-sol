@@ -224,6 +224,7 @@
       "number_children": "Number of children",
       "button": "Book",
       "successMessage": "Your reservation has been successfully registered! You will be contacted by email very soon.",
+      "arrivalTooSoon": "Bookings must be made at least 3 days before the arrival date.",
       "errorMessage": "Some fields are invalid or incomplete. Please check your input.",
       "serverError": "An error occurred. Please try again later."
     }

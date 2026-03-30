@@ -170,8 +170,32 @@ const childrenOptions = computed(() => {
   return Array.from({ length: count + 1 }, (_, i) => i);
 });
 
+const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
+
+const parseLocalDateInput = (yyyyMmDd) => {
+  if (!yyyyMmDd || typeof yyyyMmDd !== "string") return null;
+  const [y, m, d] = yyyyMmDd.split("-").map((x) => Number(x));
+  if (!y || !m || !d) return null;
+  const dt = new Date(y, m - 1, d);
+  return Number.isNaN(dt.getTime()) ? null : dt;
+};
+
+const isArrivalAtLeastThreeDaysAway = (arrivalDateStr) => {
+  const arrival = parseLocalDateInput(arrivalDateStr);
+  if (!arrival) return false;
+  const now = new Date();
+  return arrival.getTime() - now.getTime() >= THREE_DAYS_MS;
+};
+
 const handleSubmit = async () => {
   alertMessage.value = "";
+
+  if (!isArrivalAtLeastThreeDaysAway(formData.value.arrivalDate)) {
+    alertType.value = "error";
+    alertMessage.value = t("booking.form.arrivalTooSoon");
+    return;
+  }
+
   try {
     const response = await createBooking(formData.value);
 
@@ -183,7 +207,14 @@ const handleSubmit = async () => {
       alertMessage.value = t("booking.form.successMessage");
     } else if (response.status >= 400 && response.status < 500) {
       alertType.value = "error";
-      alertMessage.value = t("booking.form.errorMessage");
+      const validationMessages = response.data?.validation_messages;
+      const hasArrivalTooSoon =
+        Array.isArray(validationMessages) &&
+        validationMessages.some((m) => m?.code === "ARRIVAL_TOO_SOON");
+
+      alertMessage.value = hasArrivalTooSoon
+        ? t("booking.form.arrivalTooSoon")
+        : t("booking.form.errorMessage");
 
       console.warn("Client error:", response.data?.validation_messages);
     } else if (response.status >= 500) {

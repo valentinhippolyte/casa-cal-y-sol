@@ -225,6 +225,7 @@
       "number_children": "Número de niños",
       "button": "Reservar",
       "successMessage": "¡Su reserva ha sido registrada exitosamente! Nos pondremos en contacto con usted por correo electrónico muy pronto.",
+      "arrivalTooSoon": "La reserva debe realizarse al menos 3 días antes de la fecha de llegada.",
       "errorMessage": "Algunos campos son inválidos o están incompletos. Por favor, revise su información.",
       "serverError": "Ha ocurrido un error. Por favor, inténtelo de nuevo más tarde."
     }
