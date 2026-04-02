@@ -165,7 +165,7 @@
 <script setup>
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
-import { createBooking, sendBookingEmail } from "../../services/apiService.js";
+import { createBooking } from "../../services/apiService.js";
 import AlertMessage from "../booking/AlertMessage.vue";
 
 const { t } = useI18n();
@@ -242,9 +242,6 @@ const handleSubmit = async () => {
     const response = await createBooking(formData.value);
 
     if (response.status >= 200 && response.status < 300) {
-      // Send email after a succeed reservation
-      await sendBookingEmail(formData.value);
-
       alertType.value = "success";
       alertMessage.value = t("booking.form.successMessage");
       resetForm(); // Reset form after successful submission

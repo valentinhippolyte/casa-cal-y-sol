@@ -22,24 +22,3 @@ export const createBooking = async (data) => {
     throw error;
   }
 };
-
-export const sendBookingEmail = async (bookingData) => {
-  try {
-    const response = await fetch(`${API_BASE_URL}/send-booking-email`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(bookingData),
-    });
-
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-
-    return await response.json();
-  } catch (error) {
-    console.error("Error sending email:", error);
-    throw error;
-  }
-};
