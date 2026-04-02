@@ -146,7 +146,7 @@
     },
     "olvera": {
       "title": "Olvera au quotidien",
-      "text": "Notre maison offre tous les avantages de la ville tout en conservant l’authenticité d’un village. À moins de 100 mètres, vous trouverez supermarchés, boucherie, primeur, pâtisserie, pharmacie, bars, et bien plus encore (vous trouverez nos recommandations sur la carte). En plus de toutes ces commodités, cette maison vous offre, en pleine ville, une piscine privative de 3 x 4 m pour vous rafraîchir sous le soleil andalou. Située dans la paisible Calle Peñón, où seuls le boulanger et les éboueurs passent quotidiennement, notre maison garantit calme et sérénité. Un parking est disponible à proximité.",
+      "text": "Notre maison offre tous les avantages de la ville tout en conservant l’authenticité d’un village. À moins de 100 mètres, vous trouverez supermarchés, boucherie, primeur, pâtisserie, pharmacie, bars, et bien plus encore (vous trouverez nos recommandations sur la carte). En plus de toutes ces commodités, cette maison vous offre, en pleine ville, une piscine privative de 3 x 4 m pour vous rafraîchir sous le soleil andalou (ouverte de mai à novembre). Située dans la paisible Calle Peñón, où seuls le boulanger et les éboueurs passent quotidiennement, notre maison garantit calme et sérénité. Un parking est disponible à proximité.",
       "legend": {
         "title": "À proximité :",
         "1": "Supermarché",
@@ -225,7 +225,7 @@
       "additionalInfo": "Informations supplémentaires",
       "additionalInfoPlaceholder": "Vous pouvez préciser ici tout détail utile concernant votre séjour.",
       "button": "Réserver",
-      "successMessage": "Votre réservation a bien été enregistrée ! Vous serez contacté par mail très prochainement.",
+      "successMessage": "Votre demande de réservation a bien été reçue ! Elle est en cours de traitement. Nous vous contacterons par email très prochainement pour confirmer votre réservation.",
       "arrivalTooSoon": "La réservation doit être faite au moins 3 jours avant la date d’arrivée.",
       "errorMessage": "Certains champs sont invalides ou incomplets. Veuillez vérifier votre saisie.",
       "serverError": "Une erreur est survenue. Veuillez réessayer plus tard."

@@ -146,7 +146,7 @@
     },
     "olvera": {
       "title": "Everyday life in Olvera",
-      "text": "Our house offers all the advantages of the city while preserving the authenticity of a village. Less than 100 meters away, you'll find supermarkets, a butcher, greengrocer, bakery, pharmacy, bars, and much more (our recommendations are listed on the map). In addition to all these amenities, the house also features a private 3x4m pool to cool off under the Andalusian sun. Located on the quiet Calle Peñón, where only the baker and garbage collectors pass daily, our house guarantees peace and serenity. Parking is available nearby.",
+      "text": "Our house offers all the advantages of the city while preserving the authenticity of a village. Less than 100 meters away, you'll find supermarkets, a butcher, greengrocer, bakery, pharmacy, bars, and much more (our recommendations are listed on the map). In addition to all these amenities, the house also features a private 3x4m pool to cool off under the Andalusian sun (open from May to November). Located on the quiet Calle Peñón, where only the baker and garbage collectors pass daily, our house guarantees peace and serenity. Parking is available nearby.",
       "legend": {
         "title": "Nearby:",
         "1": "Supermarket",
@@ -225,7 +225,7 @@
       "additionalInfo": "Additional information",
       "additionalInfoPlaceholder": "You can specify here any useful detail about your stay.",
       "button": "Book",
-      "successMessage": "Your reservation has been successfully registered! You will be contacted by email very soon.",
+      "successMessage": "Your reservation request has been successfully received! It is currently being reviewed. We will contact you by email very soon to confirm your reservation.",
       "arrivalTooSoon": "Bookings must be made at least 3 days before the arrival date.",
       "errorMessage": "Some fields are invalid or incomplete. Please check your input.",
       "serverError": "An error occurred. Please try again later."

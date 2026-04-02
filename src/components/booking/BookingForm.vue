@@ -170,6 +170,36 @@ import AlertMessage from "../booking/AlertMessage.vue";
 
 const { t } = useI18n();
 
+const toLocalStartOfDay = (dateLike) => {
+  if (!dateLike) return null;
+
+  // HTML date input provides "YYYY-MM-DD". Parse explicitly as local time.
+  if (typeof dateLike === "string") {
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateLike);
+    if (!m) return null;
+    const y = Number(m[1]);
+    const mo = Number(m[2]) - 1;
+    const d = Number(m[3]);
+    const dt = new Date(y, mo, d);
+    return Number.isNaN(dt.getTime()) ? null : dt;
+  }
+
+  const dt = new Date(dateLike);
+  if (Number.isNaN(dt.getTime())) return null;
+  return new Date(dt.getFullYear(), dt.getMonth(), dt.getDate());
+};
+
+const isArrivalAtLeastThreeDaysAway = (arrivalDate) => {
+  const arrival = toLocalStartOfDay(arrivalDate);
+  if (!arrival) return false;
+
+  const today = toLocalStartOfDay(new Date());
+  const minArrival = new Date(today);
+  minArrival.setDate(minArrival.getDate() + 3);
+
+  return arrival >= minArrival;
+};
+
 const formData = ref({
   lastName: "",
   firstName: "",

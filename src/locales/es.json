@@ -147,7 +147,7 @@
     },
     "olvera": {
       "title": "Olvera en la vida cotidiana",
-      "text": "Nuestra casa ofrece todas las ventajas de la ciudad manteniendo la autenticidad de un pueblo. A menos de 100 metros, encontrarás supermercados, carnicería, frutería, panadería, farmacia, bares y mucho más (nuestras recomendaciones están en el mapa). Además de todas estas comodidades, esta casa también cuenta con una piscina privada de 3x4 m para refrescarte bajo el sol andaluz. Situada en la tranquila Calle Peñón, por donde solo pasan el panadero y los basureros cada día, nuestra casa garantiza calma y serenidad. Hay aparcamiento disponible cerca.",
+      "text": "Nuestra casa ofrece todas las ventajas de la ciudad manteniendo la autenticidad de un pueblo. A menos de 100 metros, encontrarás supermercados, carnicería, frutería, panadería, farmacia, bares y mucho más (nuestras recomendaciones están en el mapa). Además de todas estas comodidades, esta casa también cuenta con una piscina privada de 3x4 m para refrescarte bajo el sol andaluz (abierta de mayo a noviembre). Situada en la tranquila Calle Peñón, por donde solo pasan el panadero y los basureros cada día, nuestra casa garantiza calma y serenidad. Hay aparcamiento disponible cerca.",
       "legend": {
         "title": "Cerca de casa:",
         "1": "Supermercado",
@@ -226,7 +226,7 @@
       "additionalInfo": "Información adicional",
       "additionalInfoPlaceholder": "Puede especificar aquí cualquier detalle útil sobre su estancia.",
       "button": "Reservar",
-      "successMessage": "¡Su reserva ha sido registrada exitosamente! Nos pondremos en contacto con usted por correo electrónico muy pronto.",
+      "successMessage": "¡Su solicitud de reserva ha sido registrada correctamente! Actualmente está en proceso de validación. Nos pondremos en contacto con usted por correo electrónico muy pronto para confirmar su reserva.",
       "arrivalTooSoon": "La reserva debe realizarse al menos 3 días antes de la fecha de llegada.",
       "errorMessage": "Algunos campos son inválidos o están incompletos. Por favor, revise su información.",
       "serverError": "Ha ocurrido un error. Por favor, inténtelo de nuevo más tarde."
